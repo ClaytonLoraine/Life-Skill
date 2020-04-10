@@ -1,6 +1,6 @@
 @start
   *say
-    Hello World
+    Hello everyone
 
 @pause
     *say 
