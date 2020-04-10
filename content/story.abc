@@ -5,3 +5,8 @@
 @pause
     *say 
         Thanks for playing!
+        
+        
+@stop
+    *say 
+        Stopping
