@@ -68,26 +68,11 @@
         
 @choosetrade
     *say 
-        choose trade
+        you have chosen trade
         
     *then 
-        hear industrial {
-        set specialization to industrial
+        set specialization to trade
             -> collegelife
-        }
-        
-        hear mechanical {
-        set specialization to mechanical
-            -> collegelife
-        }
-        
-        hear construction {
-        set specialization to construction
-        
-            -> collegelife
-        }
-        
-
 
         
 @choosemajor
@@ -180,15 +165,10 @@
     if specialization is arts {
     //-> artjobs
     }
-    if specialization is construction {
-    //-> constructionjobs
+    if specialization is trade {
+    //-> tradejobs
     }
-    if specialization is mechanical {
-    //-> mechanicaljobs
-    }
-    if specialization is industrial {
-    //-> industrialjobs
-    }
+
     
     
 @sciencejobs
