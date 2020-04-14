@@ -1,6 +1,22 @@
 @start
   *say
-    Hello everyone
+    Welcome to Life! In this game you will be given choices to make in your new virtual life! Would you like to play?
+    
+    *then
+		hear yes {
+		set money to 0
+		set education to 0
+		set character to 0
+		set jobexperience to 0
+		set kids to 0
+		set married to false
+		
+            -> opener
+        }
+		
+        hear no {
+            -> stop
+        }
 
 @pause
     *say 
@@ -10,3 +26,177 @@
 @stop
     *say 
         Stopping
+        
+@opener 
+    *say
+    Make college choice
+    
+    *then
+		hear trade school {
+		set college to "trade"
+		decrease money by 30,000
+		increase education by 10
+		increase character by 2
+            -> choosetrade
+        }
+		
+        hear public college {
+        decrease money by 10,000
+        increase character by 1
+        increase education by 10
+        set college to "public"
+
+            -> choosemajor
+        }
+        hear private college {
+        decrease money by 60,000
+        increase character by 5
+        increase education by 10
+		set college to "private"
+
+            -> choosemajor
+        }
+        
+        hear party college {
+        decrease money by 60,000
+        increase character by 10
+        increase education by 5
+		set college to "party"
+
+            -> choosemajor
+        }
+        
+@choosetrade
+    *say 
+        choose trade
+        
+    *then 
+        hear industrial {
+        set specialization to industrial
+            -> collegelife
+        }
+        
+        hear mechanical {
+        set specialization to mechanical
+            -> collegelife
+        }
+        
+        hear construction {
+        set specialization to construction
+        
+            -> collegelife
+        }
+        
+
+
+        
+@choosemajor
+    *say 
+        choose major
+        
+    *then
+        hear sciences {
+        set specialization to sciences
+            -> collegelife
+        }
+        
+        hear arts {
+        set specialization to arts
+            -> collegelife
+        }
+        
+@collegelife
+
+    *say 
+        how do you handle college
+    
+    *then
+        hear party {
+        increase character by 4            
+            -> workstudy
+        }
+        
+        hear study {
+        increase education by 4
+            -> workstudy
+        }
+        
+        hear best of both {
+        increase character by 2
+        increase education by 2
+            -> workstudy
+        }
+        
+@workstudy
+    *say 
+        want to work while at college
+    
+    *then
+        hear yes {
+        decrease character by 2  
+        decrease education by 2
+        increase jobexperience by 4
+        increase money by 30,000
+            -> graduatedcollege
+        }
+        
+        hear no {
+            -> graduatedcollege
+        }
+@graduatedcollege
+    *say 
+        Congrats!
+    
+    *then
+
+            -> wheretolive
+
+@wheretolive
+    *say 
+        where do you want to live for now until you are able to make more money and buy a house for yourself
+    
+    *then
+        hear parent's house {
+        decrease character by 5
+
+            -> choosejob
+        }
+        
+        hear rent apartment {
+        decrease money by 10,000
+        increase character by 3
+            -> choosejob
+        }
+        
+@choosejob
+    *say 
+        what job do you want?
+    
+    
+    *then
+    if specialization is sciences {
+    -> sciencejobs
+    }
+    if specialization is arts {
+    //-> artjobs
+    }
+    if specialization is construction {
+    //-> constructionjobs
+    }
+    if specialization is mechanical {
+    //-> mechanicaljobs
+    }
+    if specialization is industrial {
+    //-> industrialjobs
+    }
+    
+    
+@sciencejobs
+    *say 
+    
+
+
+
+
+
+    

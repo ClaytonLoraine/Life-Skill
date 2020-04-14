@@ -1,5 +1,23 @@
 {
     "en-US": {
-        "translation": {}
+        "translation": {
+            "start.narration": "Welcome to Life! In this game you will be given choices to make in your new virtual life! Would you like to play?",
+            "utterance-yes": "yes",
+            "utterance-no": "no",
+            "pause.narration": "Thanks You. Come Again",
+            "stop.narration": "Stopping",
+            "opener.narration": "Make college choice",
+            "utterance-trade school": "trade school",
+            "utterance-public college": "public college",
+            "utterance-private college": "private college",
+            "utterance-party college": "party college",
+            "choosetrade.narration": "choose trade",
+            "utterance-industrial": "industrial",
+            "utterance-mechanical": "mechanical",
+            "utterance-construction": "construction",
+            "choosemajor.narration": "choose major",
+            "utterance-sciences": "sciences",
+            "utterance-arts": "arts"
+        }
     }
 }
