@@ -29,7 +29,7 @@
         
 @opener 
     *say
-    Make college choice
+    You can pick between these places to study; Trade School, Public College, Private College, or Party School. Which would you like?
     
     *then
 		hear trade school {
@@ -75,6 +75,20 @@
             -> collegelife
 
         
+@pickedparty
+    *say
+        The party school it is. There are many frats and sororities that you can become a part of. This type of college is great for having fun. Even though it is considered a party school you still need to figure out what field you would like to study in. Would you like to study science, or art?
+    *then
+        hear science {
+        set pecialization to sciences
+            -> party_collegelife_science
+        }
+        
+        herar arts {
+        set specialization to arts
+            -> party_collegelife_arts
+        }
+        
 @choosemajor
     *say 
         choose major
@@ -89,7 +103,53 @@
         set specialization to arts
             -> collegelife
         }
+     
+@party_collegelife_science
+    *say
+        You chose to study in the field of science. Your first two years you work on getting all your general education done with. During your schooling you decided how you wanted to spend your time. You could go out and party, focus on your studies, or try to do both. How would you want to spend your college time?
+    *then
+        hear party {
+        increase character by 4
+            -> party_workstudy_party
+        }
         
+        hear study {
+        increase education by 4
+            -> party_workstudy_study
+        }
+        
+        hear best of both {
+        increase character by 2
+        increase education by 2
+            -> party_workstudy_both
+        }
+
+@party_collegelife_arts
+    *say
+        You are a diligent worker and decided to study in the art field. How would you like to spend your time while at college? Partying a lot, studying, or a mixture of both?
+    *then
+        hear party {
+        increase character by 4
+            -> party_workstudy_party
+        }
+        
+        hear study {
+        increase education by 4
+            -> party_workstudy_study
+        }
+        
+        hear best of both {
+        increase character by 2
+        increase education by 2
+            -> party_workstudy_both
+        }
+        
+@party_workstudy_both
+
+@party_workstudy_study
+
+@party_workstudy_party
+
 @collegelife
 
     *say 
