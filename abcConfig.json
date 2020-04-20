@@ -15,7 +15,7 @@
 
 		"aws-profile-name": "default",
 
-		"skill-invocation-name": "testing",
+		"skill-invocation-name": "Life Simulator",
 
 		"dynamo-db-session-table-name": "testing-sessions",
 
@@ -23,7 +23,7 @@
 
 		"s3-bucket-name": "alexa-ml",
 
-		"ask-skill-directory-name": "testing",
+		"ask-skill-directory-name": "life-simulator",
 
 		"publish-locales": [
 			"en-US"
@@ -31,9 +31,9 @@
 
 		"update-string-with-source": true,
 
-		"story-title": "testing",
+		"story-title": "life simulator",
 
-		"story-id": "testing",
+		"story-id": "life-simulator",
 		
 		"abc-baked-filename": "baked_story.json",
 		
