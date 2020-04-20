@@ -265,7 +265,7 @@
     *then 
         hear programmer{
         increase money by 225,000
-        //> programmer
+        //-> programmer
         }
         hear doctor{
         increase money by 600,000
