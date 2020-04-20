@@ -151,19 +151,29 @@
 
 
 @both_life
+    *say
+        You chose to try and do both!
+        
+    *then
+        -> workstudy
 
 @study_life
+    *say
+        You chose to study!
+        
+    *then
+        -> workstudy
 
 @party_life
     *say
         You chose to party!
         
     *then
-        
+        -> workstudy
         
 @workstudy
     *say 
-        want to work while at college
+        Want to work while at college?
     
     *then
         hear yes {
@@ -171,19 +181,34 @@
         decrease education by 2
         increase jobexperience by 4
         increase money by 30,000
-            -> graduatedcollege
+            -> workstudy_yes
         }
         
         hear no {
-            -> graduatedcollege
+            -> workstudy_no
         }
+        
+@workstudy_yes
+    *say 
+        You chose to work at college
+        
+    *then
+    -> graduatedcollege
+
+@workstudy_no
+    *say 
+        You chose not to work at college
+        
+    *then
+    -> graduatedcollege
+
 @graduatedcollege
     *say 
         Congrats!
     
     *then
 
-            -> wheretolive
+        -> wheretolive
 
 @wheretolive
     *say 
@@ -204,7 +229,7 @@
         
 @choosejob
     *say 
-        what job do you want?
+        Time to choose a job. What job do you want?
     
     
     *then
@@ -212,17 +237,68 @@
     -> sciencejobs
     }
     if specialization is arts {
-    //-> artjobs
+    -> artjobs
     }
     if specialization is trade {
-    //-> tradejobs
+    -> tradejobs
     }
 
     
     
 @sciencejobs
     *say 
+        You chose to get a degree in science so you can choose the following jobs: Programmer, Doctor, Forensic scientist
     
+    *then 
+        hear programmer{
+        increase money by 225,000
+        //> programmer
+        }
+        hear doctor{
+        increase money by 600,000
+        //-> doctor
+        }
+        hear forensic scientist{
+        increase money by 195,000
+        //-> forensic_scientist
+        }
+        
+
+@artjobs
+    *say 
+        You chose to get a degree in the arts so you can choose the following jobs: Programmer, Doctor, Forensic scientist
+    
+    *then 
+        hear programmer{
+        increase money by 225,000
+        //-> programmer
+        }
+        hear doctor{
+        increase money by 600,000
+        //-> doctor
+        }
+        hear forensic scientist{
+        increase money by 195,000
+        //-> forensic_scientist
+        }
+
+@tradejobs
+    *say 
+        You chose to get a degree in science so you can choose the following jobs: Programmer, Doctor, Forensic scientist
+    
+    *then 
+        hear programmer{
+        increase money by 225,000
+        //-> programmer
+        }
+        hear doctor{
+        increase money by 600,000
+        //-> doctor
+        }
+        hear forensic scientist{
+        increase money by 195,000
+        //-> forensic_scientist
+        }
 
 
 
