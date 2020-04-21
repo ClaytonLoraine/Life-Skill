@@ -159,14 +159,14 @@
 
 @study_life
     *say
-        You chose to study!
+        You chose to study! You have made the choice that studying and getting good grades is worth your time, because of the money you are spending.
         
     *then
         -> workstudy
 
 @party_life
     *say
-        You chose to party!
+        You chose to party! Your time spent while at college is going out and partying a lot. You spend too much time partying to where it affects your education and you don’t learn much.
         
     *then
         -> workstudy
@@ -190,21 +190,21 @@
         
 @workstudy_yes
     *say 
-        You chose to work at college
+        You chose to work at college. The rest of your time not learning at school you spend working. This allows you to save up some money to pay off your Schooling. You get out of college with great experience and are ready to get out there in the real world.
         
     *then
     -> graduatedcollege
 
 @workstudy_no
     *say 
-        You chose not to work at college
+        You know having a job would help you make some extra cash to pay for things and college. However, you think that focusing on your studies is more important right now. You chose not to work at college
         
     *then
     -> graduatedcollege
 
 @graduatedcollege
     *say 
-        Congrats!
+        Congrats! you made your way through college.
     
     *then
 
@@ -212,7 +212,7 @@
 
 @wheretolive
     *say 
-        where do you want to live for now until you are able to make more money and buy a house for yourself
+        where do you want to live for now until you are able to make more money and buy a house for yourself?
     
     *then
         hear parent's house {
@@ -279,41 +279,109 @@
 
 @artjobs
     *say 
-        You chose to get a degree in the arts so you can choose the following jobs: Programmer, Doctor, Forensic scientist
+        You chose to get a degree in the arts so you can choose the following jobs: teacher, writer, or a designer?
     
     *then 
-        hear programmer{
-        increase money by 225,000
-        //-> programmer
+        hear teacherr{
+        increase money by 105,000
+        //-> teacher
         }
-        hear doctor{
-        increase money by 600,000
-        //-> doctor
+        hear writer{
+        increase money by 135,000
+        //-> writer
         }
-        hear forensic scientist{
-        increase money by 195,000
-        //-> forensic_scientist
+        hear designer{
+        increase money by 180,000
+        //-> designer
         }
 
 @tradejobs
     *say 
-        You chose to get a degree in science so you can choose the following jobs: Programmer, Doctor, Forensic scientist
+        You chose to get a degree in a trade so you can choose the following jobs: constructor, Auto mechanic, electrician
     
     *then 
-        hear programmer{
+        hear constructor{
         increase money by 225,000
-        //-> programmer
+        //-> construction
         }
-        hear doctor{
-        increase money by 600,000
-        //-> doctor
+        hear auto mechanic{
+        increase money by 120,000
+        //-> auto_mechanic
         }
-        hear forensic scientist{
-        increase money by 195,000
-        //-> forensic_scientist
+        hear electrician{
+        increase money by 180,000
+        //-> electrician
         }
 
+@programmer
+    *say
+        You become a programmer. You enjoyed the problem sovling and writing program that do things for you.
+    *then
+    -> chooseresidents
+    
+@doctor
+    *say
+        You chose to become a doctor. This was fit for you because of how much you want to save peoples lives.
+    *then
+    -> chooseresidents
 
+@forensic_scientist
+    *say
+        Wanting to help find criminals you became a forensic scientist. using you abilities to analyze evidence to use in determining the innocence or guild of a suspect.
+    *then
+    -> chooseresidents
+    
+@teacher
+    *say
+        Being with kids and helping them learn is a passion of yours. You took your passion and are now a teacher.
+    *then
+    -> chooseresidents
+
+@writer
+    *say
+        Writing your own stories to tell a compelling peice is amazing. You took your skills and used them to become a writer.
+    *then
+    -> chooseresidents
+    
+@designer
+    *say
+        You decided on being a designer. Making creative work and displaying it for people to see.
+    *then
+    -> chooseresidents
+    
+@construction
+    *say
+        You are a constructor now. using math and physics to create wonderful buildings.
+    *then
+    -> chooseresidents
+
+@auto_mechanic
+    *say
+        Fixing cars and getting old ones to work again is something fantastic. You chose to become an auto mechanic
+    *then
+    -> chooseresidents
+@electrician
+    *say
+        Running wire through a house and getting power to everything is phenomenal. You became a electrician
+    *then
+    -> chooseresidents
+
+@chooseresidents
+    *say
+        You have to choose where you would like to live at. Somewhere in the country, city, or suburbs?
+    *then
+        hear country{
+        decrease money by 70,000
+        //-> country
+        }
+        hear city{
+        decrease money by 200,000
+        //-> city
+        }
+        hear suburb{
+        decrease money by 150,000
+        //-> suburb
+        }
 
 
 
