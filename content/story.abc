@@ -265,15 +265,15 @@
     *then 
         hear programmer{
         increase money by 225,000
-        //-> programmer
+        -> programmer
         }
         hear doctor{
         increase money by 600,000
-        //-> doctor
+        -> doctor
         }
         hear forensic scientist{
         increase money by 195,000
-        //-> forensic_scientist
+        -> forensic_scientist
         }
         
 
@@ -284,15 +284,15 @@
     *then 
         hear teacherr{
         increase money by 105,000
-        //-> teacher
+        -> teacher
         }
         hear writer{
         increase money by 135,000
-        //-> writer
+        -> writer
         }
         hear designer{
         increase money by 180,000
-        //-> designer
+        -> designer
         }
 
 @tradejobs
@@ -302,15 +302,15 @@
     *then 
         hear constructor{
         increase money by 225,000
-        //-> construction
+        -> construction
         }
         hear auto mechanic{
         increase money by 120,000
-        //-> auto_mechanic
+        -> auto_mechanic
         }
         hear electrician{
         increase money by 180,000
-        //-> electrician
+        -> electrician
         }
 
 @programmer
@@ -372,17 +372,122 @@
     *then
         hear country{
         decrease money by 70,000
-        //-> country
+        -> country
         }
         hear city{
         decrease money by 200,000
-        //-> city
+        -> city
         }
         hear suburb{
         decrease money by 150,000
-        //-> suburb
+        -> suburb
+        }
+        
+@country
+    *say
+        You love the wide-open outdoors with no traffic, few neighbors, and planty of room for activiies. The country is where you want to live.
+    *then
+    -> marriage
+
+@city
+    *say
+        You enjoy the hustle and bustle of the City. There are many things to do and go in the city, that is why you wanted to live there
+    *then
+    -> marriage
+
+@suburb
+    *say
+        after looking at all the different places to live you decided being in a safe and cozy suburb would be great for you.
+    *then
+    -> marriage
+    
+@marriage
+    *say
+        Having finally got your job and living on your own, you wonder to yourself if you want to get a spouse to spend your time with. Do you want to get married or stay single
+    *then
+        hear married{
+        -> married
+        }
+        hear single{
+        -> single
+        }
+        
+@married
+    *say
+    Congratulations! You are getting married to the love of your life. Is the Wedding going to be a big one or small?
+    *then
+        hear big{
+        decrease money by 40,000
+        increase character by 6
+        -> big
+        }
+        hear small{
+        decrease money by 20,000
+        increase character by 3
+        -> small
+        }
+    
+@single
+    *say
+        You figured that getting married would be a waste of your time and cause you pain and suffering. There is a reason why so many people get divorced. You made it through your life. making it through college and having a sucessful job. You live your retirement alone, but it does not feel that way living in the where you are. Congratulations, on completing your Journey! Come back soon and play again.
+    *then
+        -> stop
+
+
+@big
+    *say
+        You want to have a big wedding with lots of people, food, and decorations. The wedding went great. You invited all your family and friends to celebrate the occasion.
+    *then
+    -> married_life
+@small
+    *say
+        You only wanted to have a few people at your wedding and not many decorations to keep the cost down.
+    *then
+    -> married_life
+
+@married_life
+    *say 
+        Now that you have been married for some time and life is going well are kids something you would like to have?
+    *then
+        hear have kids{
+        decrease money by 40,000
+        increase charater by 6
+        -> kids
+        }
+        hear don't{
+        -> no_kids
+        }
+        
+@kids
+    *say
+        You lived a great life having kids and watching them grow up. You have been at your job for 20 years would you like to retire?
+    *then
+        hear yes{
+        -> retire
+        }
+        hear no{
+        ->dontretire
         }
 
+@no_kids
+    *say
+        You and your spouse decide that kids would be to much work. You two live by yourselves. You have grown older now would you like to retire?
+    *then
+        hear yes{
+        -> retire
+        }
+        hear no{
+        ->dontretire
+        }
+        
+@retire
+    *say
+        After a great long time at your job, living with your family and seeing them grow up. You decided to reitre from work and enjoy the rest of life together with your spouse. Thank you for playing life, come back again soon.
+    *then
+        -> stop
 
-
-    
+@dontretire
+    *say
+        You enjoy your job to much and don't know if you would ever stop working in life. You continue the rest of your life working with fewer hours and spending the evening with your family. Congratualtions on making through life. Play again and choose different outcomes.
+    *then
+        -> stop
