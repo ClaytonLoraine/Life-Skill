@@ -1,0 +1,246 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "intents": [
+                {
+                    "name": "flexaIntent",
+                    "samples": [
+                        "trade school"
+                    ]
+                },
+                {
+                    "name": "flexbIntent",
+                    "samples": [
+                        "public college"
+                    ]
+                },
+                {
+                    "name": "flexcIntent",
+                    "samples": [
+                        "private college"
+                    ]
+                },
+                {
+                    "name": "flexdIntent",
+                    "samples": [
+                        "party college"
+                    ]
+                },
+                {
+                    "name": "flexeIntent",
+                    "samples": [
+                        "sciences"
+                    ]
+                },
+                {
+                    "name": "flexfIntent",
+                    "samples": [
+                        "arts"
+                    ]
+                },
+                {
+                    "name": "flexgIntent",
+                    "samples": [
+                        "party"
+                    ]
+                },
+                {
+                    "name": "flexhIntent",
+                    "samples": [
+                        "study"
+                    ]
+                },
+                {
+                    "name": "flexiIntent",
+                    "samples": [
+                        "both"
+                    ]
+                },
+                {
+                    "name": "flexjIntent",
+                    "samples": [
+                        "parent's house"
+                    ]
+                },
+                {
+                    "name": "flexkIntent",
+                    "samples": [
+                        "rent apartment"
+                    ]
+                },
+                {
+                    "name": "flexlIntent",
+                    "samples": [
+                        "programmer"
+                    ]
+                },
+                {
+                    "name": "flexmIntent",
+                    "samples": [
+                        "doctor"
+                    ]
+                },
+                {
+                    "name": "flexnIntent",
+                    "samples": [
+                        "forensic scientist"
+                    ]
+                },
+                {
+                    "name": "flexoIntent",
+                    "samples": [
+                        "teacherr"
+                    ]
+                },
+                {
+                    "name": "flexpIntent",
+                    "samples": [
+                        "writer"
+                    ]
+                },
+                {
+                    "name": "flexqIntent",
+                    "samples": [
+                        "designer"
+                    ]
+                },
+                {
+                    "name": "flexrIntent",
+                    "samples": [
+                        "auto mechanic"
+                    ]
+                },
+                {
+                    "name": "flexsIntent",
+                    "samples": [
+                        "electrician"
+                    ]
+                },
+                {
+                    "name": "flextIntent",
+                    "samples": [
+                        "country"
+                    ]
+                },
+                {
+                    "name": "flexuIntent",
+                    "samples": [
+                        "city"
+                    ]
+                },
+                {
+                    "name": "flexvIntent",
+                    "samples": [
+                        "suburb"
+                    ]
+                },
+                {
+                    "name": "flexwIntent",
+                    "samples": [
+                        "married"
+                    ]
+                },
+                {
+                    "name": "flexxIntent",
+                    "samples": [
+                        "single"
+                    ]
+                },
+                {
+                    "name": "flexyIntent",
+                    "samples": [
+                        "big"
+                    ]
+                },
+                {
+                    "name": "flexzIntent",
+                    "samples": [
+                        "small"
+                    ]
+                },
+                {
+                    "name": "flexbaIntent",
+                    "samples": [
+                        "have kids"
+                    ]
+                },
+                {
+                    "name": "flexbbIntent",
+                    "samples": [
+                        "don't have kids"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent"
+                },
+                {
+                    "name": "AMAZON.HelpIntent"
+                },
+                {
+                    "name": "AMAZON.LoopOffIntent"
+                },
+                {
+                    "name": "AMAZON.LoopOnIntent"
+                },
+                {
+                    "name": "AMAZON.NextIntent"
+                },
+                {
+                    "name": "AMAZON.NoIntent"
+                },
+                {
+                    "name": "AMAZON.PauseIntent"
+                },
+                {
+                    "name": "AMAZON.PreviousIntent"
+                },
+                {
+                    "name": "AMAZON.RepeatIntent"
+                },
+                {
+                    "name": "AMAZON.ResumeIntent"
+                },
+                {
+                    "name": "AMAZON.ShuffleOffIntent"
+                },
+                {
+                    "name": "AMAZON.ShuffleOnIntent"
+                },
+                {
+                    "name": "AMAZON.StartOverIntent"
+                },
+                {
+                    "name": "AMAZON.StopIntent"
+                },
+                {
+                    "name": "AMAZON.YesIntent"
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent"
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent"
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent"
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent"
+                },
+                {
+                    "name": "AMAZON.PageUpIntent"
+                },
+                {
+                    "name": "AMAZON.PageDownIntent"
+                },
+                {
+                    "name": "AMAZON.MoreIntent"
+                },
+                {
+                    "name": "AMAZON.FallbackIntent"
+                }
+            ],
+            "invocationName": "life simulator"
+        }
+    }
+}

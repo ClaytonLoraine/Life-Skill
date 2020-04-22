@@ -1,0 +1,28 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.8e277c8b-902d-4bc7-965b-38227988889c",
+      "was_cloned": false,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "12aa0a8341f9ee59a10c1225391e3831"
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:563123089456:function:ask-custom-life-simulator-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-custom-life-simulator-default",
+            "handler": "index.handler",
+            "revisionId": "6ac0f3f6-5073-4c6a-82ae-114730a165d6",
+            "runtime": "nodejs10.x"
+          }
+        ]
+      }
+    }
+  }
+}

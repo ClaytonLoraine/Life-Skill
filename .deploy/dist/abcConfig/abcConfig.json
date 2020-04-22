@@ -17,7 +17,7 @@
 
 		"skill-invocation-name": "Life Simulator",
 
-		"dynamo-db-session-table-name": "testing-sessions",
+		"dynamo-db-session-table-name": "life-simulator-sessions",
 
 		"s3-domain-name": "s3.amazonaws.com",
 
