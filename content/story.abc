@@ -397,6 +397,7 @@
             -> scenario3
             }
     -> chooseresidents
+    
 @electrician
     *say
         Running wire through a house and getting power to everything is phenomenal. You became a electrician
@@ -505,32 +506,67 @@
         Now that you have been married for some time and life is going well are kids something you would like to have?
     *then
         hear have kids{
-        decrease money by 40,000
-        increase charater by 6
-        -> kids
+            roll 1d20
+                if rollResult == 5{
+                set kids to 3
+                -> kids3
+                }
+                if rollResult <= 4{
+                set kids to 2
+                -> kids2
+                }
+                if rollResult >= 6{
+                set kids to 1
+                -> kids1
+                }
+        -> kids3
         }
-        hear don't{
-        -> no_kids
+        hear don't have kids{
+        -> retire_choice
         }
         
-@kids
-    *say
-        You lived a great life having kids and watching them grow up. You have been at your job for 20 years would you like to retire?
+@kids1
+    *say 
+        You and yoru partner had a kid! Congrats!
+    
     *then
+        decrease money by 40,000
+        increase character by 3
         roll 1d4
             if rollResult ==1{
             ->scenario4
             }
-        hear yes{
-        -> retire
-        }
-        hear no{
-        ->dontretire
-        }
+        -> retire_choice
+        
+@kids2
+    *say 
+        You and your partner had twins! Twice as much fun!
+    
+    *then
+        decrease money by 80,000
+        increase character by 6
+        roll 1d4
+            if rollResult ==1{
+            ->scenario4
+            }
+        -> retire_choice
+        
+@kids3
+    *say 
+        What luck! You and your partner had triplets! A tripple threat!
+    
+    *then
+        decrease money by 120,000
+        increase character by 9
+        roll 1d4
+            if rollResult ==1{
+            ->scenario4
+            }
+        -> retire_choice
 
-@no_kids
+@retire_choice
     *say
-        You and your spouse decide that kids would be to much work. You two live by yourselves. You have grown older now would you like to retire?
+        You lived a great life having kids and watching them grow up. You have been at your job for 20 years would you like to retire?
     *then
         hear yes{
         -> retire
@@ -577,9 +613,4 @@
         Uh Oh! Looks like your kids have outgrown their current bedset in their room and they need a new one!
     *then
         decrease money by 1000
-        hear yes{
-        -> retire
-        }
-        hear no{
-        ->dontretire
-        }
+        -> retire_choice
