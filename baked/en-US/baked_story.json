@@ -1,0 +1,2912 @@
+{
+    "pluginName": "default",
+    "scenes": [
+        {
+            "contents": [
+                {
+                    "narration": "Welcome to Life! In this game you will be given choices to make in your new virtual life! Would you like to play?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "yes"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "jobexperience",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "kids",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "married",
+                                            "variableValue": "{false}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "opener",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.YesIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "no"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "stop",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.NoIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "start",
+            "customProperties": {
+                "sourceLocation": 0,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Paused",
+                    "sceneDirections": []
+                }
+            ],
+            "id": "pause",
+            "customProperties": {
+                "sourceLocation": 370,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Thanks for playing!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "ending",
+                            "parameters": {}
+                        }
+                    ]
+                }
+            ],
+            "id": "stop",
+            "customProperties": {
+                "sourceLocation": 420,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You can pick between these places to study; Trade School, Public College, Private College, or Party School. Which would you like?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "trade school"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "college",
+                                            "variableValue": "{\"trade\"}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{30,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "10"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "trade",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexaIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "public college"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{10,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "1"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "10"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "college",
+                                            "variableValue": "{\"public\"}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "public",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexbIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "private college"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{60,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "5"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "10"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "college",
+                                            "variableValue": "{\"private\"}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "private",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexcIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "party college"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{60,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "10"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "5"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "college",
+                                            "variableValue": "{\"party\"}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "party",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexdIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "opener",
+            "customProperties": {
+                "sourceLocation": 500,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "The party school it is. There are many frats and sororities that you can become a part of. This type of college is great for having fun. Even though it is considered a party school you still need to figure out what field you would like to study in.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "choosemajor",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "party",
+            "customProperties": {
+                "sourceLocation": 1422,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "you have chosen trade school!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "set",
+                            "parameters": {
+                                "variableName": "specialization",
+                                "variableValue": "{trade}"
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "collegelife",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "trade",
+            "customProperties": {
+                "sourceLocation": 1747,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You have chosen a private college!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "choosemajor",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "private",
+            "customProperties": {
+                "sourceLocation": 1898,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You have chosen a public college!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "choosemajor",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "public",
+            "customProperties": {
+                "sourceLocation": 2010,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Would you like to study science, or art?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "sciences"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "specialization",
+                                            "variableValue": "{sciences}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "sciences",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexeIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "arts"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "specialization",
+                                            "variableValue": "{arts}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "arts",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexfIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "choosemajor",
+            "customProperties": {
+                "sourceLocation": 2120,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to study the sciences.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "collegelife",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "sciences",
+            "customProperties": {
+                "sourceLocation": 2408,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to study in the field of art.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "collegelife",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "arts",
+            "customProperties": {
+                "sourceLocation": 2515,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Your first two years you work on getting all your general education done with. During your schooling you decided how you wanted to spend your time. You could go out and party, focus on your studies, or try to do both. How would you want to spend your college time?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "party"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "4"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "party_life",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexgIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "study"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "4"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "study_life",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexhIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "both"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "both_life",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexiIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "collegelife",
+            "customProperties": {
+                "sourceLocation": 2631,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to try and do both!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "workstudy",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "both_life",
+            "customProperties": {
+                "sourceLocation": 3254,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to study! You have made the choice that studying and getting good grades is worth your time, because of the money you are spending.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "workstudy",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "study_life",
+            "customProperties": {
+                "sourceLocation": 3353,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to party! Your time spent while at college is going out and partying a lot. You spend too much time partying to where it affects your education and you don’t learn much.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d4"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario1",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "workstudy",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "party_life",
+            "customProperties": {
+                "sourceLocation": 3565,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Want to work while at college?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "yes"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "jobexperience",
+                                            "variableValue": "4"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{30,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "workstudy_yes",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.YesIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "no"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "workstudy_no",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.NoIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "workstudy",
+            "customProperties": {
+                "sourceLocation": 3911,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to work at college. The rest of your time not learning at school you spend working. This allows you to save up some money to pay off your Schooling. You get out of college with great experience and are ready to get out there in the real world.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "graduatedcollege",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "workstudy_yes",
+            "customProperties": {
+                "sourceLocation": 4253,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You know having a job would help you make some extra cash to pay for things and college. However, you think that focusing on your studies is more important right now. You chose not to work at college",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "graduatedcollege",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "workstudy_no",
+            "customProperties": {
+                "sourceLocation": 4584,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Congrats! you made your way through college.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "wheretolive",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "graduatedcollege",
+            "customProperties": {
+                "sourceLocation": 4860,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "where do you want to live for now until you are able to make more money and buy a house for yourself?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "parent's house"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "5"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "parents_house",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexjIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "rent apartment"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{10,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "3"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "apartment",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexkIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "wheretolive",
+            "customProperties": {
+                "sourceLocation": 4981,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You are living in your parents basement",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "choosejob",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "parents_house",
+            "customProperties": {
+                "sourceLocation": 5370,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You are living in your own apartment. independance!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "choosejob",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "apartment",
+            "customProperties": {
+                "sourceLocation": 5480,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Time to choose a job. What job do you want?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{specialization} == {sciences}",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "sciencejobs",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{specialization} == {arts}",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "artjobs",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{specialization} == {trade}",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "tradejobs",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "choosejob",
+            "customProperties": {
+                "sourceLocation": 5602,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to get a degree in science so you can choose the following jobs: Programmer, Doctor, Forensic scientist",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "programmer"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{225,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "programmer",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexlIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "doctor"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{600,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "doctor",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexmIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "forensic scientist"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{195,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "forensic_scientist",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexnIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "sciencejobs",
+            "customProperties": {
+                "sourceLocation": 5876,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to get a degree in the arts so you can choose the following jobs: teacher, writer, or a designer?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "teacherr"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{105,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "teacher",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexoIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "writer"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{135,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "writer",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexpIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "designer"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{180,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "designer",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexqIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "artjobs",
+            "customProperties": {
+                "sourceLocation": 6328,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to get a degree in a trade so you can choose the following jobs: constructor, Auto mechanic, electrician",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "constructor"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{225,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "construction",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "function Object() { [native code] }"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "auto mechanic"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{120,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "auto_mechanic",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexrIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "electrician"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{180,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "electrician",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexsIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "tradejobs",
+            "customProperties": {
+                "sourceLocation": 6736,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You become a programmer. You enjoyed the problem sovling and writing program that do things for you.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "programmer",
+            "customProperties": {
+                "sourceLocation": 7181,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You chose to become a doctor. This was fit for you because of how much you want to save peoples lives.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "doctor",
+            "customProperties": {
+                "sourceLocation": 7438,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Wanting to help find criminals you became a forensic scientist. using you abilities to analyze evidence to use in determining the innocence or guild of a suspect.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "forensic_scientist",
+            "customProperties": {
+                "sourceLocation": 7685,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Being with kids and helping them learn is a passion of yours. You took your passion and are now a teacher.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "teacher",
+            "customProperties": {
+                "sourceLocation": 8008,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Writing your own stories to tell a compelling peice is amazing. You took your skills and used them to become a writer.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "writer",
+            "customProperties": {
+                "sourceLocation": 8260,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You decided on being a designer. Making creative work and displaying it for people to see.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "designer",
+            "customProperties": {
+                "sourceLocation": 8527,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You are a constructor now. using math and physics to create wonderful buildings.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "construction",
+            "customProperties": {
+                "sourceLocation": 8768,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Fixing cars and getting old ones to work again is something fantastic. You chose to become an auto mechanic",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "auto_mechanic",
+            "customProperties": {
+                "sourceLocation": 8999,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Running wire through a house and getting power to everything is phenomenal. You became a electrician",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d10"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "electrician",
+            "customProperties": {
+                "sourceLocation": 9262,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You have to choose where you would like to live at. Somewhere in the country, city, or suburbs?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "country"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{70,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "country",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flextIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "city"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{200,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "city",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexuIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "suburb"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{150,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "suburb",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexvIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "chooseresidents",
+            "customProperties": {
+                "sourceLocation": 9512,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You love the wide-open outdoors with no traffic, few neighbors, and planty of room for activiies. The country is where you want to live.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d4"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario2",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "marriage",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "country",
+            "customProperties": {
+                "sourceLocation": 9907,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You enjoy the hustle and bustle of the City. There are many things to do and go in the city, that is why you wanted to live there",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d4"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario2",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "marriage",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "city",
+            "customProperties": {
+                "sourceLocation": 10198,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "after looking at all the different places to live you decided being in a safe and cozy suburb would be great for you.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d4"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario2",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "marriage",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "suburb",
+            "customProperties": {
+                "sourceLocation": 10462,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Having finally got your job and living on your own, you wonder to yourself if you want to get a spouse to spend your time with. Do you want to get married or stay single",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "married"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "married",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexwIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "single"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "single",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexxIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "marriage",
+            "customProperties": {
+                "sourceLocation": 10720,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Congratulations! You are getting married to the love of your life. Is the Wedding going to be a big one or small?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "big"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{40,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "6"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "big",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexyIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "small"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{20,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "3"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "small",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexzIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "married",
+            "customProperties": {
+                "sourceLocation": 11036,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You figured that getting married would be a waste of your time and cause you pain and suffering. There is a reason why so many people get divorced. You made it through your life. making it through college and having a sucessful job. You live your retirement alone, but it does not feel that way living in the where you are. Congratulations, on completing your Journey! Come back soon and play again.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "stop",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "single",
+            "customProperties": {
+                "sourceLocation": 11407,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You want to have a big wedding with lots of people, food, and decorations. The wedding went great. You invited all your family and friends to celebrate the occasion.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "married_life",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "big",
+            "customProperties": {
+                "sourceLocation": 11860,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You only wanted to have a few people at your wedding and not many decorations to keep the cost down.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "married_life",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "small",
+            "customProperties": {
+                "sourceLocation": 12078,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Now that you have been married for some time and life is going well are kids something you would like to have?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "have kids"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "roll dice",
+                                        "parameters": {
+                                            "diceString": "1d20"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "condition",
+                                        "parameters": {
+                                            "condition": "{rollResult} == 5",
+                                            "directions": [
+                                                {
+                                                    "directionType": "set",
+                                                    "parameters": {
+                                                        "variableName": "kids",
+                                                        "variableValue": "3"
+                                                    }
+                                                },
+                                                {
+                                                    "directionType": "go to",
+                                                    "parameters": {
+                                                        "target": "kids3",
+                                                        "targetSceneProperty": "narration"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "directionType": "condition",
+                                        "parameters": {
+                                            "condition": "{rollResult} <= 4",
+                                            "directions": [
+                                                {
+                                                    "directionType": "set",
+                                                    "parameters": {
+                                                        "variableName": "kids",
+                                                        "variableValue": "2"
+                                                    }
+                                                },
+                                                {
+                                                    "directionType": "go to",
+                                                    "parameters": {
+                                                        "target": "kids2",
+                                                        "targetSceneProperty": "narration"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "directionType": "condition",
+                                        "parameters": {
+                                            "condition": "{rollResult} >= 6",
+                                            "directions": [
+                                                {
+                                                    "directionType": "set",
+                                                    "parameters": {
+                                                        "variableName": "kids",
+                                                        "variableValue": "1"
+                                                    }
+                                                },
+                                                {
+                                                    "directionType": "go to",
+                                                    "parameters": {
+                                                        "target": "kids1",
+                                                        "targetSceneProperty": "narration"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "kids3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexbaIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "don't have kids"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retire_choice",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexbbIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "married_life",
+            "customProperties": {
+                "sourceLocation": 12234,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You and yoru partner had a kid! Congrats!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "reduce",
+                            "parameters": {
+                                "variableName": "money",
+                                "variableValue": "{40,000}"
+                            }
+                        },
+                        {
+                            "directionType": "increase",
+                            "parameters": {
+                                "variableName": "character",
+                                "variableValue": "3"
+                            }
+                        },
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d4"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} ==1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario4",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "retire_choice",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "kids1",
+            "customProperties": {
+                "sourceLocation": 12861,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You and your partner had twins! Twice as much fun!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "reduce",
+                            "parameters": {
+                                "variableName": "money",
+                                "variableValue": "{80,000}"
+                            }
+                        },
+                        {
+                            "directionType": "increase",
+                            "parameters": {
+                                "variableName": "character",
+                                "variableValue": "6"
+                            }
+                        },
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d4"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} ==1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario4",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "retire_choice",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "kids2",
+            "customProperties": {
+                "sourceLocation": 13128,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "What luck! You and your partner had triplets! A tripple threat!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "reduce",
+                            "parameters": {
+                                "variableName": "money",
+                                "variableValue": "{120,000}"
+                            }
+                        },
+                        {
+                            "directionType": "increase",
+                            "parameters": {
+                                "variableName": "character",
+                                "variableValue": "9"
+                            }
+                        },
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d4"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} ==1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario4",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "retire_choice",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "kids3",
+            "customProperties": {
+                "sourceLocation": 13404,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You lived a great life having kids and watching them grow up. You have been at your job for 20 years would you like to retire?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "yes"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retire",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.YesIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "no"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "dontretire",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.NoIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "retire_choice",
+            "customProperties": {
+                "sourceLocation": 13686,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "After a great long time at your job, living with your family and seeing them grow up. You decided to reitre from work and enjoy the rest of life together with your spouse. Thank you for playing life, come back again soon.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "stop",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "retire",
+            "customProperties": {
+                "sourceLocation": 13958,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You enjoy your job to much and don't know if you would ever stop working in life. You continue the rest of your life working with fewer hours and spending the evening with your family. Congratualtions on making through life. Play again and choose different outcomes.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "stop",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "dontretire",
+            "customProperties": {
+                "sourceLocation": 14232,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You have now moved into your new place but you soon discover that your new living space needs repairs. Thats gonna hurt the wallet!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "reduce",
+                            "parameters": {
+                                "variableName": "money",
+                                "variableValue": "{5,000}"
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "marriage",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "scenario2",
+            "customProperties": {
+                "sourceLocation": 14563,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You were at a party and fell off a roof and broke your back! You had to be transported by ambulance to the hospital",
+                    "sceneDirections": [
+                        {
+                            "directionType": "reduce",
+                            "parameters": {
+                                "variableName": "money",
+                                "variableValue": "{10,000}"
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "workstudy",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "scenario1",
+            "customProperties": {
+                "sourceLocation": 14794,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Your hard work has finally paid off! Your boss has decided to give you a raise after all the time and effort you have put in!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "increase",
+                            "parameters": {
+                                "variableName": "money",
+                                "variableValue": "{$5,000}"
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "chooseresidents",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "scenario3",
+            "customProperties": {
+                "sourceLocation": 14988,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Uh Oh! Looks like your kids have outgrown their current bedset in their room and they need a new one!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "reduce",
+                            "parameters": {
+                                "variableName": "money",
+                                "variableValue": "1000"
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "retire_choice",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "scenario4",
+            "customProperties": {
+                "sourceLocation": 15221,
+                "sourceID": "story.abc"
+            }
+        }
+    ],
+    "storyID": "life-simulator",
+    "storyTitle": "life simulator",
+    "alexaVoiceModel": {
+        "languageModel": {
+            "intents": [
+                {
+                    "name": "flexaIntent",
+                    "samples": [
+                        "trade school"
+                    ]
+                },
+                {
+                    "name": "flexbIntent",
+                    "samples": [
+                        "public college"
+                    ]
+                },
+                {
+                    "name": "flexcIntent",
+                    "samples": [
+                        "private college"
+                    ]
+                },
+                {
+                    "name": "flexdIntent",
+                    "samples": [
+                        "party college"
+                    ]
+                },
+                {
+                    "name": "flexeIntent",
+                    "samples": [
+                        "sciences"
+                    ]
+                },
+                {
+                    "name": "flexfIntent",
+                    "samples": [
+                        "arts"
+                    ]
+                },
+                {
+                    "name": "flexgIntent",
+                    "samples": [
+                        "party"
+                    ]
+                },
+                {
+                    "name": "flexhIntent",
+                    "samples": [
+                        "study"
+                    ]
+                },
+                {
+                    "name": "flexiIntent",
+                    "samples": [
+                        "both"
+                    ]
+                },
+                {
+                    "name": "flexjIntent",
+                    "samples": [
+                        "parent's house"
+                    ]
+                },
+                {
+                    "name": "flexkIntent",
+                    "samples": [
+                        "rent apartment"
+                    ]
+                },
+                {
+                    "name": "flexlIntent",
+                    "samples": [
+                        "programmer"
+                    ]
+                },
+                {
+                    "name": "flexmIntent",
+                    "samples": [
+                        "doctor"
+                    ]
+                },
+                {
+                    "name": "flexnIntent",
+                    "samples": [
+                        "forensic scientist"
+                    ]
+                },
+                {
+                    "name": "flexoIntent",
+                    "samples": [
+                        "teacherr"
+                    ]
+                },
+                {
+                    "name": "flexpIntent",
+                    "samples": [
+                        "writer"
+                    ]
+                },
+                {
+                    "name": "flexqIntent",
+                    "samples": [
+                        "designer"
+                    ]
+                },
+                {
+                    "name": "flexrIntent",
+                    "samples": [
+                        "auto mechanic"
+                    ]
+                },
+                {
+                    "name": "flexsIntent",
+                    "samples": [
+                        "electrician"
+                    ]
+                },
+                {
+                    "name": "flextIntent",
+                    "samples": [
+                        "country"
+                    ]
+                },
+                {
+                    "name": "flexuIntent",
+                    "samples": [
+                        "city"
+                    ]
+                },
+                {
+                    "name": "flexvIntent",
+                    "samples": [
+                        "suburb"
+                    ]
+                },
+                {
+                    "name": "flexwIntent",
+                    "samples": [
+                        "married"
+                    ]
+                },
+                {
+                    "name": "flexxIntent",
+                    "samples": [
+                        "single"
+                    ]
+                },
+                {
+                    "name": "flexyIntent",
+                    "samples": [
+                        "big"
+                    ]
+                },
+                {
+                    "name": "flexzIntent",
+                    "samples": [
+                        "small"
+                    ]
+                },
+                {
+                    "name": "flexbaIntent",
+                    "samples": [
+                        "have kids"
+                    ]
+                },
+                {
+                    "name": "flexbbIntent",
+                    "samples": [
+                        "don't have kids"
+                    ]
+                },
+                {
+                    "name": "AMAZON.CancelIntent"
+                },
+                {
+                    "name": "AMAZON.HelpIntent"
+                },
+                {
+                    "name": "AMAZON.LoopOffIntent"
+                },
+                {
+                    "name": "AMAZON.LoopOnIntent"
+                },
+                {
+                    "name": "AMAZON.NextIntent"
+                },
+                {
+                    "name": "AMAZON.NoIntent"
+                },
+                {
+                    "name": "AMAZON.PauseIntent"
+                },
+                {
+                    "name": "AMAZON.PreviousIntent"
+                },
+                {
+                    "name": "AMAZON.RepeatIntent"
+                },
+                {
+                    "name": "AMAZON.ResumeIntent"
+                },
+                {
+                    "name": "AMAZON.ShuffleOffIntent"
+                },
+                {
+                    "name": "AMAZON.ShuffleOnIntent"
+                },
+                {
+                    "name": "AMAZON.StartOverIntent"
+                },
+                {
+                    "name": "AMAZON.StopIntent"
+                },
+                {
+                    "name": "AMAZON.YesIntent"
+                },
+                {
+                    "name": "AMAZON.ScrollUpIntent"
+                },
+                {
+                    "name": "AMAZON.ScrollLeftIntent"
+                },
+                {
+                    "name": "AMAZON.ScrollDownIntent"
+                },
+                {
+                    "name": "AMAZON.ScrollRightIntent"
+                },
+                {
+                    "name": "AMAZON.PageUpIntent"
+                },
+                {
+                    "name": "AMAZON.PageDownIntent"
+                },
+                {
+                    "name": "AMAZON.MoreIntent"
+                },
+                {
+                    "name": "AMAZON.FallbackIntent"
+                }
+            ],
+            "invocationName": "life simulator"
+        }
+    }
+}
