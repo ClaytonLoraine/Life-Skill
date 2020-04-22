@@ -169,8 +169,13 @@
         You chose to party! Your time spent while at college is going out and partying a lot. You spend too much time partying to where it affects your education and you don’t learn much.
         
     *then
+        roll 1d4
+            if rollResult == 1{
+            ->scenario1
+            }
         -> workstudy
         
+
 @workstudy
     *say 
         Want to work while at college?
@@ -317,53 +322,89 @@
     *say
         You become a programmer. You enjoyed the problem sovling and writing program that do things for you.
     *then
+        roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
     
 @doctor
     *say
         You chose to become a doctor. This was fit for you because of how much you want to save peoples lives.
     *then
+    roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
 
 @forensic_scientist
     *say
         Wanting to help find criminals you became a forensic scientist. using you abilities to analyze evidence to use in determining the innocence or guild of a suspect.
     *then
+    roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
     
 @teacher
     *say
         Being with kids and helping them learn is a passion of yours. You took your passion and are now a teacher.
     *then
+    roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
 
 @writer
     *say
         Writing your own stories to tell a compelling peice is amazing. You took your skills and used them to become a writer.
     *then
+    roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
     
 @designer
     *say
         You decided on being a designer. Making creative work and displaying it for people to see.
     *then
+    roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
     
 @construction
     *say
         You are a constructor now. using math and physics to create wonderful buildings.
     *then
+    roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
 
 @auto_mechanic
     *say
         Fixing cars and getting old ones to work again is something fantastic. You chose to become an auto mechanic
     *then
+    roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
 @electrician
     *say
         Running wire through a house and getting power to everything is phenomenal. You became a electrician
     *then
+    roll 1d10
+            if rollResult == 1{
+            -> scenario3
+            }
     -> chooseresidents
 
 @chooseresidents
@@ -386,19 +427,33 @@
 @country
     *say
         You love the wide-open outdoors with no traffic, few neighbors, and planty of room for activiies. The country is where you want to live.
+        
     *then
+        roll 1d4
+            if rollResult == 1{
+            ->scenario2
+            }
     -> marriage
+    
 
 @city
     *say
         You enjoy the hustle and bustle of the City. There are many things to do and go in the city, that is why you wanted to live there
     *then
+     roll 1d4
+            if rollResult == 1{
+            ->scenario2
+            }
     -> marriage
 
 @suburb
     *say
         after looking at all the different places to live you decided being in a safe and cozy suburb would be great for you.
     *then
+     roll 1d4
+            if rollResult == 1{
+            ->scenario2
+            }
     -> marriage
     
 @marriage
@@ -462,6 +517,10 @@
     *say
         You lived a great life having kids and watching them grow up. You have been at your job for 20 years would you like to retire?
     *then
+        roll 1d4
+            if rollResult ==1{
+            ->scenario4
+            }
         hear yes{
         -> retire
         }
@@ -491,3 +550,36 @@
         You enjoy your job to much and don't know if you would ever stop working in life. You continue the rest of your life working with fewer hours and spending the evening with your family. Congratualtions on making through life. Play again and choose different outcomes.
     *then
         -> stop
+        
+@scenario2
+    *say
+        You have now moved into your new place but you soon discover that your new living space needs repairs. Thats gonna hurt the wallet!
+    *then
+        decrease money by 5,000
+        -> marriage
+        
+@scenario1
+*say
+     You were at a party and fell off a roof and broke your back! You had to be transported by ambulance to the hospital
+*then
+    decrease money by 10,000
+    -> workstudy
+    
+@scenario3
+    *say
+        Your hard work has finally paid off! Your boss has decided to give you a raise after all the time and effort you have put in!
+    *then
+        increase money by $5,000
+        -> chooseresidents
+        
+@scenario4
+    *say
+        Uh Oh! Looks like your kids have outgrown their current bedset in their room and they need a new one!
+    *then
+        decrease money by 1000
+        hear yes{
+        -> retire
+        }
+        hear no{
+        ->dontretire
+        }
