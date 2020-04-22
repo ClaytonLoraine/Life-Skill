@@ -217,10 +217,10 @@
 
 @wheretolive
     *say 
-        where do you want to live for now until you are able to make more money and buy a house for yourself?
+        where do you want to live for now until you are able to make more money and buy a house for yourself? Go back home, or rent apartment?
     
     *then
-        hear parent's house {
+        hear parent's house, home {
         decrease character by 5
 
             -> parents_house
