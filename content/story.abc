@@ -104,12 +104,12 @@
         Would you like to study science, or art?
         
     *then
-        hear sciences {
+        hear science {
         set specialization to sciences
             -> sciences
         }
         
-        hear arts {
+        hear art {
         set specialization to arts
             -> arts
         }
