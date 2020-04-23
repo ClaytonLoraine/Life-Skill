@@ -888,8 +888,7 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "parent's house",
-                                    "home"
+                                    "parent's house"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -974,7 +973,7 @@
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 5407,
+                "sourceLocation": 5401,
                 "sourceID": "story.abc"
             }
         },
@@ -995,7 +994,7 @@
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 5517,
+                "sourceLocation": 5511,
                 "sourceID": "story.abc"
             }
         },
@@ -1054,7 +1053,7 @@
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 5639,
+                "sourceLocation": 5633,
                 "sourceID": "story.abc"
             }
         },
@@ -1152,7 +1151,7 @@
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 5913,
+                "sourceLocation": 5907,
                 "sourceID": "story.abc"
             }
         },
@@ -1250,7 +1249,7 @@
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 6365,
+                "sourceLocation": 6359,
                 "sourceID": "story.abc"
             }
         },
@@ -1348,7 +1347,7 @@
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 6773,
+                "sourceLocation": 6767,
                 "sourceID": "story.abc"
             }
         },
@@ -1390,7 +1389,7 @@
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 7218,
+                "sourceLocation": 7212,
                 "sourceID": "story.abc"
             }
         },
@@ -1432,7 +1431,7 @@
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 7475,
+                "sourceLocation": 7469,
                 "sourceID": "story.abc"
             }
         },
@@ -1474,7 +1473,7 @@
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 7722,
+                "sourceLocation": 7716,
                 "sourceID": "story.abc"
             }
         },
@@ -1516,7 +1515,7 @@
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 8045,
+                "sourceLocation": 8039,
                 "sourceID": "story.abc"
             }
         },
@@ -1558,7 +1557,7 @@
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 8297,
+                "sourceLocation": 8291,
                 "sourceID": "story.abc"
             }
         },
@@ -1600,7 +1599,7 @@
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 8564,
+                "sourceLocation": 8558,
                 "sourceID": "story.abc"
             }
         },
@@ -1642,7 +1641,7 @@
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 8805,
+                "sourceLocation": 8799,
                 "sourceID": "story.abc"
             }
         },
@@ -1684,7 +1683,7 @@
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 9036,
+                "sourceLocation": 9030,
                 "sourceID": "story.abc"
             }
         },
@@ -1726,7 +1725,7 @@
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 9299,
+                "sourceLocation": 9293,
                 "sourceID": "story.abc"
             }
         },
@@ -1824,7 +1823,7 @@
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 9549,
+                "sourceLocation": 9543,
                 "sourceID": "story.abc"
             }
         },
@@ -1866,7 +1865,7 @@
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 9944,
+                "sourceLocation": 9938,
                 "sourceID": "story.abc"
             }
         },
@@ -1908,7 +1907,7 @@
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 10235,
+                "sourceLocation": 10229,
                 "sourceID": "story.abc"
             }
         },
@@ -1950,7 +1949,7 @@
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 10499,
+                "sourceLocation": 10493,
                 "sourceID": "story.abc"
             }
         },
@@ -2006,7 +2005,7 @@
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 10757,
+                "sourceLocation": 10751,
                 "sourceID": "story.abc"
             }
         },
@@ -2090,7 +2089,7 @@
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 11073,
+                "sourceLocation": 11067,
                 "sourceID": "story.abc"
             }
         },
@@ -2111,7 +2110,7 @@
             ],
             "id": "single",
             "customProperties": {
-                "sourceLocation": 11444,
+                "sourceLocation": 11438,
                 "sourceID": "story.abc"
             }
         },
@@ -2132,7 +2131,7 @@
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 11897,
+                "sourceLocation": 11891,
                 "sourceID": "story.abc"
             }
         },
@@ -2153,7 +2152,7 @@
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 12115,
+                "sourceLocation": 12109,
                 "sourceID": "story.abc"
             }
         },
@@ -2281,7 +2280,7 @@
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 12271,
+                "sourceLocation": 12265,
                 "sourceID": "story.abc"
             }
         },
@@ -2337,7 +2336,7 @@
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 12898,
+                "sourceLocation": 12892,
                 "sourceID": "story.abc"
             }
         },
@@ -2393,7 +2392,7 @@
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 13165,
+                "sourceLocation": 13159,
                 "sourceID": "story.abc"
             }
         },
@@ -2449,7 +2448,7 @@
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 13441,
+                "sourceLocation": 13435,
                 "sourceID": "story.abc"
             }
         },
@@ -2505,7 +2504,7 @@
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 13723,
+                "sourceLocation": 13717,
                 "sourceID": "story.abc"
             }
         },
@@ -2526,7 +2525,7 @@
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 13995,
+                "sourceLocation": 13989,
                 "sourceID": "story.abc"
             }
         },
@@ -2547,7 +2546,7 @@
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 14269,
+                "sourceLocation": 14263,
                 "sourceID": "story.abc"
             }
         },
@@ -2575,7 +2574,7 @@
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 14600,
+                "sourceLocation": 14594,
                 "sourceID": "story.abc"
             }
         },
@@ -2603,7 +2602,7 @@
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 14831,
+                "sourceLocation": 14825,
                 "sourceID": "story.abc"
             }
         },
@@ -2631,7 +2630,7 @@
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 15025,
+                "sourceLocation": 15019,
                 "sourceID": "story.abc"
             }
         },
@@ -2659,7 +2658,7 @@
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 15258,
+                "sourceLocation": 15252,
                 "sourceID": "story.abc"
             }
         }
@@ -2726,8 +2725,7 @@
                 {
                     "name": "flexjIntent",
                     "samples": [
-                        "parent's house",
-                        "home"
+                        "parent's house"
                     ]
                 },
                 {
