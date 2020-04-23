@@ -29,13 +29,13 @@
                 {
                     "name": "flexeIntent",
                     "samples": [
-                        "sciences"
+                        "science"
                     ]
                 },
                 {
                     "name": "flexfIntent",
                     "samples": [
-                        "arts"
+                        "art"
                     ]
                 },
                 {
@@ -59,7 +59,8 @@
                 {
                     "name": "flexjIntent",
                     "samples": [
-                        "parent's house"
+                        "parent's house",
+                        "home"
                     ]
                 },
                 {

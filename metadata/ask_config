@@ -6,7 +6,7 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "12aa0a8341f9ee59a10c1225391e3831"
+          "eTag": "1e0f5f8132ffa4cab005f132192e826e"
         },
         "lambda": [
           {
@@ -18,7 +18,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-life-simulator-default",
             "handler": "index.handler",
-            "revisionId": "6ac0f3f6-5073-4c6a-82ae-114730a165d6",
+            "revisionId": "70d8ac29-d2ed-40ab-bf86-261924b14e33",
             "runtime": "nodejs10.x"
           }
         ]
