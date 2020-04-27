@@ -18,7 +18,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-custom-life-simulator-default",
             "handler": "index.handler",
-            "revisionId": "7e2b8e00-254e-4647-bee0-d6fb53e0becf",
+            "revisionId": "d23fe6e4-f035-4891-b4c6-f0f1c98b70e5",
             "runtime": "nodejs10.x"
           }
         ]
