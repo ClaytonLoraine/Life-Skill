@@ -5,169 +5,215 @@
                 {
                     "name": "flexaIntent",
                     "samples": [
-                        "trade school"
+                        "trade school",
+                        "trade",
+                        "go to trade school"
                     ]
                 },
                 {
                     "name": "flexbIntent",
                     "samples": [
-                        "public college"
+                        "public college",
+                        "go to public college",
+                        "public"
                     ]
                 },
                 {
                     "name": "flexcIntent",
                     "samples": [
-                        "private college"
+                        "private college",
+                        "private",
+                        "go to private college"
                     ]
                 },
                 {
                     "name": "flexdIntent",
                     "samples": [
-                        "party college"
+                        "party college",
+                        "party school",
+                        "party",
+                        "go to party school",
+                        "go out and party",
+                        "party life"
                     ]
                 },
                 {
                     "name": "flexeIntent",
                     "samples": [
-                        "science"
+                        "science",
+                        "study science"
                     ]
                 },
                 {
                     "name": "flexfIntent",
                     "samples": [
-                        "art"
+                        "art",
+                        "study art"
                     ]
                 },
                 {
                     "name": "flexgIntent",
                     "samples": [
-                        "party"
+                        "study",
+                        "focus on studies",
+                        "focus on my studies",
+                        "studies",
+                        "study life"
                     ]
                 },
                 {
                     "name": "flexhIntent",
                     "samples": [
-                        "study"
+                        "both",
+                        "try to do both"
                     ]
                 },
                 {
                     "name": "flexiIntent",
                     "samples": [
-                        "both"
+                        "parent's house",
+                        "live at home",
+                        "go back home",
+                        "home"
                     ]
                 },
                 {
                     "name": "flexjIntent",
                     "samples": [
-                        "parent's house"
+                        "rent apartment",
+                        "get apartment",
+                        "apartment"
                     ]
                 },
                 {
                     "name": "flexkIntent",
                     "samples": [
-                        "rent apartment"
+                        "programmer"
                     ]
                 },
                 {
                     "name": "flexlIntent",
                     "samples": [
-                        "programmer"
+                        "doctor"
                     ]
                 },
                 {
                     "name": "flexmIntent",
                     "samples": [
-                        "doctor"
+                        "forensic scientist"
                     ]
                 },
                 {
                     "name": "flexnIntent",
                     "samples": [
-                        "forensic scientist"
+                        "teacher"
                     ]
                 },
                 {
                     "name": "flexoIntent",
                     "samples": [
-                        "teacherr"
+                        "writer"
                     ]
                 },
                 {
                     "name": "flexpIntent",
                     "samples": [
-                        "writer"
+                        "designer"
                     ]
                 },
                 {
                     "name": "flexqIntent",
                     "samples": [
-                        "designer"
+                        "auto mechanic"
                     ]
                 },
                 {
                     "name": "flexrIntent",
                     "samples": [
-                        "auto mechanic"
+                        "electrician"
                     ]
                 },
                 {
                     "name": "flexsIntent",
                     "samples": [
-                        "electrician"
+                        "country",
+                        "live out in the country"
                     ]
                 },
                 {
                     "name": "flextIntent",
                     "samples": [
-                        "country"
+                        "city",
+                        "big city",
+                        "live in the city"
                     ]
                 },
                 {
                     "name": "flexuIntent",
                     "samples": [
-                        "city"
+                        "suburb",
+                        "suburbs"
                     ]
                 },
                 {
                     "name": "flexvIntent",
                     "samples": [
-                        "suburb"
+                        "married",
+                        "get married",
+                        "marry"
                     ]
                 },
                 {
                     "name": "flexwIntent",
                     "samples": [
-                        "married"
+                        "single",
+                        "stay single",
+                        "be alone"
                     ]
                 },
                 {
                     "name": "flexxIntent",
                     "samples": [
-                        "single"
+                        "big",
+                        "big wedding",
+                        "big one"
                     ]
                 },
                 {
                     "name": "flexyIntent",
                     "samples": [
-                        "big"
+                        "small",
+                        "small one",
+                        "small wedding"
                     ]
                 },
                 {
                     "name": "flexzIntent",
                     "samples": [
-                        "small"
+                        "have kids",
+                        "want kids",
+                        "try to have kids"
                     ]
                 },
                 {
                     "name": "flexbaIntent",
                     "samples": [
-                        "have kids"
+                        "don't have kids",
+                        "no kids",
+                        "don't want kids"
                     ]
                 },
                 {
                     "name": "flexbbIntent",
                     "samples": [
-                        "don't have kids"
+                        "retire",
+                        "retire from work"
+                    ]
+                },
+                {
+                    "name": "flexbcIntent",
+                    "samples": [
+                        "keep working"
                     ]
                 },
                 {

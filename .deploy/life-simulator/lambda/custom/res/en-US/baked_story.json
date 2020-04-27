@@ -139,7 +139,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "trade school"
+                                    "trade school",
+                                    "trade",
+                                    "go to trade school"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -188,7 +190,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "public college"
+                                    "public college",
+                                    "go to public college",
+                                    "public"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -237,7 +241,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "private college"
+                                    "private college",
+                                    "private",
+                                    "go to private college"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -286,7 +292,10 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "party college"
+                                    "party college",
+                                    "party school",
+                                    "party",
+                                    "go to party school"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -357,7 +366,7 @@
             ],
             "id": "party",
             "customProperties": {
-                "sourceLocation": 1422,
+                "sourceLocation": 1552,
                 "sourceID": "story.abc"
             }
         },
@@ -385,7 +394,7 @@
             ],
             "id": "trade",
             "customProperties": {
-                "sourceLocation": 1747,
+                "sourceLocation": 1877,
                 "sourceID": "story.abc"
             }
         },
@@ -406,7 +415,7 @@
             ],
             "id": "private",
             "customProperties": {
-                "sourceLocation": 1898,
+                "sourceLocation": 2028,
                 "sourceID": "story.abc"
             }
         },
@@ -427,7 +436,7 @@
             ],
             "id": "public",
             "customProperties": {
-                "sourceLocation": 2010,
+                "sourceLocation": 2140,
                 "sourceID": "story.abc"
             }
         },
@@ -440,7 +449,8 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "science"
+                                    "science",
+                                    "study science"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -468,7 +478,8 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "art"
+                                    "art",
+                                    "study art"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -497,7 +508,7 @@
             ],
             "id": "choosemajor",
             "customProperties": {
-                "sourceLocation": 2120,
+                "sourceLocation": 2250,
                 "sourceID": "story.abc"
             }
         },
@@ -518,7 +529,7 @@
             ],
             "id": "sciences",
             "customProperties": {
-                "sourceLocation": 2406,
+                "sourceLocation": 2562,
                 "sourceID": "story.abc"
             }
         },
@@ -539,7 +550,7 @@
             ],
             "id": "arts",
             "customProperties": {
-                "sourceLocation": 2513,
+                "sourceLocation": 2669,
                 "sourceID": "story.abc"
             }
         },
@@ -552,7 +563,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "party"
+                                    "party",
+                                    "go out and party",
+                                    "party life"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -572,7 +585,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexgIntent"
+                                    "flexdIntent"
                                 ]
                             }
                         },
@@ -580,7 +593,11 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "study"
+                                    "study",
+                                    "focus on studies",
+                                    "focus on my studies",
+                                    "studies",
+                                    "study life"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -600,7 +617,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexhIntent"
+                                    "flexgIntent"
                                 ]
                             }
                         },
@@ -608,7 +625,8 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "both"
+                                    "both",
+                                    "try to do both"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -635,7 +653,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexiIntent"
+                                    "flexhIntent"
                                 ]
                             }
                         }
@@ -644,7 +662,7 @@
             ],
             "id": "collegelife",
             "customProperties": {
-                "sourceLocation": 2629,
+                "sourceLocation": 2785,
                 "sourceID": "story.abc"
             }
         },
@@ -665,7 +683,7 @@
             ],
             "id": "both_life",
             "customProperties": {
-                "sourceLocation": 3252,
+                "sourceLocation": 3514,
                 "sourceID": "story.abc"
             }
         },
@@ -686,7 +704,7 @@
             ],
             "id": "study_life",
             "customProperties": {
-                "sourceLocation": 3351,
+                "sourceLocation": 3613,
                 "sourceID": "story.abc"
             }
         },
@@ -728,7 +746,7 @@
             ],
             "id": "party_life",
             "customProperties": {
-                "sourceLocation": 3563,
+                "sourceLocation": 3825,
                 "sourceID": "story.abc"
             }
         },
@@ -812,7 +830,7 @@
             ],
             "id": "workstudy",
             "customProperties": {
-                "sourceLocation": 3909,
+                "sourceLocation": 4171,
                 "sourceID": "story.abc"
             }
         },
@@ -833,7 +851,7 @@
             ],
             "id": "workstudy_yes",
             "customProperties": {
-                "sourceLocation": 4251,
+                "sourceLocation": 4513,
                 "sourceID": "story.abc"
             }
         },
@@ -854,7 +872,7 @@
             ],
             "id": "workstudy_no",
             "customProperties": {
-                "sourceLocation": 4582,
+                "sourceLocation": 4844,
                 "sourceID": "story.abc"
             }
         },
@@ -875,7 +893,7 @@
             ],
             "id": "graduatedcollege",
             "customProperties": {
-                "sourceLocation": 4858,
+                "sourceLocation": 5120,
                 "sourceID": "story.abc"
             }
         },
@@ -888,7 +906,10 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "parent's house"
+                                    "parent's house",
+                                    "live at home",
+                                    "go back home",
+                                    "home"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -908,7 +929,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexjIntent"
+                                    "flexiIntent"
                                 ]
                             }
                         },
@@ -916,7 +937,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "rent apartment"
+                                    "rent apartment",
+                                    "get apartment",
+                                    "apartment"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -943,7 +966,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexkIntent"
+                                    "flexjIntent"
                                 ]
                             }
                         }
@@ -952,7 +975,7 @@
             ],
             "id": "wheretolive",
             "customProperties": {
-                "sourceLocation": 4979,
+                "sourceLocation": 5241,
                 "sourceID": "story.abc"
             }
         },
@@ -973,7 +996,7 @@
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 5401,
+                "sourceLocation": 5723,
                 "sourceID": "story.abc"
             }
         },
@@ -994,7 +1017,7 @@
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 5511,
+                "sourceLocation": 5833,
                 "sourceID": "story.abc"
             }
         },
@@ -1053,7 +1076,7 @@
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 5633,
+                "sourceLocation": 5955,
                 "sourceID": "story.abc"
             }
         },
@@ -1086,7 +1109,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexlIntent"
+                                    "flexkIntent"
                                 ]
                             }
                         },
@@ -1114,7 +1137,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexmIntent"
+                                    "flexlIntent"
                                 ]
                             }
                         },
@@ -1142,7 +1165,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexnIntent"
+                                    "flexmIntent"
                                 ]
                             }
                         }
@@ -1151,7 +1174,7 @@
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 5907,
+                "sourceLocation": 6229,
                 "sourceID": "story.abc"
             }
         },
@@ -1164,7 +1187,7 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "teacherr"
+                                    "teacher"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -1184,7 +1207,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexoIntent"
+                                    "flexnIntent"
                                 ]
                             }
                         },
@@ -1212,7 +1235,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexpIntent"
+                                    "flexoIntent"
                                 ]
                             }
                         },
@@ -1240,7 +1263,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexqIntent"
+                                    "flexpIntent"
                                 ]
                             }
                         }
@@ -1249,7 +1272,7 @@
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 6359,
+                "sourceLocation": 6681,
                 "sourceID": "story.abc"
             }
         },
@@ -1310,7 +1333,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexrIntent"
+                                    "flexqIntent"
                                 ]
                             }
                         },
@@ -1338,7 +1361,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexsIntent"
+                                    "flexrIntent"
                                 ]
                             }
                         }
@@ -1347,7 +1370,7 @@
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 6767,
+                "sourceLocation": 7088,
                 "sourceID": "story.abc"
             }
         },
@@ -1389,7 +1412,7 @@
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 7212,
+                "sourceLocation": 7533,
                 "sourceID": "story.abc"
             }
         },
@@ -1431,7 +1454,7 @@
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 7469,
+                "sourceLocation": 7790,
                 "sourceID": "story.abc"
             }
         },
@@ -1473,7 +1496,7 @@
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 7716,
+                "sourceLocation": 8037,
                 "sourceID": "story.abc"
             }
         },
@@ -1515,7 +1538,7 @@
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 8039,
+                "sourceLocation": 8360,
                 "sourceID": "story.abc"
             }
         },
@@ -1557,7 +1580,7 @@
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 8291,
+                "sourceLocation": 8612,
                 "sourceID": "story.abc"
             }
         },
@@ -1599,7 +1622,7 @@
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 8558,
+                "sourceLocation": 8879,
                 "sourceID": "story.abc"
             }
         },
@@ -1641,7 +1664,7 @@
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 8799,
+                "sourceLocation": 9120,
                 "sourceID": "story.abc"
             }
         },
@@ -1683,7 +1706,7 @@
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 9030,
+                "sourceLocation": 9351,
                 "sourceID": "story.abc"
             }
         },
@@ -1725,7 +1748,7 @@
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 9293,
+                "sourceLocation": 9614,
                 "sourceID": "story.abc"
             }
         },
@@ -1738,7 +1761,8 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "country"
+                                    "country",
+                                    "live out in the country"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -1758,7 +1782,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flextIntent"
+                                    "flexsIntent"
                                 ]
                             }
                         },
@@ -1766,7 +1790,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "city"
+                                    "city",
+                                    "big city",
+                                    "live in the city"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -1786,7 +1812,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexuIntent"
+                                    "flextIntent"
                                 ]
                             }
                         },
@@ -1794,7 +1820,8 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "suburb"
+                                    "suburb",
+                                    "suburbs"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -1814,7 +1841,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexvIntent"
+                                    "flexuIntent"
                                 ]
                             }
                         }
@@ -1823,7 +1850,7 @@
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 9543,
+                "sourceLocation": 9864,
                 "sourceID": "story.abc"
             }
         },
@@ -1865,7 +1892,7 @@
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 9938,
+                "sourceLocation": 10321,
                 "sourceID": "story.abc"
             }
         },
@@ -1907,7 +1934,7 @@
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 10229,
+                "sourceLocation": 10612,
                 "sourceID": "story.abc"
             }
         },
@@ -1949,20 +1976,22 @@
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 10493,
+                "sourceLocation": 10876,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Having finally got your job and living on your own, you wonder to yourself if you want to get a spouse to spend your time with. Do you want to get married or stay single",
+                    "narration": "Having finally got your job and living on your own, you wonder to yourself if you want to get a spouse to spend your time with. Do you want to get married or stay single?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "married"
+                                    "married",
+                                    "get married",
+                                    "marry"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -1975,7 +2004,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexwIntent"
+                                    "flexvIntent"
                                 ]
                             }
                         },
@@ -1983,7 +2012,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "single"
+                                    "single",
+                                    "stay single",
+                                    "be alone"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -1996,7 +2027,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexxIntent"
+                                    "flexwIntent"
                                 ]
                             }
                         }
@@ -2005,7 +2036,7 @@
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 10751,
+                "sourceLocation": 11134,
                 "sourceID": "story.abc"
             }
         },
@@ -2018,7 +2049,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "big"
+                                    "big",
+                                    "big wedding",
+                                    "big one"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -2045,7 +2078,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexyIntent"
+                                    "flexxIntent"
                                 ]
                             }
                         },
@@ -2053,7 +2086,9 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "small"
+                                    "small",
+                                    "small one",
+                                    "small wedding"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -2080,7 +2115,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexzIntent"
+                                    "flexyIntent"
                                 ]
                             }
                         }
@@ -2089,7 +2124,7 @@
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 11067,
+                "sourceLocation": 11494,
                 "sourceID": "story.abc"
             }
         },
@@ -2110,7 +2145,7 @@
             ],
             "id": "single",
             "customProperties": {
-                "sourceLocation": 11438,
+                "sourceLocation": 11913,
                 "sourceID": "story.abc"
             }
         },
@@ -2131,7 +2166,7 @@
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 11891,
+                "sourceLocation": 12366,
                 "sourceID": "story.abc"
             }
         },
@@ -2152,7 +2187,7 @@
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 12109,
+                "sourceLocation": 12584,
                 "sourceID": "story.abc"
             }
         },
@@ -2165,7 +2200,10 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "have kids"
+                                    "have kids",
+                                    "yes",
+                                    "want kids",
+                                    "try to have kids"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -2250,7 +2288,8 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexbaIntent"
+                                    "flexzIntent",
+                                    "AMAZON.YesIntent"
                                 ]
                             }
                         },
@@ -2258,7 +2297,10 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "don't have kids"
+                                    "don't have kids",
+                                    "no",
+                                    "no kids",
+                                    "don't want kids"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -2271,7 +2313,8 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexbbIntent"
+                                    "flexbaIntent",
+                                    "AMAZON.NoIntent"
                                 ]
                             }
                         }
@@ -2280,7 +2323,7 @@
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 12265,
+                "sourceLocation": 12740,
                 "sourceID": "story.abc"
             }
         },
@@ -2336,7 +2379,7 @@
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 12892,
+                "sourceLocation": 13431,
                 "sourceID": "story.abc"
             }
         },
@@ -2392,7 +2435,7 @@
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 13159,
+                "sourceLocation": 13698,
                 "sourceID": "story.abc"
             }
         },
@@ -2448,20 +2491,22 @@
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 13435,
+                "sourceLocation": 13974,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You lived a great life having kids and watching them grow up. You have been at your job for 20 years would you like to retire?",
+                    "narration": "You lived a great life having kids and watching them grow up. You have been at your job for 20 years, would you like to retire?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "yes"
+                                    "yes",
+                                    "retire",
+                                    "retire from work"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -2474,7 +2519,8 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "AMAZON.YesIntent"
+                                    "AMAZON.YesIntent",
+                                    "flexbbIntent"
                                 ]
                             }
                         },
@@ -2482,7 +2528,8 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "no"
+                                    "no",
+                                    "keep working"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -2495,7 +2542,8 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "AMAZON.NoIntent"
+                                    "AMAZON.NoIntent",
+                                    "flexbcIntent"
                                 ]
                             }
                         }
@@ -2504,7 +2552,7 @@
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 13717,
+                "sourceLocation": 14256,
                 "sourceID": "story.abc"
             }
         },
@@ -2525,7 +2573,7 @@
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 13989,
+                "sourceLocation": 14570,
                 "sourceID": "story.abc"
             }
         },
@@ -2546,7 +2594,7 @@
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 14263,
+                "sourceLocation": 14844,
                 "sourceID": "story.abc"
             }
         },
@@ -2574,7 +2622,7 @@
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 14594,
+                "sourceLocation": 15175,
                 "sourceID": "story.abc"
             }
         },
@@ -2602,7 +2650,7 @@
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 14825,
+                "sourceLocation": 15406,
                 "sourceID": "story.abc"
             }
         },
@@ -2630,7 +2678,7 @@
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 15019,
+                "sourceLocation": 15600,
                 "sourceID": "story.abc"
             }
         },
@@ -2658,7 +2706,7 @@
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 15252,
+                "sourceLocation": 15833,
                 "sourceID": "story.abc"
             }
         }
@@ -2671,169 +2719,215 @@
                 {
                     "name": "flexaIntent",
                     "samples": [
-                        "trade school"
+                        "trade school",
+                        "trade",
+                        "go to trade school"
                     ]
                 },
                 {
                     "name": "flexbIntent",
                     "samples": [
-                        "public college"
+                        "public college",
+                        "go to public college",
+                        "public"
                     ]
                 },
                 {
                     "name": "flexcIntent",
                     "samples": [
-                        "private college"
+                        "private college",
+                        "private",
+                        "go to private college"
                     ]
                 },
                 {
                     "name": "flexdIntent",
                     "samples": [
-                        "party college"
+                        "party college",
+                        "party school",
+                        "party",
+                        "go to party school",
+                        "go out and party",
+                        "party life"
                     ]
                 },
                 {
                     "name": "flexeIntent",
                     "samples": [
-                        "science"
+                        "science",
+                        "study science"
                     ]
                 },
                 {
                     "name": "flexfIntent",
                     "samples": [
-                        "art"
+                        "art",
+                        "study art"
                     ]
                 },
                 {
                     "name": "flexgIntent",
                     "samples": [
-                        "party"
+                        "study",
+                        "focus on studies",
+                        "focus on my studies",
+                        "studies",
+                        "study life"
                     ]
                 },
                 {
                     "name": "flexhIntent",
                     "samples": [
-                        "study"
+                        "both",
+                        "try to do both"
                     ]
                 },
                 {
                     "name": "flexiIntent",
                     "samples": [
-                        "both"
+                        "parent's house",
+                        "live at home",
+                        "go back home",
+                        "home"
                     ]
                 },
                 {
                     "name": "flexjIntent",
                     "samples": [
-                        "parent's house"
+                        "rent apartment",
+                        "get apartment",
+                        "apartment"
                     ]
                 },
                 {
                     "name": "flexkIntent",
                     "samples": [
-                        "rent apartment"
+                        "programmer"
                     ]
                 },
                 {
                     "name": "flexlIntent",
                     "samples": [
-                        "programmer"
+                        "doctor"
                     ]
                 },
                 {
                     "name": "flexmIntent",
                     "samples": [
-                        "doctor"
+                        "forensic scientist"
                     ]
                 },
                 {
                     "name": "flexnIntent",
                     "samples": [
-                        "forensic scientist"
+                        "teacher"
                     ]
                 },
                 {
                     "name": "flexoIntent",
                     "samples": [
-                        "teacherr"
+                        "writer"
                     ]
                 },
                 {
                     "name": "flexpIntent",
                     "samples": [
-                        "writer"
+                        "designer"
                     ]
                 },
                 {
                     "name": "flexqIntent",
                     "samples": [
-                        "designer"
+                        "auto mechanic"
                     ]
                 },
                 {
                     "name": "flexrIntent",
                     "samples": [
-                        "auto mechanic"
+                        "electrician"
                     ]
                 },
                 {
                     "name": "flexsIntent",
                     "samples": [
-                        "electrician"
+                        "country",
+                        "live out in the country"
                     ]
                 },
                 {
                     "name": "flextIntent",
                     "samples": [
-                        "country"
+                        "city",
+                        "big city",
+                        "live in the city"
                     ]
                 },
                 {
                     "name": "flexuIntent",
                     "samples": [
-                        "city"
+                        "suburb",
+                        "suburbs"
                     ]
                 },
                 {
                     "name": "flexvIntent",
                     "samples": [
-                        "suburb"
+                        "married",
+                        "get married",
+                        "marry"
                     ]
                 },
                 {
                     "name": "flexwIntent",
                     "samples": [
-                        "married"
+                        "single",
+                        "stay single",
+                        "be alone"
                     ]
                 },
                 {
                     "name": "flexxIntent",
                     "samples": [
-                        "single"
+                        "big",
+                        "big wedding",
+                        "big one"
                     ]
                 },
                 {
                     "name": "flexyIntent",
                     "samples": [
-                        "big"
+                        "small",
+                        "small one",
+                        "small wedding"
                     ]
                 },
                 {
                     "name": "flexzIntent",
                     "samples": [
-                        "small"
+                        "have kids",
+                        "want kids",
+                        "try to have kids"
                     ]
                 },
                 {
                     "name": "flexbaIntent",
                     "samples": [
-                        "have kids"
+                        "don't have kids",
+                        "no kids",
+                        "don't want kids"
                     ]
                 },
                 {
                     "name": "flexbbIntent",
                     "samples": [
-                        "don't have kids"
+                        "retire",
+                        "retire from work"
+                    ]
+                },
+                {
+                    "name": "flexbcIntent",
+                    "samples": [
+                        "keep working"
                     ]
                 },
                 {
