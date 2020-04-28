@@ -1,19 +1,19 @@
 @start
   *say
-    Welcome to Life! In this game you will be given choices to make in your new virtual life! Would you like to play?
+    Welcome to Life! In this game, you will be given choices to make in your new virtual life! Would you like to play?
     
     *then
-		hear yes {
-		set money to 0
-		set education to 0
-		set character to 0
-		set jobexperience to 0
-		set kids to 0
-		set married to false
-		
+        hear yes {
+        set money to 0
+        set education to 0
+        set character to 0
+        set jobexperience to 0
+        set kids to 0
+        set married to false
+        
             -> opener
         }
-		
+        
         hear no {
             -> stop
         }
@@ -35,14 +35,14 @@
         Congratulations!! You've just graduated from Average Town High School. Now you need to decide what to do with your life going forward. Here are your options for what to do next. You can go to a Trade School, a Public College, a Private College, or Party School. Which would you like to do?
     
     *then
-		hear trade school, trade, go to trade school {
-		set college to "trade"
-		decrease money by 30,000
-		increase education by 10
-		increase character by 2
+        hear trade school, trade, go to trade school {
+        set college to "trade"
+        decrease money by 30,000
+        increase education by 10
+        increase character by 2
             -> trade
         }
-		
+        
         hear public college, go to public college, public {
         decrease money by 10,000
         increase character by 1
@@ -55,7 +55,7 @@
         decrease money by 60,000
         increase character by 5
         increase education by 10
-		set college to "private"
+        set college to "private"
 
             -> private
         }
@@ -64,7 +64,7 @@
         decrease money by 60,000
         increase character by 10
         increase education by 5
-		set college to "party"
+        set college to "party"
 
             -> party
         }
@@ -87,28 +87,28 @@
             
 @finished_trade
     *say
-        Congrats! You have finished up your short experience at trade school and now have valuable skill sets that you can use in the work force! Now it is time to figure out which job you want to do.
+        Congrats! You have finished up your short experience at trade school and now have valuable skill sets that you can use in the workforce! Now it is time to figure out which job you want to do.
         *then
             set specialization to trade
             -> tradejobs
             
 @private
     *say
-        You have chosen a private college! You value your education and want to get the best possible outcome from college. With smaller classroom sizes and less student populations, you will be able to get the most out of your educational experience.
+        You have chosen a private college! You value your education and want to get the best possible outcome from college. With smaller classroom sizes and fewer student populations, you will be able to get the most out of your educational experience.
         
     *then
         -> choosemajor
         
 @public
     *say
-        You have chosen a public college! Alright! Public is the best of both worlds. Many people choose public universities because they want the full college experience of getting a degree while still being able to party at the same time. 
+        You have chosen a public college! Alright! Public colleges are the best of both worlds. Many people choose public universities because they want the full college experience of getting a degree while still being able to party at the same time. 
         
     *then
         -> choosemajor
         
 @choosemajor
     *say 
-        Would you like to study science, or art?
+        Would you like to study science or art?
         
     *then
         hear science, study science {
@@ -138,7 +138,7 @@
      
 @collegelife
     *say
-         Your first two years you work on getting all your general education done with. During your schooling you decided how you wanted to spend your time. You could go out and party, focus on your studies, or try to do both. How do you want to spend your time in college?
+         Your first two years you work on getting all your general education done with. During your schooling, you decided how you wanted to spend your time. You could go out and party, focus on your studies or try to do both. How do you want to spend your time in college?
     *then
         hear party, go out and party, party life {
         increase character by 4
@@ -166,14 +166,14 @@
 
 @study_life
     *say
-        You chose to study! You have made the choice that studying and getting good grades is worth your time, because of the money you are spending.
+        You chose to study! You have decided that studying and getting good grades is worth your time, because of the money you are spending.
         
     *then
         -> workstudy
 
 @party_life
     *say
-        You chose to party! You become on of the most well known party animals on campus. You've definitely earned your degree in Partying, although... that does not count for much in the real world. 
+        You chose to party! You become one of the most well-known party animals on campus. You've definitely earned your degree in Partying, although... that does not count for much in the working world. 
         
     *then
         roll 1d4
@@ -240,14 +240,14 @@
         }
 @parents_house
     *say 
-        You are living in your parents basement. It's not as great as it was when you were a kid and you want to get out of there fast. So you need to choose a job if you want to move out. 
+        You are living in your parents' basement. It's not as great as it was when you were a kid and you want to get out of there fast. So you need to choose a job if you want to move out. 
     
     *then
     -> choosejob
     
 @apartment
     *say 
-        You are living in your own apartment. Independence!
+        You are living in your own apartment. Welcome to true independence!
     
     *then
     -> choosejob
@@ -309,7 +309,7 @@
 
 @tradejobs
     *say 
-        You chose to get a degree in a trade so you can choose the following jobs: Contractor, Auto Mechanic or an Electrician. Which will it be?
+        You chose to get a degree in a trade so you can choose the following jobs: Contractor, Auto Mechanic, or an Electrician. Which will it be?
     
     *then 
         hear contractor{
@@ -417,13 +417,13 @@
 
 @chooseresidents
     *say
-        You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful country side, right in the busy city or just outside the city in a cozy suburban home. Which will it be?
+        You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful countryside, right in the busy city, or just outside the city in a cozy suburban home. Which will it be?
     *then
         hear country, live out in the country, in the country, the country{
         decrease money by 70,000
         -> country
         }
-        hear city, big city, live in the city, in the city, , the city{
+        hear city, big city, live in the city, in the city, the city{
         decrease money by 150,000
         -> city
         }
@@ -434,7 +434,7 @@
         
 @country
     *say
-        You love the wide-open outdoors with no traffic, few neighbors, and plenty of room for activiies. The country is where you want to live.
+        You love the wide-open outdoors with no traffic, few neighbors, and plenty of room for activities. The country is where you want to live.
         
     *then
         roll 1d4
@@ -534,7 +534,7 @@
         
 @kids1
     *say 
-        You and yoru partner had a kid! Congrats!
+        You and your partner had a kid! Congrats!
     
     *then
         decrease money by 40,000
@@ -560,7 +560,7 @@
         
 @kids3
     *say 
-        What luck! You and your partner had triplets! A tripple threat!
+        What luck! You and your partner had triplets! A triple threat!
     
     *then
         decrease money by 120,000
@@ -584,19 +584,19 @@
         
 @retire
     *say
-        After a great long time at your job, living with your family and seeing them grow up. You decided to reitre from work and enjoy the rest of life together with your spouse. Thank you for playing life, come back again soon.
+        After a great long time at your job, living with your family and seeing them grow up. You decided to retire from work and enjoy the rest of life together with your spouse. Thank you for playing life simulator, come back again soon.
     *then
         -> stop
 
 @dontretire
     *say
-        You enjoy your job to much and don't know if you would ever stop working in life. You continue the rest of your life working with fewer hours and spending the evening with your family. Congratualtions on making through life. Play again and choose different outcomes.
+        You enjoy your job too much and don't know if you would ever stop working in life. You continue the rest of your life working with fewer hours and spending the evening with your family. Congratulations on making through life. Play again and choose different outcomes.
     *then
         -> stop
         
 @scenario2
     *say
-        You have now moved into your new place but you soon discover that your new living space needs repairs. Thats gonna hurt the wallet!
+        You have now moved into your new place but you soon discover that your new living space needs repairs. That's gonna hurt the wallet!
     *then
         decrease money by 5,000
         -> marriage
