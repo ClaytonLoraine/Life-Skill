@@ -1,7 +1,7 @@
 @global append
     *then
         hear restart, start over {
-            >> RESTART
+            -> start
         }
 
 @resume
@@ -153,7 +153,7 @@
      
 @collegelife
     *say
-         Your first two years you work on getting all your general education done with. During your schooling, you decided how you wanted to spend your time. You could go out and party, focus on your studies or try to do both. How do you want to spend your time in college?
+         Your first two years you work on getting all your general education done with. You need to decide how you wanted to spend your time while at college. You could go out and party, focus on your studies or try to do both. How do you want to spend your time in college?
     *then
         hear party, go out and party, party life {
         increase character by 4
@@ -258,7 +258,7 @@
         }
 @parents_house
     *say 
-        You are living in your parents' basement. It's not as great as it was when you were a kid and you want to get out of there fast. So you need to choose a job if you want to move out. 
+        You are living in your parents' basement. It's not as great as it was when you were a kid and you want to get out of there fast. So you need to find a job if you want to move out. 
     
     *then
     -> choosejob
@@ -274,7 +274,7 @@
         
 @choosejob
     *say 
-        Time to choose a job. What job do you want?
+        Time to find a job. What job do you want?
     
     
     *then
@@ -446,7 +446,7 @@
 
 @chooseresidents
     *say
-        You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful countryside, right in the busy city, or just outside the city in a cozy suburban home. Which will it be?
+        You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful countryside, right in the busy city, or just outside the city in a cozy suburban home. Which will it be? The city, the suburbs, or the country?
     *then
         hear country, live out in the country, in the country, the country{
         decrease stress by 1

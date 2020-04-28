@@ -4,6 +4,125 @@
         {
             "contents": [
                 {
+                    "narration": "",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "global append",
+            "customProperties": {
+                "sourceLocation": 0,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Welcome back! Do you want to continue your life from where you last left off?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "yes",
+                                    "sure"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "{resume}",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.YesIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "no"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.NoIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "resume",
+            "customProperties": {
+                "sourceLocation": 92,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
                     "narration": "Welcome to Life! In this game, you will be given choices to make in your new virtual life! Would you like to play?",
                     "sceneDirections": [
                         {
@@ -103,26 +222,37 @@
                                     "AMAZON.NoIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "start",
             "customProperties": {
-                "sourceLocation": 0,
-                "sourceID": "story.abc"
-            }
-        },
-        {
-            "contents": [
-                {
-                    "narration": "Paused",
-                    "sceneDirections": []
-                }
-            ],
-            "id": "pause",
-            "customProperties": {
-                "sourceLocation": 486,
+                "sourceLocation": 313,
                 "sourceID": "story.abc"
             }
         },
@@ -134,13 +264,37 @@
                         {
                             "directionType": "ending",
                             "parameters": {}
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "stop",
             "customProperties": {
-                "sourceLocation": 536,
+                "sourceLocation": 799,
                 "sourceID": "story.abc"
             }
         },
@@ -353,13 +507,37 @@
                                     "flexdIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "opener",
             "customProperties": {
-                "sourceLocation": 616,
+                "sourceLocation": 879,
                 "sourceID": "story.abc"
             }
         },
@@ -374,13 +552,37 @@
                                 "target": "choosemajor",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "party",
             "customProperties": {
-                "sourceLocation": 1880,
+                "sourceLocation": 2143,
                 "sourceID": "story.abc"
             }
         },
@@ -395,13 +597,37 @@
                                 "target": "finished_trade",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "trade",
             "customProperties": {
-                "sourceLocation": 2205,
+                "sourceLocation": 2468,
                 "sourceID": "story.abc"
             }
         },
@@ -423,13 +649,37 @@
                                 "target": "tradejobs",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "finished_trade",
             "customProperties": {
-                "sourceLocation": 2427,
+                "sourceLocation": 2690,
                 "sourceID": "story.abc"
             }
         },
@@ -444,13 +694,37 @@
                                 "target": "choosemajor",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "private",
             "customProperties": {
-                "sourceLocation": 2744,
+                "sourceLocation": 3007,
                 "sourceID": "story.abc"
             }
         },
@@ -465,13 +739,37 @@
                                 "target": "choosemajor",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "public",
             "customProperties": {
-                "sourceLocation": 3066,
+                "sourceLocation": 3329,
                 "sourceID": "story.abc"
             }
         },
@@ -537,13 +835,37 @@
                                     "flexfIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "choosemajor",
             "customProperties": {
-                "sourceLocation": 3386,
+                "sourceLocation": 3649,
                 "sourceID": "story.abc"
             }
         },
@@ -558,13 +880,37 @@
                                 "target": "collegelife",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "sciences",
             "customProperties": {
-                "sourceLocation": 3697,
+                "sourceLocation": 3960,
                 "sourceID": "story.abc"
             }
         },
@@ -579,20 +925,44 @@
                                 "target": "collegelife",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "arts",
             "customProperties": {
-                "sourceLocation": 3804,
+                "sourceLocation": 4067,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Your first two years you work on getting all your general education done with. During your schooling, you decided how you wanted to spend your time. You could go out and party, focus on your studies or try to do both. How do you want to spend your time in college?",
+                    "narration": "Your first two years you work on getting all your general education done with. You need to decide how you wanted to spend your time while at college. You could go out and party, focus on your studies or try to do both. How do you want to spend your time in college?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -706,13 +1076,37 @@
                                     "flexhIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "collegelife",
             "customProperties": {
-                "sourceLocation": 3909,
+                "sourceLocation": 4172,
                 "sourceID": "story.abc"
             }
         },
@@ -727,13 +1121,37 @@
                                 "target": "workstudy",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "both_life",
             "customProperties": {
-                "sourceLocation": 4705,
+                "sourceLocation": 4969,
                 "sourceID": "story.abc"
             }
         },
@@ -748,13 +1166,37 @@
                                 "target": "workstudy",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "study_life",
             "customProperties": {
-                "sourceLocation": 5005,
+                "sourceLocation": 5269,
                 "sourceID": "story.abc"
             }
         },
@@ -790,13 +1232,37 @@
                                 "target": "workstudy",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "party_life",
             "customProperties": {
-                "sourceLocation": 5209,
+                "sourceLocation": 5473,
                 "sourceID": "story.abc"
             }
         },
@@ -881,13 +1347,37 @@
                                     "AMAZON.NoIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "workstudy",
             "customProperties": {
-                "sourceLocation": 5572,
+                "sourceLocation": 5836,
                 "sourceID": "story.abc"
             }
         },
@@ -902,13 +1392,37 @@
                                 "target": "graduatedcollege",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "workstudy_yes",
             "customProperties": {
-                "sourceLocation": 6166,
+                "sourceLocation": 6430,
                 "sourceID": "story.abc"
             }
         },
@@ -923,13 +1437,37 @@
                                 "target": "graduatedcollege",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "workstudy_no",
             "customProperties": {
-                "sourceLocation": 6497,
+                "sourceLocation": 6761,
                 "sourceID": "story.abc"
             }
         },
@@ -944,13 +1482,37 @@
                                 "target": "wheretolive",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "graduatedcollege",
             "customProperties": {
-                "sourceLocation": 6774,
+                "sourceLocation": 7038,
                 "sourceID": "story.abc"
             }
         },
@@ -1032,20 +1594,44 @@
                                     "flexjIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "wheretolive",
             "customProperties": {
-                "sourceLocation": 7014,
+                "sourceLocation": 7278,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You are living in your parents' basement. It's not as great as it was when you were a kid and you want to get out of there fast. So you need to choose a job if you want to move out.",
+                    "narration": "You are living in your parents' basement. It's not as great as it was when you were a kid and you want to get out of there fast. So you need to find a job if you want to move out.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -1053,13 +1639,37 @@
                                 "target": "choosejob",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 7868,
+                "sourceLocation": 8132,
                 "sourceID": "story.abc"
             }
         },
@@ -1081,20 +1691,44 @@
                                 "target": "choosejob",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 8121,
+                "sourceLocation": 8383,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Time to choose a job. What job do you want?",
+                    "narration": "Time to find a job. What job do you want?",
                     "sceneDirections": [
                         {
                             "directionType": "condition",
@@ -1140,13 +1774,37 @@
                                     }
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 8289,
+                "sourceLocation": 8551,
                 "sourceID": "story.abc"
             }
         },
@@ -1259,13 +1917,37 @@
                                     "flexmIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 8563,
+                "sourceLocation": 8823,
                 "sourceID": "story.abc"
             }
         },
@@ -1378,13 +2060,37 @@
                                     "flexpIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 9121,
+                "sourceLocation": 9381,
                 "sourceID": "story.abc"
             }
         },
@@ -1497,13 +2203,37 @@
                                     "flexsIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 9634,
+                "sourceLocation": 9894,
                 "sourceID": "story.abc"
             }
         },
@@ -1539,13 +2269,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 10189,
+                "sourceLocation": 10449,
                 "sourceID": "story.abc"
             }
         },
@@ -1581,13 +2335,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 10456,
+                "sourceLocation": 10716,
                 "sourceID": "story.abc"
             }
         },
@@ -1623,13 +2401,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 10752,
+                "sourceLocation": 11012,
                 "sourceID": "story.abc"
             }
         },
@@ -1665,13 +2467,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 11076,
+                "sourceLocation": 11336,
                 "sourceID": "story.abc"
             }
         },
@@ -1707,13 +2533,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 11328,
+                "sourceLocation": 11588,
                 "sourceID": "story.abc"
             }
         },
@@ -1749,13 +2599,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 11595,
+                "sourceLocation": 11855,
                 "sourceID": "story.abc"
             }
         },
@@ -1791,13 +2665,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 11836,
+                "sourceLocation": 12096,
                 "sourceID": "story.abc"
             }
         },
@@ -1833,13 +2731,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 12066,
+                "sourceLocation": 12326,
                 "sourceID": "story.abc"
             }
         },
@@ -1875,20 +2797,44 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 12329,
+                "sourceLocation": 12589,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful countryside, right in the busy city, or just outside the city in a cozy suburban home. Which will it be?",
+                    "narration": "You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful countryside, right in the busy city, or just outside the city in a cozy suburban home. Which will it be? The city, the suburbs, or the country?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -1997,13 +2943,37 @@
                                     "flexvIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 12579,
+                "sourceLocation": 12839,
                 "sourceID": "story.abc"
             }
         },
@@ -2039,13 +3009,37 @@
                                 "target": "marriage",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 13312,
+                "sourceLocation": 13611,
                 "sourceID": "story.abc"
             }
         },
@@ -2081,13 +3075,37 @@
                                 "target": "retirement_fund",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 13604,
+                "sourceLocation": 13903,
                 "sourceID": "story.abc"
             }
         },
@@ -2123,13 +3141,37 @@
                                 "target": "retirement_fund",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 13879,
+                "sourceLocation": 14178,
                 "sourceID": "story.abc"
             }
         },
@@ -2200,13 +3242,37 @@
                                     "flexxIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "retirement_fund",
             "customProperties": {
-                "sourceLocation": 14144,
+                "sourceLocation": 14443,
                 "sourceID": "story.abc"
             }
         },
@@ -2221,13 +3287,37 @@
                                 "target": "marriage",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "retirement_fund_yes",
             "customProperties": {
-                "sourceLocation": 14605,
+                "sourceLocation": 14904,
                 "sourceID": "story.abc"
             }
         },
@@ -2242,13 +3332,37 @@
                                 "target": "marriage",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "retirement_fund_no",
             "customProperties": {
-                "sourceLocation": 14779,
+                "sourceLocation": 15078,
                 "sourceID": "story.abc"
             }
         },
@@ -2302,13 +3416,37 @@
                                     "flexzIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 14953,
+                "sourceLocation": 15252,
                 "sourceID": "story.abc"
             }
         },
@@ -2404,13 +3542,37 @@
                                     "flexbbIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 15313,
+                "sourceLocation": 15612,
                 "sourceID": "story.abc"
             }
         },
@@ -2425,13 +3587,37 @@
                                 "target": "retire_choice",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "single",
             "customProperties": {
-                "sourceLocation": 15793,
+                "sourceLocation": 16092,
                 "sourceID": "story.abc"
             }
         },
@@ -2446,13 +3632,37 @@
                                 "target": "married_life",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 16011,
+                "sourceLocation": 16310,
                 "sourceID": "story.abc"
             }
         },
@@ -2467,13 +3677,37 @@
                                 "target": "married_life",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 16229,
+                "sourceLocation": 16528,
                 "sourceID": "story.abc"
             }
         },
@@ -2624,13 +3858,37 @@
                                     "AMAZON.NoIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 16385,
+                "sourceLocation": 16684,
                 "sourceID": "story.abc"
             }
         },
@@ -2680,13 +3938,37 @@
                                 "target": "retire_choice",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 17187,
+                "sourceLocation": 17486,
                 "sourceID": "story.abc"
             }
         },
@@ -2736,13 +4018,37 @@
                                 "target": "retire_choice",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 17454,
+                "sourceLocation": 17753,
                 "sourceID": "story.abc"
             }
         },
@@ -2792,13 +4098,37 @@
                                 "target": "retire_choice",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 17730,
+                "sourceLocation": 18029,
                 "sourceID": "story.abc"
             }
         },
@@ -2867,13 +4197,37 @@
                                     "flexbfIntent"
                                 ]
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 18011,
+                "sourceLocation": 18310,
                 "sourceID": "story.abc"
             }
         },
@@ -2888,13 +4242,37 @@
                                 "target": "stop",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 18426,
+                "sourceLocation": 18725,
                 "sourceID": "story.abc"
             }
         },
@@ -2909,13 +4287,37 @@
                                 "target": "stop",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 18710,
+                "sourceLocation": 19009,
                 "sourceID": "story.abc"
             }
         },
@@ -2937,13 +4339,37 @@
                                 "target": "retirement_fund",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 19042,
+                "sourceLocation": 19341,
                 "sourceID": "story.abc"
             }
         },
@@ -2965,13 +4391,37 @@
                                 "target": "workstudy",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 19281,
+                "sourceLocation": 19580,
                 "sourceID": "story.abc"
             }
         },
@@ -2993,13 +4443,37 @@
                                 "target": "chooseresidents",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 19495,
+                "sourceLocation": 19794,
                 "sourceID": "story.abc"
             }
         },
@@ -3021,13 +4495,37 @@
                                 "target": "retire_choice",
                                 "targetSceneProperty": "narration"
                             }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
                         }
                     ]
                 }
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 19729,
+                "sourceLocation": 20028,
                 "sourceID": "story.abc"
             }
         }
