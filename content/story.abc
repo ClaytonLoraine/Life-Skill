@@ -10,6 +10,7 @@
         set jobexperience to 0
         set kids to 0
         set married to false
+        set stress to 0
         
             -> opener
         }
@@ -130,7 +131,7 @@
      
 @arts
     *say 
-        You chose to study in the field of art.
+        You chose to study the arts.
         
     *then 
      -> collegelife
@@ -147,12 +148,14 @@
         
         hear study, focus on studies, focus on my studies, studies, study life {
         increase education by 4
+        increase stress by 4
             -> study_life
         }
         
         hear both, try to do both, do both {
         increase character by 2
         increase education by 2
+        increase stress by 4
             -> both_life
         }
 
@@ -193,6 +196,7 @@
         decrease education by 2
         increase jobexperience by 4
         increase money by 30,000
+        increase stress by 2
             -> workstudy_yes
         }
         
@@ -224,7 +228,7 @@
 
 @wheretolive
     *say 
-        Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue the life away from home and find an apartment somewhere. Which would you like to do?
+        Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independance. Which would you like to do?
     
     *then
         hear parent's house, live at home, live with parents, parents {
@@ -233,7 +237,7 @@
             -> parents_house
         }
         
-        hear rent apartment, get apartment, apartment {
+        hear rent apartment, get apartment, apartment, rent {
         decrease money by 10,000
         increase character by 3
             -> apartment
@@ -250,6 +254,8 @@
         You are living in your own apartment. Welcome to true independence!
     
     *then
+    increase stress by 2
+    
     -> choosejob
         
 @choosejob
@@ -277,13 +283,16 @@
     *then 
         hear programmer{
         increase money by 225,000
+        increase stress by 2
         -> programmer
         }
         hear doctor{
+        increase stress by 4
         increase money by 600,000
         -> doctor
         }
         hear forensic scientist{
+        increase stress by 2
         increase money by 195,000
         -> forensic_scientist
         }
@@ -295,14 +304,17 @@
     
     *then 
         hear teacher{
+        increase stress by 3
         increase money by 105,000
         -> teacher
         }
         hear writer{
+        increase stress by 2
         increase money by 135,000
         -> writer
         }
         hear designer{
+        increase stress by 2
         increase money by 180,000
         -> designer
         }
@@ -313,14 +325,17 @@
     
     *then 
         hear contractor{
+        increase stress by 1
         increase money by 225,000
         -> construction
         }
         hear auto mechanic{
+        increase stress by 1
         increase money by 120,000
         -> auto_mechanic
         }
         hear electrician{
+        increase stress by 1
         increase money by 180,000
         -> electrician
         }
@@ -420,10 +435,12 @@
         You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful countryside, right in the busy city, or just outside the city in a cozy suburban home. Which will it be?
     *then
         hear country, live out in the country, in the country, the country{
+        decrease stress by 1
         decrease money by 70,000
         -> country
         }
         hear city, big city, live in the city, in the city, the city{
+        increase stress by 1
         decrease money by 150,000
         -> city
         }
@@ -481,12 +498,15 @@
     *then
         hear big, big wedding, big one{
         decrease money by 40,000
-        increase character by 6
+        increase character by 5
+        increase stress by 3
         -> big
         }
+        
         hear small, small one, small wedding{
         decrease money by 20,000
         increase character by 3
+        increase stress by 3
         -> small
         }
     
@@ -515,14 +535,17 @@
         hear have kids, yes, want kids, try to have kids{
             roll 1d20
                 if rollResult == 5{
+                increase stress by 6
                 set kids to 3
                 -> kids3
                 }
                 if rollResult <= 4{
+                increase stress by 4
                 set kids to 2
                 -> kids2
                 }
                 if rollResult >= 6{
+                increase stress by 2
                 set kids to 1
                 -> kids1
                 }
@@ -573,12 +596,13 @@
 
 @retire_choice
     *say
-        You lived a great life having kids and watching them grow up. You have been at your job for 20 years, would you like to retire?
+        You lived a great life having kids and watching them grow up. You have been at your job for 20 years, would you like to retire or keep working and supporting yourself?
     *then
         hear yes, retire, retire from work {
         -> retire
         }
         hear no, keep working{
+        increase stress by 3
         ->dontretire
         }
         
@@ -602,17 +626,17 @@
         -> marriage
         
 @scenario1
-*say
-     You were at a party and fell off a roof and broke your back! You had to be transported by ambulance to the hospital
-*then
-    decrease money by 10,000
-    -> workstudy
+    *say
+         You were at a party and fell off a roof and broke your back! You had to be transported by ambulance to the hospital
+    *then
+        decrease money by 10,000
+        -> workstudy
     
 @scenario3
     *say
         Your hard work has finally paid off! Your boss has decided to give you a raise after all the time and effort you have put in!
     *then
-        increase money by $5,000
+        increase money by $20,000
         -> chooseresidents
         
 @scenario4
