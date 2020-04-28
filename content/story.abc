@@ -4,6 +4,18 @@
             >> RESTART
         }
 
+@resume
+    *say
+        Welcome back! Do you want to continue your life from where you last left off?
+    *then
+        hear yes, sure {
+            >> RESUME
+        }
+
+        hear no {
+            -> start
+        }
+
 @start
   *say
     Welcome to Life! In this game, you will be given choices to make in your new virtual life! Would you like to play?
