@@ -101,7 +101,7 @@
         
 @public
     *say
-        You have chosen a public college! Alright! Public is the best of both world. Many people choose public universities because they want the full college experience of getting a degree while still being able to party at the same time. 
+        You have chosen a public college! Alright! Public is the best of both worlds. Many people choose public universities because they want the full college experience of getting a degree while still being able to party at the same time. 
         
     *then
         -> choosemajor
@@ -138,7 +138,7 @@
      
 @collegelife
     *say
-         Your first two years you work on getting all your general education done with. During your schooling you decided how you wanted to spend your time. You could go out and party, focus on your studies, or try to do both. How would you want to spend your college time?
+         Your first two years you work on getting all your general education done with. During your schooling you decided how you wanted to spend your time. You could go out and party, focus on your studies, or try to do both. How do you want to spend your time in college?
     *then
         hear party, go out and party, party life {
         increase character by 4
@@ -173,7 +173,7 @@
 
 @party_life
     *say
-        You chose to party! Your time spent while at college is going out and partying a lot. You spend too much time partying to where it affects your education and you don’t learn much.
+        You chose to party! You become on of the most well known party animals on campus. You've definitely earned your degree in Partying, although... that does not count for much in the real world. 
         
     *then
         roll 1d4
@@ -185,7 +185,7 @@
 
 @workstudy
     *say 
-        Want to work while at college?
+        You get tired of having no money to spend on things you want and having to rely on your parents to pay for things. A job opportunity on campus appears and you think it might be a good way to make some extra cash. Would you like to work while in college?
     
     *then
         hear yes {
@@ -209,14 +209,14 @@
 
 @workstudy_no
     *say 
-        You know having a job would help you make some extra cash to pay for things and college. However, you think that focusing on your studies is more important right now. You chose not to work at college
+        You know having a job would help you make some extra cash to pay for things and college. However, you think that focusing on your studies is more important right now. You choose not to work at college
         
     *then
     -> graduatedcollege
 
 @graduatedcollege
     *say 
-        Congrats! you made your way through college.
+        Congrats! You've made your way through the exciting and stressful thing they call college. Now, it's on to the real world and you can't live in the dorms anymore. 
     
     *then
 
@@ -224,10 +224,10 @@
 
 @wheretolive
     *say 
-        where do you want to live for now until you are able to make more money and buy a house for yourself? Go back home, or rent apartment?
+        Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue the life away from home and find an apartment somewhere. Which would you like to do?
     
     *then
-        hear parent's house, live at home {
+        hear parent's house, live at home, live with parents, parents {
         decrease character by 5
 
             -> parents_house
@@ -240,14 +240,14 @@
         }
 @parents_house
     *say 
-        You are living in your parents basement
+        You are living in your parents basement. It's not as great as it was when you were a kid and you want to get out of there fast. So you need to choose a job if you want to move out. 
     
     *then
     -> choosejob
     
 @apartment
     *say 
-        You are living in your own apartment. independance!
+        You are living in your own apartment. Independence!
     
     *then
     -> choosejob
@@ -272,7 +272,7 @@
     
 @sciencejobs
     *say 
-        You chose to get a degree in science so you can choose the following jobs: Programmer, Doctor, Forensic scientist
+        You chose to get a degree in science so you can choose the following jobs: Programmer, Doctor, Forensic scientist. Which will it be?
     
     *then 
         hear programmer{
@@ -291,7 +291,7 @@
 
 @artjobs
     *say 
-        You chose to get a degree in the arts so you can choose the following jobs: teacher, writer, or a designer?
+        You chose to get a degree in the arts, so you can choose the following jobs: Teacher, Writer, or a Designer. Which will it be?
     
     *then 
         hear teacher{
@@ -309,7 +309,7 @@
 
 @tradejobs
     *say 
-        You chose to get a degree in a trade so you can choose the following jobs: contractor, Auto mechanic, electrician
+        You chose to get a degree in a trade so you can choose the following jobs: Contractor, Auto Mechanic or an Electrician. Which will it be?
     
     *then 
         hear contractor{
@@ -327,7 +327,7 @@
 
 @programmer
     *say
-        You become a programmer. You enjoyed the problem sovling and writing program that do things for you.
+        You become a programmer. You enjoy problem sovling and writing programs that can complete daily tasks for you.
     *then
         roll 1d10
             if rollResult == 1{
@@ -337,7 +337,7 @@
     
 @doctor
     *say
-        You chose to become a doctor. This was fit for you because of how much you want to save peoples lives.
+        You chose to become a doctor. Nothing brings you more satisfaction than helping save lives and protecting the good people in the community around you. 
     *then
     roll 1d10
             if rollResult == 1{
@@ -347,7 +347,7 @@
 
 @forensic_scientist
     *say
-        Wanting to help find criminals you became a forensic scientist. using you abilities to analyze evidence to use in determining the innocence or guild of a suspect.
+        Wanting to help find criminals you became a forensic scientist. Using your abilities to analyze evidence to use in determining the innocence or guilt of a suspect.
     *then
     roll 1d10
             if rollResult == 1{
@@ -417,7 +417,7 @@
 
 @chooseresidents
     *say
-        You have to choose where you would like to live at. Somewhere in the country, city, or suburbs?
+        You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful country side, right in the busy city or just outside the city in a cozy suburban home. Which will it be?
     *then
         hear country, live out in the country, in the country, the country{
         decrease money by 70,000
@@ -434,7 +434,7 @@
         
 @country
     *say
-        You love the wide-open outdoors with no traffic, few neighbors, and planty of room for activiies. The country is where you want to live.
+        You love the wide-open outdoors with no traffic, few neighbors, and plenty of room for activiies. The country is where you want to live.
         
     *then
         roll 1d4
@@ -446,7 +446,7 @@
 
 @city
     *say
-        You enjoy the hustle and bustle of the City. There are many things to do and go in the city, that is why you wanted to live there
+        You enjoy the hustle and bustle of the City. There are many things to do and go see in the city, that is why you wanted to live there
     *then
      roll 1d4
             if rollResult == 1{
@@ -456,7 +456,7 @@
 
 @suburb
     *say
-        after looking at all the different places to live you decided being in a safe and cozy suburb would be great for you.
+        After looking at all the different places to live you decided being in a safe and cozy suburb would be great for you.
     *then
      roll 1d4
             if rollResult == 1{
@@ -477,7 +477,7 @@
         
 @married
     *say
-    Congratulations! You are getting married to the love of your life. Is the Wedding going to be a big one or small?
+    Congratulations! You are getting married to the love of your life. Is the wedding going to be a big one or small?
     *then
         hear big, big wedding, big one{
         decrease money by 40,000
@@ -494,7 +494,7 @@
     *say
         You figured that getting married would be a waste of your time and cause you pain and suffering. There is a reason why so many people get divorced. You made it through your life. making it through college and having a sucessful job. You live your retirement alone, but it does not feel that way living in the where you are. Congratulations, on completing your Journey! Come back soon and play again.
     *then
-        -> stop
+        -> retire_choice
 
 
 @big
