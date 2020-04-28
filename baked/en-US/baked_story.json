@@ -957,7 +957,7 @@
         {
             "contents": [
                 {
-                    "narration": "Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independance. Which would you like to do?",
+                    "narration": "Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independance. Which would you like to do? Live in your old room or rent an apartment?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -966,7 +966,10 @@
                                     "parent's house",
                                     "live at home",
                                     "live with parents",
-                                    "parents"
+                                    "parents",
+                                    "live in old room",
+                                    "old room",
+                                    "room"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -994,10 +997,12 @@
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
+                                    "rent an apartment",
                                     "rent apartment",
                                     "get apartment",
                                     "apartment",
-                                    "rent"
+                                    "rent",
+                                    "live away from home"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -1054,7 +1059,7 @@
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 7750,
+                "sourceLocation": 7868,
                 "sourceID": "story.abc"
             }
         },
@@ -1082,7 +1087,7 @@
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 8003,
+                "sourceLocation": 8121,
                 "sourceID": "story.abc"
             }
         },
@@ -1141,7 +1146,7 @@
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 8171,
+                "sourceLocation": 8289,
                 "sourceID": "story.abc"
             }
         },
@@ -1260,7 +1265,7 @@
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 8445,
+                "sourceLocation": 8563,
                 "sourceID": "story.abc"
             }
         },
@@ -1379,7 +1384,7 @@
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 9003,
+                "sourceLocation": 9121,
                 "sourceID": "story.abc"
             }
         },
@@ -1498,7 +1503,7 @@
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 9516,
+                "sourceLocation": 9634,
                 "sourceID": "story.abc"
             }
         },
@@ -1540,7 +1545,7 @@
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 10071,
+                "sourceLocation": 10189,
                 "sourceID": "story.abc"
             }
         },
@@ -1582,7 +1587,7 @@
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 10338,
+                "sourceLocation": 10456,
                 "sourceID": "story.abc"
             }
         },
@@ -1624,7 +1629,7 @@
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 10634,
+                "sourceLocation": 10752,
                 "sourceID": "story.abc"
             }
         },
@@ -1666,7 +1671,7 @@
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 10958,
+                "sourceLocation": 11076,
                 "sourceID": "story.abc"
             }
         },
@@ -1708,7 +1713,7 @@
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 11210,
+                "sourceLocation": 11328,
                 "sourceID": "story.abc"
             }
         },
@@ -1750,7 +1755,7 @@
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 11477,
+                "sourceLocation": 11595,
                 "sourceID": "story.abc"
             }
         },
@@ -1792,7 +1797,7 @@
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 11718,
+                "sourceLocation": 11836,
                 "sourceID": "story.abc"
             }
         },
@@ -1834,7 +1839,7 @@
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 11948,
+                "sourceLocation": 12066,
                 "sourceID": "story.abc"
             }
         },
@@ -1876,7 +1881,7 @@
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 12211,
+                "sourceLocation": 12329,
                 "sourceID": "story.abc"
             }
         },
@@ -1998,7 +2003,7 @@
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 12461,
+                "sourceLocation": 12579,
                 "sourceID": "story.abc"
             }
         },
@@ -2040,7 +2045,7 @@
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 13194,
+                "sourceLocation": 13312,
                 "sourceID": "story.abc"
             }
         },
@@ -2082,7 +2087,7 @@
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 13486,
+                "sourceLocation": 13604,
                 "sourceID": "story.abc"
             }
         },
@@ -2124,7 +2129,7 @@
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 13761,
+                "sourceLocation": 13879,
                 "sourceID": "story.abc"
             }
         },
@@ -2201,7 +2206,7 @@
             ],
             "id": "retirement_fund",
             "customProperties": {
-                "sourceLocation": 14026,
+                "sourceLocation": 14144,
                 "sourceID": "story.abc"
             }
         },
@@ -2222,7 +2227,7 @@
             ],
             "id": "retirement_fund_yes",
             "customProperties": {
-                "sourceLocation": 14487,
+                "sourceLocation": 14605,
                 "sourceID": "story.abc"
             }
         },
@@ -2243,7 +2248,7 @@
             ],
             "id": "retirement_fund_no",
             "customProperties": {
-                "sourceLocation": 14661,
+                "sourceLocation": 14779,
                 "sourceID": "story.abc"
             }
         },
@@ -2303,7 +2308,7 @@
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 14835,
+                "sourceLocation": 14953,
                 "sourceID": "story.abc"
             }
         },
@@ -2405,7 +2410,7 @@
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 15195,
+                "sourceLocation": 15313,
                 "sourceID": "story.abc"
             }
         },
@@ -2426,7 +2431,7 @@
             ],
             "id": "single",
             "customProperties": {
-                "sourceLocation": 15675,
+                "sourceLocation": 15793,
                 "sourceID": "story.abc"
             }
         },
@@ -2447,7 +2452,7 @@
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 15893,
+                "sourceLocation": 16011,
                 "sourceID": "story.abc"
             }
         },
@@ -2468,7 +2473,7 @@
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 16111,
+                "sourceLocation": 16229,
                 "sourceID": "story.abc"
             }
         },
@@ -2625,7 +2630,7 @@
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 16267,
+                "sourceLocation": 16385,
                 "sourceID": "story.abc"
             }
         },
@@ -2681,7 +2686,7 @@
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 17069,
+                "sourceLocation": 17187,
                 "sourceID": "story.abc"
             }
         },
@@ -2737,7 +2742,7 @@
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 17336,
+                "sourceLocation": 17454,
                 "sourceID": "story.abc"
             }
         },
@@ -2793,7 +2798,7 @@
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 17612,
+                "sourceLocation": 17730,
                 "sourceID": "story.abc"
             }
         },
@@ -2868,7 +2873,7 @@
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 17893,
+                "sourceLocation": 18011,
                 "sourceID": "story.abc"
             }
         },
@@ -2889,7 +2894,7 @@
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 18308,
+                "sourceLocation": 18426,
                 "sourceID": "story.abc"
             }
         },
@@ -2910,7 +2915,7 @@
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 18592,
+                "sourceLocation": 18710,
                 "sourceID": "story.abc"
             }
         },
@@ -2938,7 +2943,7 @@
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 18924,
+                "sourceLocation": 19042,
                 "sourceID": "story.abc"
             }
         },
@@ -2966,7 +2971,7 @@
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 19163,
+                "sourceLocation": 19281,
                 "sourceID": "story.abc"
             }
         },
@@ -2994,7 +2999,7 @@
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 19377,
+                "sourceLocation": 19495,
                 "sourceID": "story.abc"
             }
         },
@@ -3022,7 +3027,7 @@
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 19611,
+                "sourceLocation": 19729,
                 "sourceID": "story.abc"
             }
         }
@@ -3105,16 +3110,21 @@
                         "parent's house",
                         "live at home",
                         "live with parents",
-                        "parents"
+                        "parents",
+                        "live in old room",
+                        "old room",
+                        "room"
                     ]
                 },
                 {
                     "name": "flexjIntent",
                     "samples": [
+                        "rent an apartment",
                         "rent apartment",
                         "get apartment",
                         "apartment",
-                        "rent"
+                        "rent",
+                        "live away from home"
                     ]
                 },
                 {

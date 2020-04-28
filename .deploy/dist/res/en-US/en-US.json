@@ -75,16 +75,21 @@
                         "parent's house",
                         "live at home",
                         "live with parents",
-                        "parents"
+                        "parents",
+                        "live in old room",
+                        "old room",
+                        "room"
                     ]
                 },
                 {
                     "name": "flexjIntent",
                     "samples": [
+                        "rent an apartment",
                         "rent apartment",
                         "get apartment",
                         "apartment",
-                        "rent"
+                        "rent",
+                        "live away from home"
                     ]
                 },
                 {
