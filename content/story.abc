@@ -11,6 +11,7 @@
         set kids to 0
         set married to false
         set stress to 0
+        set retirement_fund to false
         
             -> opener
         }
@@ -481,6 +482,7 @@
             }
     -> marriage
     
+    
 @marriage
     *say
         Having finally got your job and living on your own, you wonder to yourself if you want to get a spouse to spend your time with. Do you want to get married or stay single?
@@ -494,7 +496,7 @@
         
 @married
     *say
-    Congratulations! You are getting married to the love of your life. Is the wedding going to be a big one or small?
+    Congratulations! You are getting married to the love of your life. Is the wedding going to be big or small?
     *then
         hear big, big wedding, big one{
         decrease money by 40,000
@@ -602,6 +604,7 @@
         -> retire
         }
         hear no, keep working{
+        increase character by 2
         increase stress by 3
         ->dontretire
         }
