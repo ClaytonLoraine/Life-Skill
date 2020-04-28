@@ -32,7 +32,7 @@
         
 @opener 
     *say
-    You can pick between these places to study; Trade School, Public College, Private College, or Party School. Which would you like?
+        Congradulations!! You've just graduated from Average Town High School. Now you need to decide what to do with your life going forward. Here are your options for what to do next. You can go to a Trade School, a Public College, a Private College, or Party School. Which would you like to do?
     
     *then
 		hear trade school, trade, go to trade school {
@@ -79,22 +79,29 @@
         
 @trade
     *say 
-        you have chosen trade school!
+        You have chosen to go to trade school! You decided that college life wasn't for you and wanted to get a head start on life. 
         
     *then 
-        set specialization to trade
-            -> collegelife
+        
+            -> finished_trade
+            
+@finished_trade
+    *say
+        Congrats! You have finished up your short experience at trade school and now have valuable skill sets that you can use in the work force! Now it is time to figure out which job you want to do.
+        *then
+            set specialization to trade
+            -> tradejobs
             
 @private
     *say
-        You have chosen a private college!
+        You have chosen a private college! You value your education and want to get the best possible outcome from college. With smaller classroom sizes and less student populations, you will be able to get the most out of your educational experience.
         
     *then
         -> choosemajor
         
 @public
     *say
-        You have chosen a public college!
+        You have chosen a public college! Alright! Public is the best of both world. Many people choose public universities because they want the full college experience of getting a degree while still being able to party at the same time. 
         
     *then
         -> choosemajor
@@ -143,7 +150,7 @@
             -> study_life
         }
         
-        hear both, try to do both {
+        hear both, try to do both, do both {
         increase character by 2
         increase education by 2
             -> both_life
@@ -152,7 +159,7 @@
 
 @both_life
     *say
-        You chose to try and do both!
+        You chose to try and do both! You figure that you've put in the hard work and that hard work deserves a little bit of a reward. You party but not too hard because you know there is still work to be done to finish out your degree. 
         
     *then
         -> workstudy
@@ -302,10 +309,10 @@
 
 @tradejobs
     *say 
-        You chose to get a degree in a trade so you can choose the following jobs: constructor, Auto mechanic, electrician
+        You chose to get a degree in a trade so you can choose the following jobs: contractor, Auto mechanic, electrician
     
     *then 
-        hear constructor{
+        hear contractor{
         increase money by 225,000
         -> construction
         }
@@ -380,7 +387,7 @@
     
 @construction
     *say
-        You are a constructor now. using math and physics to create wonderful buildings.
+        You are a contractor now. Using math and physics to create wonderful buildings.
     *then
     roll 1d10
             if rollResult == 1{
@@ -412,16 +419,16 @@
     *say
         You have to choose where you would like to live at. Somewhere in the country, city, or suburbs?
     *then
-        hear country, live out in the country{
+        hear country, live out in the country, in the country, the country{
         decrease money by 70,000
         -> country
         }
-        hear city, big city, live in the city{
-        decrease money by 200,000
+        hear city, big city, live in the city, in the city, , the city{
+        decrease money by 150,000
         -> city
         }
-        hear suburb, suburbs{
-        decrease money by 150,000
+        hear suburb, suburbs, in the suburbs, the suburbs{
+        decrease money by 120,000
         -> suburb
         }
         
