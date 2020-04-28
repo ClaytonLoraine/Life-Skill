@@ -1,3 +1,9 @@
+@global append
+    *then
+        hear restart, start over {
+            >> RESTART
+        }
+
 @start
   *say
     Welcome to Life! In this game, you will be given choices to make in your new virtual life! Would you like to play?
@@ -20,11 +26,6 @@
             -> stop
         }
 
-@pause
-    *say 
-        Paused
-        
-        
 @stop
     *say 
         Thanks for playing!
