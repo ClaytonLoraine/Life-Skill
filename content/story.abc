@@ -492,7 +492,7 @@
     
 @single
     *say
-        You figured that getting married would be a waste of your time and cause you pain and suffering. There is a reason why so many people get divorced. You made it through your life. making it through college and having a sucessful job. You live your retirement alone, but it does not feel that way living in the where you are. Congratulations, on completing your Journey! Come back soon and play again.
+        You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life. 
     *then
         -> retire_choice
 
