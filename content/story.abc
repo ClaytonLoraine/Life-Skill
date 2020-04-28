@@ -190,7 +190,7 @@
 
 @party_life
     *say
-        You chose to party! You become one of the most well-known party animals on campus. You've definitely earned your degree in Partying, although... that does not count for much in the working world. 
+        You chose to party! You become one of the most well-known party animals on campus. You've definitely earned your degree in Partying, although... that does not count for much in the real world. 
         
     *then
         roll 1d4
@@ -426,7 +426,7 @@
 
 @auto_mechanic
     *say
-        Fixing cars and getting old ones to work again is something fantastic. You chose to become an auto mechanic
+        Fixing cars and getting old ones to work again is something fantastic. You choose to become an auto mechanic
     *then
     roll 1d10
             if rollResult == 1{
@@ -514,26 +514,53 @@
         You decide to look out for your future self and invest in a retirement plan that will work for you.
         
     *then
-    -> marriage
+    -> dating
 
 @retirement_fund_no
     *say
         You decide that you need to look out for your current self first. Retirement is a long way away!
         
     *then
-    -> marriage
+    -> dating
+    
+@dating
+    *say
+        You've met a cute partner whom you deem suitable for companionship during the night on the town. You two hit it off immediately and decide to begin dating.
+    *then
+        -> marriage
     
 @marriage
     *say
-        Having finally got your job and living on your own, you wonder to yourself if you want to get a spouse to spend your time with. Do you want to get married or stay single?
+        You and your partner have been going strong for a while now and you begin to think about asking them to marry you. Will you propose?
     *then
-        hear married, get married, marry{
+        hear yes, I will{
+            roll 1d4
+                if rollResult == 1{
+                -> rejection
+                }
         -> married
         }
         hear single, stay single, be alone{
         -> single
         }
+@rejection
+    *say
+        OUCH! That one hurt. Your partner was clearly not ready for marriage. The rejection has fractured your relationship and you both to decide to go seperate ways. 
+    *then
+        increase stress by 2
+        ->alone
         
+@alone
+    *say
+        Wow, that break up really took a toll on you, huh? You've spent the years following the break up alone in isolation with your thoughts and feelings. Maybe a pet would cheer you up. Would you like to adopt a pet?
+    *then
+        hear yes, adopt a pet{
+            ->adoption 
+        }
+        
+        hear no, no thank you{
+            -> retire_choice
+            }
 @married
     *say
     Congratulations! You are getting married to the love of your life. Is the wedding going to be big or small?
@@ -569,6 +596,38 @@
         You only wanted to have a few people at your wedding and not many decorations to keep the cost down.
     *then
     -> married_life
+    
+@adoption
+    *say 
+        So, you've decided to get yourself a little companion to keep you company? We think these three might be the best options for you. There's a Dog, a Cat or a quiet little fish. Which would you like?
+    *then
+        hear dog, a dog, the dog{
+            ->dog
+        }
+        hear cat, a cat, the cat{
+            ->cat
+        }
+        hear goldfish, a goldfish, the goldfish{
+            ->fish
+        }
+        
+@dog
+    *say 
+        You've chosen to adopt a dog! This furry, loveable and energetic fella will enjoy your company. Dogs require a lot of attention and love but they can also be your bestfriend. Treat them well!
+    *then
+        -> retire_choice
+        
+@cat
+    *say
+        This furry little creature will bring you lots of love and joy but can be quite a handful at times. They will always be around for you though when you need someone to snuggle up with through the hard times.
+    *then
+        -> retire_choice
+        
+@fish
+    *say
+        You've chosen to be a fish owner! Great! These little aquatic animals do not require as much attention as the other options but will be an intriguing pet. They may not do much but it is always enjoyable to sit in their company and watch them in their own world. 
+    *then
+        -> retire_choice
 
 @married_life
     *say 
@@ -638,7 +697,7 @@
 
 @retire_choice
     *say
-        You lived a great life having kids and watching them grow up. You have been at your job for 20 years, would you like to retire or keep working and supporting yourself?
+        You're starting to age and you notice to be more fatigued from work than normal. Myabe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?
     *then
         hear yes, retire, retire from work {
         -> retire
@@ -651,15 +710,22 @@
         
 @retire
     *say
-        After a great long time at your job, living with your family and seeing them grow up. You decided to retire from work and enjoy the rest of life together with your spouse. Thank you for playing life simulator, come back again soon.
+        After a great long time at your job, you decide to retire from work and enjoy the rest of life doing things you enjoy. 
     *then
-        -> stop
+        -> ending
 
 @dontretire
     *say
-        You enjoy your job too much and don't know if you would ever stop working in life. You continue the rest of your life working with fewer hours and spending the evening with your family. Congratulations on making through life. Play again and choose different outcomes.
+        You enjoy your job too much and don't know if you would ever stop working in life. You continue the rest of your life working with, just with fewer hours.
     *then
+        -> ending
+
+@ending
+    *say
+        Thank you for playing life simulator, come back again soon!
+    *then 
         -> stop
+        
         
 @scenario2
     *say
