@@ -32,7 +32,7 @@
         
 @opener 
     *say
-        Congradulations!! You've just graduated from Average Town High School. Now you need to decide what to do with your life going forward. Here are your options for what to do next. You can go to a Trade School, a Public College, a Private College, or Party School. Which would you like to do?
+        Congratulations!! You've just graduated from Average Town High School. Now you need to decide what to do with your life going forward. Here are your options for what to do next. You can go to a Trade School, a Public College, a Private College, or Party School. Which would you like to do?
     
     *then
 		hear trade school, trade, go to trade school {
