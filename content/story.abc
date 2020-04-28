@@ -470,7 +470,7 @@
             if rollResult == 1{
             ->scenario2
             }
-    -> marriage
+    -> retirement_fund
 
 @suburb
     *say
@@ -480,8 +480,35 @@
             if rollResult == 1{
             ->scenario2
             }
-    -> marriage
+    -> retirement_fund
     
+@retirement_fund
+    *say
+        Now that you are finally all settled in, would you like to set up a retirement fund to help yourself in the future? This will require monthly contributions.
+    *then
+        hear fund, set up fund, yes, sure {
+        decrease money by 40,000
+        set retirement_fund to true
+        -> retirement_fund_yes
+        }
+        
+        hear no, no thanks, don't set up fund {
+        -> retirement_fund_no
+        }
+        
+@retirement_fund_yes
+    *say
+        You decide to look out for your future self and invest in a retirement plan that will work for you.
+        
+    *then
+    -> marriage
+
+@retirement_fund_no
+    *say
+        You decide that you need to look out for your current self first. Retirement is a long way away!
+        
+    *then
+    -> marriage
     
 @marriage
     *say
@@ -626,7 +653,7 @@
         You have now moved into your new place but you soon discover that your new living space needs repairs. That's gonna hurt the wallet!
     *then
         decrease money by 5,000
-        -> marriage
+        -> retirement_fund
         
 @scenario1
     *say
