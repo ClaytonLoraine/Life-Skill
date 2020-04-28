@@ -65,14 +65,17 @@
                     "name": "flexhIntent",
                     "samples": [
                         "both",
-                        "try to do both"
+                        "try to do both",
+                        "do both"
                     ]
                 },
                 {
                     "name": "flexiIntent",
                     "samples": [
                         "parent's house",
-                        "live at home"
+                        "live at home",
+                        "live with parents",
+                        "parents"
                     ]
                 },
                 {
@@ -80,7 +83,8 @@
                     "samples": [
                         "rent apartment",
                         "get apartment",
-                        "apartment"
+                        "apartment",
+                        "rent"
                     ]
                 },
                 {
@@ -122,39 +126,64 @@
                 {
                     "name": "flexqIntent",
                     "samples": [
-                        "auto mechanic"
+                        "contractor"
                     ]
                 },
                 {
                     "name": "flexrIntent",
                     "samples": [
-                        "electrician"
+                        "auto mechanic"
                     ]
                 },
                 {
                     "name": "flexsIntent",
                     "samples": [
-                        "country",
-                        "live out in the country"
+                        "electrician"
                     ]
                 },
                 {
                     "name": "flextIntent",
                     "samples": [
-                        "city",
-                        "big city",
-                        "live in the city"
+                        "country",
+                        "live out in the country",
+                        "in the country",
+                        "the country"
                     ]
                 },
                 {
                     "name": "flexuIntent",
                     "samples": [
-                        "suburb",
-                        "suburbs"
+                        "city",
+                        "big city",
+                        "live in the city",
+                        "in the city",
+                        "the city"
                     ]
                 },
                 {
                     "name": "flexvIntent",
+                    "samples": [
+                        "suburb",
+                        "suburbs",
+                        "in the suburbs",
+                        "the suburbs"
+                    ]
+                },
+                {
+                    "name": "flexwIntent",
+                    "samples": [
+                        "fund",
+                        "set up fund"
+                    ]
+                },
+                {
+                    "name": "flexxIntent",
+                    "samples": [
+                        "don't set up fund"
+                    ]
+                },
+                {
+                    "name": "flexyIntent",
                     "samples": [
                         "married",
                         "get married",
@@ -162,7 +191,7 @@
                     ]
                 },
                 {
-                    "name": "flexwIntent",
+                    "name": "flexzIntent",
                     "samples": [
                         "single",
                         "stay single",
@@ -170,7 +199,7 @@
                     ]
                 },
                 {
-                    "name": "flexxIntent",
+                    "name": "flexbaIntent",
                     "samples": [
                         "big",
                         "big wedding",
@@ -178,7 +207,7 @@
                     ]
                 },
                 {
-                    "name": "flexyIntent",
+                    "name": "flexbbIntent",
                     "samples": [
                         "small",
                         "small one",
@@ -186,7 +215,7 @@
                     ]
                 },
                 {
-                    "name": "flexzIntent",
+                    "name": "flexbcIntent",
                     "samples": [
                         "have kids",
                         "want kids",
@@ -194,7 +223,7 @@
                     ]
                 },
                 {
-                    "name": "flexbaIntent",
+                    "name": "flexbdIntent",
                     "samples": [
                         "don't have kids",
                         "no kids",
@@ -202,14 +231,14 @@
                     ]
                 },
                 {
-                    "name": "flexbbIntent",
+                    "name": "flexbeIntent",
                     "samples": [
                         "retire",
                         "retire from work"
                     ]
                 },
                 {
-                    "name": "flexbcIntent",
+                    "name": "flexbfIntent",
                     "samples": [
                         "keep working"
                     ]

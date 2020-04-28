@@ -4,7 +4,7 @@
         {
             "contents": [
                 {
-                    "narration": "Welcome to Life! In this game you will be given choices to make in your new virtual life! Would you like to play?",
+                    "narration": "Welcome to Life! In this game, you will be given choices to make in your new virtual life! Would you like to play?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -53,6 +53,20 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "married",
+                                            "variableValue": "{false}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "retirement_fund",
                                             "variableValue": "{false}"
                                         }
                                     },
@@ -108,7 +122,7 @@
             ],
             "id": "pause",
             "customProperties": {
-                "sourceLocation": 370,
+                "sourceLocation": 486,
                 "sourceID": "story.abc"
             }
         },
@@ -126,14 +140,14 @@
             ],
             "id": "stop",
             "customProperties": {
-                "sourceLocation": 420,
+                "sourceLocation": 536,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You can pick between these places to study; Trade School, Public College, Private College, or Party School. Which would you like?",
+                    "narration": "Congratulations!! You've just graduated from Average Town High School. Now you need to decide what to do with your life going forward. Here are your options for what to do next. You can go to a Trade School, a Public College, a Private College, or Party School. Which would you like to do?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -345,7 +359,7 @@
             ],
             "id": "opener",
             "customProperties": {
-                "sourceLocation": 500,
+                "sourceLocation": 616,
                 "sourceID": "story.abc"
             }
         },
@@ -366,14 +380,35 @@
             ],
             "id": "party",
             "customProperties": {
-                "sourceLocation": 1552,
+                "sourceLocation": 1880,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "you have chosen trade school!",
+                    "narration": "You have chosen to go to trade school! You decided that college life wasn't for you and wanted to get a head start on life.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "finished_trade",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "trade",
+            "customProperties": {
+                "sourceLocation": 2205,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Congrats! You have finished up your short experience at trade school and now have valuable skill sets that you can use in the workforce! Now it is time to figure out which job you want to do.",
                     "sceneDirections": [
                         {
                             "directionType": "set",
@@ -385,23 +420,23 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "collegelife",
+                                "target": "tradejobs",
                                 "targetSceneProperty": "narration"
                             }
                         }
                     ]
                 }
             ],
-            "id": "trade",
+            "id": "finished_trade",
             "customProperties": {
-                "sourceLocation": 1877,
+                "sourceLocation": 2427,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You have chosen a private college!",
+                    "narration": "You have chosen a private college! You value your education and want to get the best possible outcome from college. With smaller classroom sizes and fewer student populations, you will be able to get the most out of your educational experience.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -415,14 +450,14 @@
             ],
             "id": "private",
             "customProperties": {
-                "sourceLocation": 2028,
+                "sourceLocation": 2744,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You have chosen a public college!",
+                    "narration": "You have chosen a public college! Alright! Public colleges are the best of both worlds. Many people choose public universities because they want the full college experience of getting a degree while still being able to party at the same time.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -436,14 +471,14 @@
             ],
             "id": "public",
             "customProperties": {
-                "sourceLocation": 2140,
+                "sourceLocation": 3066,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Would you like to study science, or art?",
+                    "narration": "Would you like to study science or art?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -508,7 +543,7 @@
             ],
             "id": "choosemajor",
             "customProperties": {
-                "sourceLocation": 2250,
+                "sourceLocation": 3386,
                 "sourceID": "story.abc"
             }
         },
@@ -529,14 +564,14 @@
             ],
             "id": "sciences",
             "customProperties": {
-                "sourceLocation": 2562,
+                "sourceLocation": 3697,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You chose to study in the field of art.",
+                    "narration": "You chose to study the arts.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -550,14 +585,14 @@
             ],
             "id": "arts",
             "customProperties": {
-                "sourceLocation": 2669,
+                "sourceLocation": 3804,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Your first two years you work on getting all your general education done with. During your schooling you decided how you wanted to spend your time. You could go out and party, focus on your studies, or try to do both. How would you want to spend your college time?",
+                    "narration": "Your first two years you work on getting all your general education done with. During your schooling, you decided how you wanted to spend your time. You could go out and party, focus on your studies or try to do both. How do you want to spend your time in college?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -609,6 +644,13 @@
                                         }
                                     },
                                     {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "4"
+                                        }
+                                    },
+                                    {
                                         "directionType": "go to",
                                         "parameters": {
                                             "target": "study_life",
@@ -626,7 +668,8 @@
                             "parameters": {
                                 "utterances": [
                                     "both",
-                                    "try to do both"
+                                    "try to do both",
+                                    "do both"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -642,6 +685,13 @@
                                         "parameters": {
                                             "variableName": "education",
                                             "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "4"
                                         }
                                     },
                                     {
@@ -662,14 +712,14 @@
             ],
             "id": "collegelife",
             "customProperties": {
-                "sourceLocation": 2785,
+                "sourceLocation": 3909,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You chose to try and do both!",
+                    "narration": "You chose to try and do both! You figure that you've put in the hard work and that hard work deserves a little bit of a reward. You party but not too hard because you know there is still work to be done to finish out your degree.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -683,14 +733,14 @@
             ],
             "id": "both_life",
             "customProperties": {
-                "sourceLocation": 3514,
+                "sourceLocation": 4705,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You chose to study! You have made the choice that studying and getting good grades is worth your time, because of the money you are spending.",
+                    "narration": "You chose to study! You have decided that studying and getting good grades is worth your time, because of the money you are spending.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -704,14 +754,14 @@
             ],
             "id": "study_life",
             "customProperties": {
-                "sourceLocation": 3613,
+                "sourceLocation": 5005,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You chose to party! Your time spent while at college is going out and partying a lot. You spend too much time partying to where it affects your education and you don’t learn much.",
+                    "narration": "You chose to party! You become one of the most well-known party animals on campus. You've definitely earned your degree in Partying, although... that does not count for much in the working world.",
                     "sceneDirections": [
                         {
                             "directionType": "roll dice",
@@ -746,14 +796,14 @@
             ],
             "id": "party_life",
             "customProperties": {
-                "sourceLocation": 3825,
+                "sourceLocation": 5209,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Want to work while at college?",
+                    "narration": "You get tired of having no money to spend on things you want and having to rely on your parents to pay for things. A job opportunity on campus appears and you think it might be a good way to make some extra cash. Would you like to work while in college?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -789,6 +839,13 @@
                                         "parameters": {
                                             "variableName": "money",
                                             "variableValue": "{30,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "2"
                                         }
                                     },
                                     {
@@ -830,7 +887,7 @@
             ],
             "id": "workstudy",
             "customProperties": {
-                "sourceLocation": 4171,
+                "sourceLocation": 5572,
                 "sourceID": "story.abc"
             }
         },
@@ -851,14 +908,14 @@
             ],
             "id": "workstudy_yes",
             "customProperties": {
-                "sourceLocation": 4513,
+                "sourceLocation": 6166,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You know having a job would help you make some extra cash to pay for things and college. However, you think that focusing on your studies is more important right now. You chose not to work at college",
+                    "narration": "You know having a job would help you make some extra cash to pay for things and college. However, you think that focusing on your studies is more important right now. You choose not to work at college",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -872,14 +929,14 @@
             ],
             "id": "workstudy_no",
             "customProperties": {
-                "sourceLocation": 4844,
+                "sourceLocation": 6497,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Congrats! you made your way through college.",
+                    "narration": "Congrats! You've made your way through the exciting and stressful thing they call college. Now, it's on to the real world and you can't live in the dorms anymore.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -893,21 +950,23 @@
             ],
             "id": "graduatedcollege",
             "customProperties": {
-                "sourceLocation": 5120,
+                "sourceLocation": 6774,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "where do you want to live for now until you are able to make more money and buy a house for yourself? Go back home, or rent apartment?",
+                    "narration": "Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independance. Which would you like to do?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
                                     "parent's house",
-                                    "live at home"
+                                    "live at home",
+                                    "live with parents",
+                                    "parents"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -937,7 +996,8 @@
                                 "utterances": [
                                     "rent apartment",
                                     "get apartment",
-                                    "apartment"
+                                    "apartment",
+                                    "rent"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -973,14 +1033,14 @@
             ],
             "id": "wheretolive",
             "customProperties": {
-                "sourceLocation": 5241,
+                "sourceLocation": 7014,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You are living in your parents basement",
+                    "narration": "You are living in your parents' basement. It's not as great as it was when you were a kid and you want to get out of there fast. So you need to choose a job if you want to move out.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -994,15 +1054,22 @@
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 5703,
+                "sourceLocation": 7750,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You are living in your own apartment. independance!",
+                    "narration": "You are living in your own apartment. Welcome to true independence!",
                     "sceneDirections": [
+                        {
+                            "directionType": "increase",
+                            "parameters": {
+                                "variableName": "stress",
+                                "variableValue": "2"
+                            }
+                        },
                         {
                             "directionType": "go to",
                             "parameters": {
@@ -1015,7 +1082,7 @@
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 5813,
+                "sourceLocation": 8003,
                 "sourceID": "story.abc"
             }
         },
@@ -1074,14 +1141,14 @@
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 5935,
+                "sourceLocation": 8171,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You chose to get a degree in science so you can choose the following jobs: Programmer, Doctor, Forensic scientist",
+                    "narration": "You chose to get a degree in science so you can choose the following jobs: Programmer, Doctor, Forensic scientist. Which will it be?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -1096,6 +1163,13 @@
                                         "parameters": {
                                             "variableName": "money",
                                             "variableValue": "{225,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "2"
                                         }
                                     },
                                     {
@@ -1119,6 +1193,13 @@
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "4"
+                                        }
+                                    },
                                     {
                                         "directionType": "increase",
                                         "parameters": {
@@ -1150,6 +1231,13 @@
                                     {
                                         "directionType": "increase",
                                         "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
                                             "variableName": "money",
                                             "variableValue": "{195,000}"
                                         }
@@ -1172,14 +1260,14 @@
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 6209,
+                "sourceLocation": 8445,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You chose to get a degree in the arts so you can choose the following jobs: teacher, writer, or a designer?",
+                    "narration": "You chose to get a degree in the arts, so you can choose the following jobs: Teacher, Writer, or a Designer. Which will it be?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -1189,6 +1277,13 @@
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "3"
+                                        }
+                                    },
                                     {
                                         "directionType": "increase",
                                         "parameters": {
@@ -1220,6 +1315,13 @@
                                     {
                                         "directionType": "increase",
                                         "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
                                             "variableName": "money",
                                             "variableValue": "{135,000}"
                                         }
@@ -1248,6 +1350,13 @@
                                     {
                                         "directionType": "increase",
                                         "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
                                             "variableName": "money",
                                             "variableValue": "{180,000}"
                                         }
@@ -1270,23 +1379,30 @@
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 6661,
+                "sourceLocation": 9003,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You chose to get a degree in a trade so you can choose the following jobs: constructor, Auto mechanic, electrician",
+                    "narration": "You chose to get a degree in a trade so you can choose the following jobs: Contractor, Auto Mechanic, or an Electrician. Which will it be?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
-                                    "constructor"
+                                    "contractor"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "1"
+                                        }
+                                    },
                                     {
                                         "directionType": "increase",
                                         "parameters": {
@@ -1303,7 +1419,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "function Object() { [native code] }"
+                                    "flexqIntent"
                                 ]
                             }
                         },
@@ -1315,6 +1431,13 @@
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "1"
+                                        }
+                                    },
                                     {
                                         "directionType": "increase",
                                         "parameters": {
@@ -1331,7 +1454,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexqIntent"
+                                    "flexrIntent"
                                 ]
                             }
                         },
@@ -1343,6 +1466,13 @@
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "1"
+                                        }
+                                    },
                                     {
                                         "directionType": "increase",
                                         "parameters": {
@@ -1359,7 +1489,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexrIntent"
+                                    "flexsIntent"
                                 ]
                             }
                         }
@@ -1368,14 +1498,14 @@
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 7068,
+                "sourceLocation": 9516,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You become a programmer. You enjoyed the problem sovling and writing program that do things for you.",
+                    "narration": "You become a programmer. You enjoy problem sovling and writing programs that can complete daily tasks for you.",
                     "sceneDirections": [
                         {
                             "directionType": "roll dice",
@@ -1410,14 +1540,14 @@
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 7513,
+                "sourceLocation": 10071,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You chose to become a doctor. This was fit for you because of how much you want to save peoples lives.",
+                    "narration": "You chose to become a doctor. Nothing brings you more satisfaction than helping save lives and protecting the good people in the community around you.",
                     "sceneDirections": [
                         {
                             "directionType": "roll dice",
@@ -1452,14 +1582,14 @@
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 7770,
+                "sourceLocation": 10338,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Wanting to help find criminals you became a forensic scientist. using you abilities to analyze evidence to use in determining the innocence or guild of a suspect.",
+                    "narration": "Wanting to help find criminals you became a forensic scientist. Using your abilities to analyze evidence to use in determining the innocence or guilt of a suspect.",
                     "sceneDirections": [
                         {
                             "directionType": "roll dice",
@@ -1494,7 +1624,7 @@
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 8017,
+                "sourceLocation": 10634,
                 "sourceID": "story.abc"
             }
         },
@@ -1536,7 +1666,7 @@
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 8340,
+                "sourceLocation": 10958,
                 "sourceID": "story.abc"
             }
         },
@@ -1578,7 +1708,7 @@
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 8592,
+                "sourceLocation": 11210,
                 "sourceID": "story.abc"
             }
         },
@@ -1620,14 +1750,14 @@
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 8859,
+                "sourceLocation": 11477,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You are a constructor now. using math and physics to create wonderful buildings.",
+                    "narration": "You are a contractor now. Using math and physics to create wonderful buildings.",
                     "sceneDirections": [
                         {
                             "directionType": "roll dice",
@@ -1662,7 +1792,7 @@
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 9100,
+                "sourceLocation": 11718,
                 "sourceID": "story.abc"
             }
         },
@@ -1704,7 +1834,7 @@
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 9331,
+                "sourceLocation": 11948,
                 "sourceID": "story.abc"
             }
         },
@@ -1746,24 +1876,33 @@
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 9594,
+                "sourceLocation": 12211,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You have to choose where you would like to live at. Somewhere in the country, city, or suburbs?",
+                    "narration": "You can finally afford a place of your own! Now where to live? You've narrowed it down to three locations: out in the beautiful countryside, right in the busy city, or just outside the city in a cozy suburban home. Which will it be?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
                             "parameters": {
                                 "utterances": [
                                     "country",
-                                    "live out in the country"
+                                    "live out in the country",
+                                    "in the country",
+                                    "the country"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "1"
+                                        }
+                                    },
                                     {
                                         "directionType": "reduce",
                                         "parameters": {
@@ -1780,7 +1919,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexsIntent"
+                                    "flextIntent"
                                 ]
                             }
                         },
@@ -1790,15 +1929,24 @@
                                 "utterances": [
                                     "city",
                                     "big city",
-                                    "live in the city"
+                                    "live in the city",
+                                    "in the city",
+                                    "the city"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
                                     {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "1"
+                                        }
+                                    },
+                                    {
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{200,000}"
+                                            "variableValue": "{150,000}"
                                         }
                                     },
                                     {
@@ -1810,7 +1958,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flextIntent"
+                                    "flexuIntent"
                                 ]
                             }
                         },
@@ -1819,7 +1967,9 @@
                             "parameters": {
                                 "utterances": [
                                     "suburb",
-                                    "suburbs"
+                                    "suburbs",
+                                    "in the suburbs",
+                                    "the suburbs"
                                 ],
                                 "saveToHistory": "true",
                                 "directions": [
@@ -1827,7 +1977,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{150,000}"
+                                            "variableValue": "{120,000}"
                                         }
                                     },
                                     {
@@ -1839,7 +1989,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexuIntent"
+                                    "flexvIntent"
                                 ]
                             }
                         }
@@ -1848,14 +1998,14 @@
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 9844,
+                "sourceLocation": 12461,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You love the wide-open outdoors with no traffic, few neighbors, and planty of room for activiies. The country is where you want to live.",
+                    "narration": "You love the wide-open outdoors with no traffic, few neighbors, and plenty of room for activities. The country is where you want to live.",
                     "sceneDirections": [
                         {
                             "directionType": "roll dice",
@@ -1890,14 +2040,14 @@
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 10301,
+                "sourceLocation": 13194,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You enjoy the hustle and bustle of the City. There are many things to do and go in the city, that is why you wanted to live there",
+                    "narration": "You enjoy the hustle and bustle of the City. There are many things to do and go see in the city, that is why you wanted to live there",
                     "sceneDirections": [
                         {
                             "directionType": "roll dice",
@@ -1923,7 +2073,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "marriage",
+                                "target": "retirement_fund",
                                 "targetSceneProperty": "narration"
                             }
                         }
@@ -1932,14 +2082,14 @@
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 10592,
+                "sourceLocation": 13486,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "after looking at all the different places to live you decided being in a safe and cozy suburb would be great for you.",
+                    "narration": "After looking at all the different places to live you decided being in a safe and cozy suburb would be great for you.",
                     "sceneDirections": [
                         {
                             "directionType": "roll dice",
@@ -1965,7 +2115,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "marriage",
+                                "target": "retirement_fund",
                                 "targetSceneProperty": "narration"
                             }
                         }
@@ -1974,7 +2124,126 @@
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 10856,
+                "sourceLocation": 13761,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Now that you are finally all settled in, would you like to set up a retirement fund to help yourself in the future? This will require monthly contributions.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "fund",
+                                    "set up fund",
+                                    "yes",
+                                    "sure"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "{40,000}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "retirement_fund",
+                                            "variableValue": "{true}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retirement_fund_yes",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "flexwIntent",
+                                    "AMAZON.YesIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "no",
+                                    "no thanks",
+                                    "don't set up fund"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retirement_fund_no",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.NoIntent",
+                                    "flexxIntent"
+                                ]
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "retirement_fund",
+            "customProperties": {
+                "sourceLocation": 14026,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You decide to look out for your future self and invest in a retirement plan that will work for you.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "marriage",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "retirement_fund_yes",
+            "customProperties": {
+                "sourceLocation": 14487,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You decide that you need to look out for your current self first. Retirement is a long way away!",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "marriage",
+                                "targetSceneProperty": "narration"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "id": "retirement_fund_no",
+            "customProperties": {
+                "sourceLocation": 14661,
                 "sourceID": "story.abc"
             }
         },
@@ -2002,7 +2271,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexvIntent"
+                                    "flexyIntent"
                                 ]
                             }
                         },
@@ -2025,7 +2294,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexwIntent"
+                                    "flexzIntent"
                                 ]
                             }
                         }
@@ -2034,14 +2303,14 @@
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 11114,
+                "sourceLocation": 14835,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Congratulations! You are getting married to the love of your life. Is the Wedding going to be a big one or small?",
+                    "narration": "Congratulations! You are getting married to the love of your life. Is the wedding going to be big or small?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -2064,7 +2333,14 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "character",
-                                            "variableValue": "6"
+                                            "variableValue": "5"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "3"
                                         }
                                     },
                                     {
@@ -2076,7 +2352,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexxIntent"
+                                    "flexbaIntent"
                                 ]
                             }
                         },
@@ -2105,6 +2381,13 @@
                                         }
                                     },
                                     {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "3"
+                                        }
+                                    },
+                                    {
                                         "directionType": "go to",
                                         "parameters": {
                                             "target": "small",
@@ -2113,7 +2396,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexyIntent"
+                                    "flexbbIntent"
                                 ]
                             }
                         }
@@ -2122,19 +2405,19 @@
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 11474,
+                "sourceLocation": 15195,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You figured that getting married would be a waste of your time and cause you pain and suffering. There is a reason why so many people get divorced. You made it through your life. making it through college and having a sucessful job. You live your retirement alone, but it does not feel that way living in the where you are. Congratulations, on completing your Journey! Come back soon and play again.",
+                    "narration": "You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "stop",
+                                "target": "retire_choice",
                                 "targetSceneProperty": "narration"
                             }
                         }
@@ -2143,7 +2426,7 @@
             ],
             "id": "single",
             "customProperties": {
-                "sourceLocation": 11893,
+                "sourceLocation": 15675,
                 "sourceID": "story.abc"
             }
         },
@@ -2164,7 +2447,7 @@
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 12346,
+                "sourceLocation": 15893,
                 "sourceID": "story.abc"
             }
         },
@@ -2185,7 +2468,7 @@
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 12564,
+                "sourceLocation": 16111,
                 "sourceID": "story.abc"
             }
         },
@@ -2217,6 +2500,13 @@
                                             "condition": "{rollResult} == 5",
                                             "directions": [
                                                 {
+                                                    "directionType": "increase",
+                                                    "parameters": {
+                                                        "variableName": "stress",
+                                                        "variableValue": "6"
+                                                    }
+                                                },
+                                                {
                                                     "directionType": "set",
                                                     "parameters": {
                                                         "variableName": "kids",
@@ -2239,6 +2529,13 @@
                                             "condition": "{rollResult} <= 4",
                                             "directions": [
                                                 {
+                                                    "directionType": "increase",
+                                                    "parameters": {
+                                                        "variableName": "stress",
+                                                        "variableValue": "4"
+                                                    }
+                                                },
+                                                {
                                                     "directionType": "set",
                                                     "parameters": {
                                                         "variableName": "kids",
@@ -2260,6 +2557,13 @@
                                         "parameters": {
                                             "condition": "{rollResult} >= 6",
                                             "directions": [
+                                                {
+                                                    "directionType": "increase",
+                                                    "parameters": {
+                                                        "variableName": "stress",
+                                                        "variableValue": "2"
+                                                    }
+                                                },
                                                 {
                                                     "directionType": "set",
                                                     "parameters": {
@@ -2286,7 +2590,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexzIntent",
+                                    "flexbcIntent",
                                     "AMAZON.YesIntent"
                                 ]
                             }
@@ -2311,7 +2615,7 @@
                                     }
                                 ],
                                 "utteranceIDs": [
-                                    "flexbaIntent",
+                                    "flexbdIntent",
                                     "AMAZON.NoIntent"
                                 ]
                             }
@@ -2321,14 +2625,14 @@
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 12720,
+                "sourceLocation": 16267,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You and yoru partner had a kid! Congrats!",
+                    "narration": "You and your partner had a kid! Congrats!",
                     "sceneDirections": [
                         {
                             "directionType": "reduce",
@@ -2377,7 +2681,7 @@
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 13411,
+                "sourceLocation": 17069,
                 "sourceID": "story.abc"
             }
         },
@@ -2433,14 +2737,14 @@
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 13678,
+                "sourceLocation": 17336,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "What luck! You and your partner had triplets! A tripple threat!",
+                    "narration": "What luck! You and your partner had triplets! A triple threat!",
                     "sceneDirections": [
                         {
                             "directionType": "reduce",
@@ -2489,14 +2793,14 @@
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 13954,
+                "sourceLocation": 17612,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You lived a great life having kids and watching them grow up. You have been at your job for 20 years, would you like to retire?",
+                    "narration": "You lived a great life having kids and watching them grow up. You have been at your job for 20 years, would you like to retire or keep working and supporting yourself?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -2518,7 +2822,7 @@
                                 ],
                                 "utteranceIDs": [
                                     "AMAZON.YesIntent",
-                                    "flexbbIntent"
+                                    "flexbeIntent"
                                 ]
                             }
                         },
@@ -2532,6 +2836,20 @@
                                 "saveToHistory": "true",
                                 "directions": [
                                     {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "2"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "3"
+                                        }
+                                    },
+                                    {
                                         "directionType": "go to",
                                         "parameters": {
                                             "target": "dontretire",
@@ -2541,7 +2859,7 @@
                                 ],
                                 "utteranceIDs": [
                                     "AMAZON.NoIntent",
-                                    "flexbcIntent"
+                                    "flexbfIntent"
                                 ]
                             }
                         }
@@ -2550,14 +2868,14 @@
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 14236,
+                "sourceLocation": 17893,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "After a great long time at your job, living with your family and seeing them grow up. You decided to reitre from work and enjoy the rest of life together with your spouse. Thank you for playing life, come back again soon.",
+                    "narration": "After a great long time at your job, living with your family and seeing them grow up. You decided to retire from work and enjoy the rest of life together with your spouse. Thank you for playing life simulator, come back again soon.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -2571,14 +2889,14 @@
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 14550,
+                "sourceLocation": 18308,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You enjoy your job to much and don't know if you would ever stop working in life. You continue the rest of your life working with fewer hours and spending the evening with your family. Congratualtions on making through life. Play again and choose different outcomes.",
+                    "narration": "You enjoy your job too much and don't know if you would ever stop working in life. You continue the rest of your life working with fewer hours and spending the evening with your family. Congratulations on making through life. Play again and choose different outcomes.",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -2592,14 +2910,14 @@
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 14824,
+                "sourceLocation": 18592,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You have now moved into your new place but you soon discover that your new living space needs repairs. Thats gonna hurt the wallet!",
+                    "narration": "You have now moved into your new place but you soon discover that your new living space needs repairs. That's gonna hurt the wallet!",
                     "sceneDirections": [
                         {
                             "directionType": "reduce",
@@ -2611,7 +2929,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "marriage",
+                                "target": "retirement_fund",
                                 "targetSceneProperty": "narration"
                             }
                         }
@@ -2620,7 +2938,7 @@
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 15155,
+                "sourceLocation": 18924,
                 "sourceID": "story.abc"
             }
         },
@@ -2648,7 +2966,7 @@
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 15386,
+                "sourceLocation": 19163,
                 "sourceID": "story.abc"
             }
         },
@@ -2661,7 +2979,7 @@
                             "directionType": "increase",
                             "parameters": {
                                 "variableName": "money",
-                                "variableValue": "{$5,000}"
+                                "variableValue": "{$20,000}"
                             }
                         },
                         {
@@ -2676,7 +2994,7 @@
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 15580,
+                "sourceLocation": 19377,
                 "sourceID": "story.abc"
             }
         },
@@ -2704,7 +3022,7 @@
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 15813,
+                "sourceLocation": 19611,
                 "sourceID": "story.abc"
             }
         }
@@ -2777,14 +3095,17 @@
                     "name": "flexhIntent",
                     "samples": [
                         "both",
-                        "try to do both"
+                        "try to do both",
+                        "do both"
                     ]
                 },
                 {
                     "name": "flexiIntent",
                     "samples": [
                         "parent's house",
-                        "live at home"
+                        "live at home",
+                        "live with parents",
+                        "parents"
                     ]
                 },
                 {
@@ -2792,7 +3113,8 @@
                     "samples": [
                         "rent apartment",
                         "get apartment",
-                        "apartment"
+                        "apartment",
+                        "rent"
                     ]
                 },
                 {
@@ -2834,39 +3156,64 @@
                 {
                     "name": "flexqIntent",
                     "samples": [
-                        "auto mechanic"
+                        "contractor"
                     ]
                 },
                 {
                     "name": "flexrIntent",
                     "samples": [
-                        "electrician"
+                        "auto mechanic"
                     ]
                 },
                 {
                     "name": "flexsIntent",
                     "samples": [
-                        "country",
-                        "live out in the country"
+                        "electrician"
                     ]
                 },
                 {
                     "name": "flextIntent",
                     "samples": [
-                        "city",
-                        "big city",
-                        "live in the city"
+                        "country",
+                        "live out in the country",
+                        "in the country",
+                        "the country"
                     ]
                 },
                 {
                     "name": "flexuIntent",
                     "samples": [
-                        "suburb",
-                        "suburbs"
+                        "city",
+                        "big city",
+                        "live in the city",
+                        "in the city",
+                        "the city"
                     ]
                 },
                 {
                     "name": "flexvIntent",
+                    "samples": [
+                        "suburb",
+                        "suburbs",
+                        "in the suburbs",
+                        "the suburbs"
+                    ]
+                },
+                {
+                    "name": "flexwIntent",
+                    "samples": [
+                        "fund",
+                        "set up fund"
+                    ]
+                },
+                {
+                    "name": "flexxIntent",
+                    "samples": [
+                        "don't set up fund"
+                    ]
+                },
+                {
+                    "name": "flexyIntent",
                     "samples": [
                         "married",
                         "get married",
@@ -2874,7 +3221,7 @@
                     ]
                 },
                 {
-                    "name": "flexwIntent",
+                    "name": "flexzIntent",
                     "samples": [
                         "single",
                         "stay single",
@@ -2882,7 +3229,7 @@
                     ]
                 },
                 {
-                    "name": "flexxIntent",
+                    "name": "flexbaIntent",
                     "samples": [
                         "big",
                         "big wedding",
@@ -2890,7 +3237,7 @@
                     ]
                 },
                 {
-                    "name": "flexyIntent",
+                    "name": "flexbbIntent",
                     "samples": [
                         "small",
                         "small one",
@@ -2898,7 +3245,7 @@
                     ]
                 },
                 {
-                    "name": "flexzIntent",
+                    "name": "flexbcIntent",
                     "samples": [
                         "have kids",
                         "want kids",
@@ -2906,7 +3253,7 @@
                     ]
                 },
                 {
-                    "name": "flexbaIntent",
+                    "name": "flexbdIntent",
                     "samples": [
                         "don't have kids",
                         "no kids",
@@ -2914,14 +3261,14 @@
                     ]
                 },
                 {
-                    "name": "flexbbIntent",
+                    "name": "flexbeIntent",
                     "samples": [
                         "retire",
                         "retire from work"
                     ]
                 },
                 {
-                    "name": "flexbcIntent",
+                    "name": "flexbfIntent",
                     "samples": [
                         "keep working"
                     ]

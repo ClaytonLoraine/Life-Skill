@@ -229,16 +229,16 @@
 
 @wheretolive
     *say 
-        Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independance. Which would you like to do?
+        Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independance. Which would you like to do? Live in your old room or rent an apartment?
     
     *then
-        hear parent's house, live at home, live with parents, parents {
+        hear parent's house, live at home, live with parents, parents, live in old room, old room, room {
         decrease character by 5
 
             -> parents_house
         }
         
-        hear rent apartment, get apartment, apartment, rent {
+        hear rent an apartment, rent apartment, get apartment, apartment, rent, live away from home {
         decrease money by 10,000
         increase character by 3
             -> apartment
