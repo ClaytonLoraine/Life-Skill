@@ -32,7 +32,7 @@
         set retirement_fund to false
         set score to 0
         set retired to false
-        set pet to "none"
+        set pet to 'none'
         set heartbroken to false
         
             -> opener
@@ -625,19 +625,19 @@
             increase character by 2
             decrease stress by 2
             decrease money by 5000
-            set pet to dog
+            set pet to 'dog'
             ->dog
         }
         hear cat, a cat, the cat{
             increase character by 2
             decrease stress by 2
             decrease money by 4000
-            set pet to cat
+            set pet to 'cat'
             ->cat
         }
         hear goldfish, a goldfish, the goldfish{
             decrease stress by 1
-            set pet to fish
+            set pet to 'fish'
             ->fish
         }
         
@@ -940,10 +940,10 @@
         
 @pet
     *then
-    if pet == none{
+    if pet == 'none'{
         -> pet_yes
         }
-    if pet != none{
+    if pet != 'none'{
         -> pet_no
         }
         
