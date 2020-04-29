@@ -602,7 +602,7 @@
         -> adoption
     }
     hear no{
-        -> retire_choice
+        -> bedset_roll
     }
 
 
@@ -645,19 +645,27 @@
     *say 
         You've chosen to adopt a dog! This furry, loveable, and energetic fella will enjoy your company. Dogs require a lot of attention and love but they can also be your best friend. Treat them well!
     *then
-        -> retire_choice
+        -> bedset_roll
         
 @cat
     *say
         This furry little creature will bring you lots of love and joy but can be quite a handful at times. They will always be around for you though when you need someone to snuggle up with through the hard times.
     *then
-        -> retire_choice
+        -> bedset_roll
         
 @fish
     *say
         You've chosen to be a fish owner! Great! These little aquatic animals do not require as much attention as the other options but will be an intriguing pet. They may not do much but it is always enjoyable to sit in their company and watch them in their own world. 
     *then
-        -> retire_choice
+        -> bedset_roll
+        
+@bedset_roll
+    *then
+        roll 1d4
+        if rollResult ==1{
+        ->scenario4
+        }
+    -> retire_choice
 
 @married_life
     *say 
@@ -693,10 +701,6 @@
     *then
         decrease money by 40,000
         increase character by 3
-        roll 1d4
-            if rollResult ==1{
-            ->scenario4
-            }
         -> adoption_q
         
 @kids2
@@ -706,10 +710,6 @@
     *then
         decrease money by 80,000
         increase character by 6
-        roll 1d4
-            if rollResult ==1{
-            ->scenario4
-            }
         -> adoption_q
         
 @kids3
@@ -719,10 +719,7 @@
     *then
         decrease money by 120,000
         increase character by 9
-        roll 1d4
-            if rollResult ==1{
-            ->scenario4
-            }
+
         -> adoption_q
 
 @retire_choice
@@ -774,10 +771,10 @@
         
 @scenario4
     *say
-        Uh Oh! Looks like your kids have outgrown their current bedset in their room and they need a new one!
+        Uh Oh! Looks like your kids have outgrown their current bedset in their room and they need a new one! This will cost some money...
     *then
         decrease money by 1000
-        -> adoption_q
+        -> retire_choice
         
 @ending
     *say

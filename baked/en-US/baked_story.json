@@ -207,7 +207,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "pet",
-                                            "variableValue": "{none}"
+                                            "variableValue": "none"
                                         }
                                     },
                                     {
@@ -322,7 +322,7 @@
             ],
             "id": "stop",
             "customProperties": {
-                "sourceLocation": 908,
+                "sourceLocation": 910,
                 "sourceID": "story.abc"
             }
         },
@@ -565,7 +565,7 @@
             ],
             "id": "opener",
             "customProperties": {
-                "sourceLocation": 1032,
+                "sourceLocation": 1034,
                 "sourceID": "story.abc"
             }
         },
@@ -610,7 +610,7 @@
             ],
             "id": "party",
             "customProperties": {
-                "sourceLocation": 2296,
+                "sourceLocation": 2298,
                 "sourceID": "story.abc"
             }
         },
@@ -655,7 +655,7 @@
             ],
             "id": "trade",
             "customProperties": {
-                "sourceLocation": 2621,
+                "sourceLocation": 2623,
                 "sourceID": "story.abc"
             }
         },
@@ -707,7 +707,7 @@
             ],
             "id": "finished_trade",
             "customProperties": {
-                "sourceLocation": 2843,
+                "sourceLocation": 2845,
                 "sourceID": "story.abc"
             }
         },
@@ -752,7 +752,7 @@
             ],
             "id": "private",
             "customProperties": {
-                "sourceLocation": 3160,
+                "sourceLocation": 3162,
                 "sourceID": "story.abc"
             }
         },
@@ -797,7 +797,7 @@
             ],
             "id": "public",
             "customProperties": {
-                "sourceLocation": 3482,
+                "sourceLocation": 3484,
                 "sourceID": "story.abc"
             }
         },
@@ -893,7 +893,7 @@
             ],
             "id": "choosemajor",
             "customProperties": {
-                "sourceLocation": 3802,
+                "sourceLocation": 3804,
                 "sourceID": "story.abc"
             }
         },
@@ -938,7 +938,7 @@
             ],
             "id": "sciences",
             "customProperties": {
-                "sourceLocation": 4113,
+                "sourceLocation": 4115,
                 "sourceID": "story.abc"
             }
         },
@@ -983,7 +983,7 @@
             ],
             "id": "arts",
             "customProperties": {
-                "sourceLocation": 4220,
+                "sourceLocation": 4222,
                 "sourceID": "story.abc"
             }
         },
@@ -1134,7 +1134,7 @@
             ],
             "id": "collegelife",
             "customProperties": {
-                "sourceLocation": 4325,
+                "sourceLocation": 4327,
                 "sourceID": "story.abc"
             }
         },
@@ -1179,7 +1179,7 @@
             ],
             "id": "both_life",
             "customProperties": {
-                "sourceLocation": 5122,
+                "sourceLocation": 5124,
                 "sourceID": "story.abc"
             }
         },
@@ -1224,7 +1224,7 @@
             ],
             "id": "study_life",
             "customProperties": {
-                "sourceLocation": 5422,
+                "sourceLocation": 5424,
                 "sourceID": "story.abc"
             }
         },
@@ -1290,7 +1290,7 @@
             ],
             "id": "party_life",
             "customProperties": {
-                "sourceLocation": 5626,
+                "sourceLocation": 5628,
                 "sourceID": "story.abc"
             }
         },
@@ -1405,7 +1405,7 @@
             ],
             "id": "workstudy",
             "customProperties": {
-                "sourceLocation": 5986,
+                "sourceLocation": 5988,
                 "sourceID": "story.abc"
             }
         },
@@ -1450,7 +1450,7 @@
             ],
             "id": "workstudy_yes",
             "customProperties": {
-                "sourceLocation": 6580,
+                "sourceLocation": 6582,
                 "sourceID": "story.abc"
             }
         },
@@ -1495,7 +1495,7 @@
             ],
             "id": "workstudy_no",
             "customProperties": {
-                "sourceLocation": 6911,
+                "sourceLocation": 6913,
                 "sourceID": "story.abc"
             }
         },
@@ -1540,7 +1540,7 @@
             ],
             "id": "graduatedcollege",
             "customProperties": {
-                "sourceLocation": 7188,
+                "sourceLocation": 7190,
                 "sourceID": "story.abc"
             }
         },
@@ -1652,7 +1652,7 @@
             ],
             "id": "wheretolive",
             "customProperties": {
-                "sourceLocation": 7428,
+                "sourceLocation": 7430,
                 "sourceID": "story.abc"
             }
         },
@@ -1697,7 +1697,7 @@
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 8282,
+                "sourceLocation": 8284,
                 "sourceID": "story.abc"
             }
         },
@@ -1749,7 +1749,7 @@
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 8533,
+                "sourceLocation": 8535,
                 "sourceID": "story.abc"
             }
         },
@@ -1832,7 +1832,7 @@
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 8701,
+                "sourceLocation": 8703,
                 "sourceID": "story.abc"
             }
         },
@@ -1975,7 +1975,7 @@
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 8973,
+                "sourceLocation": 8975,
                 "sourceID": "story.abc"
             }
         },
@@ -2118,7 +2118,7 @@
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 9531,
+                "sourceLocation": 9533,
                 "sourceID": "story.abc"
             }
         },
@@ -2261,7 +2261,7 @@
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 10044,
+                "sourceLocation": 10046,
                 "sourceID": "story.abc"
             }
         },
@@ -2327,7 +2327,7 @@
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 10599,
+                "sourceLocation": 10601,
                 "sourceID": "story.abc"
             }
         },
@@ -2393,7 +2393,7 @@
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 10866,
+                "sourceLocation": 10868,
                 "sourceID": "story.abc"
             }
         },
@@ -2459,7 +2459,7 @@
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 11162,
+                "sourceLocation": 11164,
                 "sourceID": "story.abc"
             }
         },
@@ -2525,7 +2525,7 @@
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 11486,
+                "sourceLocation": 11488,
                 "sourceID": "story.abc"
             }
         },
@@ -2591,7 +2591,7 @@
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 11738,
+                "sourceLocation": 11740,
                 "sourceID": "story.abc"
             }
         },
@@ -2657,7 +2657,7 @@
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 12005,
+                "sourceLocation": 12007,
                 "sourceID": "story.abc"
             }
         },
@@ -2723,7 +2723,7 @@
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 12246,
+                "sourceLocation": 12248,
                 "sourceID": "story.abc"
             }
         },
@@ -2789,7 +2789,7 @@
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 12476,
+                "sourceLocation": 12478,
                 "sourceID": "story.abc"
             }
         },
@@ -2855,7 +2855,7 @@
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 12740,
+                "sourceLocation": 12742,
                 "sourceID": "story.abc"
             }
         },
@@ -3001,7 +3001,7 @@
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 12990,
+                "sourceLocation": 12992,
                 "sourceID": "story.abc"
             }
         },
@@ -3067,7 +3067,7 @@
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 13762,
+                "sourceLocation": 13764,
                 "sourceID": "story.abc"
             }
         },
@@ -3133,7 +3133,7 @@
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 14054,
+                "sourceLocation": 14056,
                 "sourceID": "story.abc"
             }
         },
@@ -3199,7 +3199,7 @@
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 14329,
+                "sourceLocation": 14331,
                 "sourceID": "story.abc"
             }
         },
@@ -3300,7 +3300,7 @@
             ],
             "id": "retirement_fund",
             "customProperties": {
-                "sourceLocation": 14594,
+                "sourceLocation": 14596,
                 "sourceID": "story.abc"
             }
         },
@@ -3345,7 +3345,7 @@
             ],
             "id": "retirement_fund_yes",
             "customProperties": {
-                "sourceLocation": 15055,
+                "sourceLocation": 15057,
                 "sourceID": "story.abc"
             }
         },
@@ -3390,7 +3390,7 @@
             ],
             "id": "retirement_fund_no",
             "customProperties": {
-                "sourceLocation": 15227,
+                "sourceLocation": 15229,
                 "sourceID": "story.abc"
             }
         },
@@ -3435,7 +3435,7 @@
             ],
             "id": "dating",
             "customProperties": {
-                "sourceLocation": 15399,
+                "sourceLocation": 15401,
                 "sourceID": "story.abc"
             }
         },
@@ -3540,7 +3540,7 @@
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 15615,
+                "sourceLocation": 15617,
                 "sourceID": "story.abc"
             }
         },
@@ -3599,7 +3599,7 @@
             ],
             "id": "rejection",
             "customProperties": {
-                "sourceLocation": 16021,
+                "sourceLocation": 16023,
                 "sourceID": "story.abc"
             }
         },
@@ -3682,7 +3682,7 @@
             ],
             "id": "alone",
             "customProperties": {
-                "sourceLocation": 16303,
+                "sourceLocation": 16305,
                 "sourceID": "story.abc"
             }
         },
@@ -3815,14 +3815,59 @@
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 16698,
+                "sourceLocation": 16700,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life. Though you may feel that you need an animal companion. Would you like to adopt a pet?",
+                    "narration": "You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life. Though you may feel that you need an animal companion.",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "adoption_q",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "single",
+            "customProperties": {
+                "sourceLocation": 17213,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Would you like to adopt a pet?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -3893,9 +3938,9 @@
                     ]
                 }
             ],
-            "id": "single",
+            "id": "adoption_q",
             "customProperties": {
-                "sourceLocation": 17211,
+                "sourceLocation": 17490,
                 "sourceID": "story.abc"
             }
         },
@@ -3940,7 +3985,7 @@
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 17573,
+                "sourceLocation": 17646,
                 "sourceID": "story.abc"
             }
         },
@@ -3985,7 +4030,7 @@
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 17791,
+                "sourceLocation": 17864,
                 "sourceID": "story.abc"
             }
         },
@@ -4029,7 +4074,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "pet",
-                                            "variableValue": "{dog}"
+                                            "variableValue": "dog"
                                         }
                                     },
                                     {
@@ -4080,7 +4125,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "pet",
-                                            "variableValue": "{cat}"
+                                            "variableValue": "cat"
                                         }
                                     },
                                     {
@@ -4117,7 +4162,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "pet",
-                                            "variableValue": "{fish}"
+                                            "variableValue": "fish"
                                         }
                                     },
                                     {
@@ -4162,7 +4207,7 @@
             ],
             "id": "adoption",
             "customProperties": {
-                "sourceLocation": 17951,
+                "sourceLocation": 18024,
                 "sourceID": "story.abc"
             }
         },
@@ -4207,7 +4252,7 @@
             ],
             "id": "dog",
             "customProperties": {
-                "sourceLocation": 18722,
+                "sourceLocation": 18801,
                 "sourceID": "story.abc"
             }
         },
@@ -4252,7 +4297,7 @@
             ],
             "id": "cat",
             "customProperties": {
-                "sourceLocation": 18983,
+                "sourceLocation": 19062,
                 "sourceID": "story.abc"
             }
         },
@@ -4297,7 +4342,7 @@
             ],
             "id": "fish",
             "customProperties": {
-                "sourceLocation": 19256,
+                "sourceLocation": 19335,
                 "sourceID": "story.abc"
             }
         },
@@ -4438,7 +4483,7 @@
                                     {
                                         "directionType": "go to",
                                         "parameters": {
-                                            "target": "retire_choice",
+                                            "target": "adoption_q",
                                             "targetSceneProperty": "narration"
                                         }
                                     }
@@ -4478,7 +4523,7 @@
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 19578,
+                "sourceLocation": 19657,
                 "sourceID": "story.abc"
             }
         },
@@ -4525,7 +4570,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "retire_choice",
+                                "target": "adoption_q",
                                 "targetSceneProperty": "narration"
                             }
                         },
@@ -4558,7 +4603,7 @@
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 20380,
+                "sourceLocation": 20456,
                 "sourceID": "story.abc"
             }
         },
@@ -4605,7 +4650,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "retire_choice",
+                                "target": "adoption_q",
                                 "targetSceneProperty": "narration"
                             }
                         },
@@ -4638,7 +4683,7 @@
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 20647,
+                "sourceLocation": 20720,
                 "sourceID": "story.abc"
             }
         },
@@ -4685,7 +4730,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "retire_choice",
+                                "target": "adoption_q",
                                 "targetSceneProperty": "narration"
                             }
                         },
@@ -4718,7 +4763,7 @@
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 20923,
+                "sourceLocation": 20993,
                 "sourceID": "story.abc"
             }
         },
@@ -4817,7 +4862,7 @@
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 21204,
+                "sourceLocation": 21271,
                 "sourceID": "story.abc"
             }
         },
@@ -4869,7 +4914,7 @@
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 21647,
+                "sourceLocation": 21714,
                 "sourceID": "story.abc"
             }
         },
@@ -4914,7 +4959,7 @@
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 21854,
+                "sourceLocation": 21921,
                 "sourceID": "story.abc"
             }
         },
@@ -4966,7 +5011,7 @@
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 22075,
+                "sourceLocation": 22142,
                 "sourceID": "story.abc"
             }
         },
@@ -5018,7 +5063,7 @@
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 22314,
+                "sourceLocation": 22381,
                 "sourceID": "story.abc"
             }
         },
@@ -5070,7 +5115,7 @@
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 22528,
+                "sourceLocation": 22595,
                 "sourceID": "story.abc"
             }
         },
@@ -5089,7 +5134,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "retire_choice",
+                                "target": "adoption_q",
                                 "targetSceneProperty": "narration"
                             }
                         },
@@ -5122,7 +5167,7 @@
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 22762,
+                "sourceLocation": 22829,
                 "sourceID": "story.abc"
             }
         },
@@ -5204,7 +5249,7 @@
             ],
             "id": "ending",
             "customProperties": {
-                "sourceLocation": 22967,
+                "sourceLocation": 23031,
                 "sourceID": "story.abc"
             }
         },
@@ -5286,7 +5331,7 @@
             ],
             "id": "money_good",
             "customProperties": {
-                "sourceLocation": 23243,
+                "sourceLocation": 23307,
                 "sourceID": "story.abc"
             }
         },
@@ -5368,7 +5413,7 @@
             ],
             "id": "money_bad",
             "customProperties": {
-                "sourceLocation": 23559,
+                "sourceLocation": 23623,
                 "sourceID": "story.abc"
             }
         },
@@ -5450,7 +5495,7 @@
             ],
             "id": "character_good",
             "customProperties": {
-                "sourceLocation": 23873,
+                "sourceLocation": 23937,
                 "sourceID": "story.abc"
             }
         },
@@ -5532,7 +5577,7 @@
             ],
             "id": "character_bad",
             "customProperties": {
-                "sourceLocation": 24172,
+                "sourceLocation": 24236,
                 "sourceID": "story.abc"
             }
         },
@@ -5615,7 +5660,7 @@
             ],
             "id": "stress_good",
             "customProperties": {
-                "sourceLocation": 24503,
+                "sourceLocation": 24567,
                 "sourceID": "story.abc"
             }
         },
@@ -5698,7 +5743,7 @@
             ],
             "id": "stress_bad",
             "customProperties": {
-                "sourceLocation": 24846,
+                "sourceLocation": 24910,
                 "sourceID": "story.abc"
             }
         },
@@ -5796,7 +5841,7 @@
             ],
             "id": "married_true",
             "customProperties": {
-                "sourceLocation": 25184,
+                "sourceLocation": 25248,
                 "sourceID": "story.abc"
             }
         },
@@ -5841,7 +5886,7 @@
             ],
             "id": "kids_0",
             "customProperties": {
-                "sourceLocation": 25473,
+                "sourceLocation": 25537,
                 "sourceID": "story.abc"
             }
         },
@@ -5886,7 +5931,7 @@
             ],
             "id": "kids_1",
             "customProperties": {
-                "sourceLocation": 25555,
+                "sourceLocation": 25619,
                 "sourceID": "story.abc"
             }
         },
@@ -5931,7 +5976,7 @@
             ],
             "id": "kids_2",
             "customProperties": {
-                "sourceLocation": 25634,
+                "sourceLocation": 25698,
                 "sourceID": "story.abc"
             }
         },
@@ -5976,7 +6021,7 @@
             ],
             "id": "kids_3",
             "customProperties": {
-                "sourceLocation": 25716,
+                "sourceLocation": 25780,
                 "sourceID": "story.abc"
             }
         },
@@ -6021,7 +6066,7 @@
             ],
             "id": "married_false",
             "customProperties": {
-                "sourceLocation": 25821,
+                "sourceLocation": 25885,
                 "sourceID": "story.abc"
             }
         },
@@ -6066,7 +6111,7 @@
             ],
             "id": "married_heartbroken",
             "customProperties": {
-                "sourceLocation": 25951,
+                "sourceLocation": 26015,
                 "sourceID": "story.abc"
             }
         },
@@ -6078,7 +6123,7 @@
                         {
                             "directionType": "condition",
                             "parameters": {
-                                "condition": "{pet} == {none}",
+                                "condition": "{pet} == 'none'",
                                 "directions": [
                                     {
                                         "directionType": "go to",
@@ -6093,7 +6138,7 @@
                         {
                             "directionType": "condition",
                             "parameters": {
-                                "condition": "{pet} != {none}",
+                                "condition": "{pet} != 'none'",
                                 "directions": [
                                     {
                                         "directionType": "go to",
@@ -6134,7 +6179,7 @@
             ],
             "id": "pet",
             "customProperties": {
-                "sourceLocation": 26082,
+                "sourceLocation": 26146,
                 "sourceID": "story.abc"
             }
         },
@@ -6232,7 +6277,7 @@
             ],
             "id": "pet_yes",
             "customProperties": {
-                "sourceLocation": 26203,
+                "sourceLocation": 26271,
                 "sourceID": "story.abc"
             }
         },
@@ -6330,7 +6375,7 @@
             ],
             "id": "pet_no",
             "customProperties": {
-                "sourceLocation": 26591,
+                "sourceLocation": 26659,
                 "sourceID": "story.abc"
             }
         },
@@ -6382,7 +6427,7 @@
             ],
             "id": "retired_yes",
             "customProperties": {
-                "sourceLocation": 27029,
+                "sourceLocation": 27097,
                 "sourceID": "story.abc"
             }
         },
@@ -6427,7 +6472,7 @@
             ],
             "id": "retired_no",
             "customProperties": {
-                "sourceLocation": 27262,
+                "sourceLocation": 27330,
                 "sourceID": "story.abc"
             }
         },
@@ -6479,7 +6524,7 @@
             ],
             "id": "retired_yes_fund",
             "customProperties": {
-                "sourceLocation": 27374,
+                "sourceLocation": 27442,
                 "sourceID": "story.abc"
             }
         },
@@ -6524,7 +6569,7 @@
             ],
             "id": "retired_no_fund",
             "customProperties": {
-                "sourceLocation": 27604,
+                "sourceLocation": 27672,
                 "sourceID": "story.abc"
             }
         },
@@ -6592,7 +6637,7 @@
             ],
             "id": "the_end_setup",
             "customProperties": {
-                "sourceLocation": 27826,
+                "sourceLocation": 27894,
                 "sourceID": "story.abc"
             }
         },
@@ -6637,7 +6682,7 @@
             ],
             "id": "the_end_good",
             "customProperties": {
-                "sourceLocation": 27955,
+                "sourceLocation": 28023,
                 "sourceID": "story.abc"
             }
         },
@@ -6682,7 +6727,7 @@
             ],
             "id": "the_end_bad",
             "customProperties": {
-                "sourceLocation": 28086,
+                "sourceLocation": 28154,
                 "sourceID": "story.abc"
             }
         },
@@ -6762,7 +6807,7 @@
             ],
             "id": "play_again",
             "customProperties": {
-                "sourceLocation": 28261,
+                "sourceLocation": 28329,
                 "sourceID": "story.abc"
             }
         }
