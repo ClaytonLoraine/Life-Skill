@@ -850,13 +850,13 @@
         You didn't have a very stressful life which is very rare in today's world!...
     
     *then 
-    if married == 'true'{
+    if married == true{
         -> married_true
         }
-    if married == 'false' {
+    if married == false {
         -> married_false
         }
-    if married == 'false' && heartbroken == 'true' {
+    if married == false && heartbroken == true {
         -> married_heartbroken
         }
         
@@ -949,16 +949,16 @@
         You got a {pet} to keep you company!...
         
     *then 
-    if retired == 'true'{
+    if retired == true{
         -> retired_yes
         }
-    if retired == 'false'{
+    if retired == false{
         -> retired_no
         }
-    if retired == 'true' && retirement_fund == 'true'{
+    if retired == true && retirement_fund == true{
         -> retired_yes_fund
         }
-        if retired == 'false' && retirement_fund == 'true'{
+        if retired == false && retirement_fund == true{
         -> retired_no_fund
         }
      
@@ -967,16 +967,16 @@
         You decided not to get a pet...
         
     *then 
-    if retired == 'true' && retirement_fund == 'false'{
+    if retired == true && retirement_fund == false{
         -> retired_yes
         }
-    if retired == 'false' && retirement_fund == 'false'{
+    if retired == false && retirement_fund == false{
         -> retired_no
         }
-    if retired == 'true' && retirement_fund == 'true'{
+    if retired == true && retirement_fund == true{
         -> retired_yes_fund
         }
-        if retired == 'false' && retirement_fund == 'true'{
+        if retired == false && retirement_fund == true{
         -> retired_no_fund
         }
         
