@@ -540,9 +540,10 @@
                 }
         -> married
         }
-        hear single, stay single, be alone{
+        hear no, stay single, be alone{
         -> single
         }
+        
 @rejection
     *say
         OUCH! That one hurt. Your partner was clearly not ready for marriage. The rejection has fractured your relationship and you both to decide to go seperate ways. 
@@ -560,7 +561,8 @@
         
         hear no, no thank you{
             -> retire_choice
-            }
+        }
+        
 @married
     *say
     Congratulations! You are getting married to the love of your life. Is the wedding going to be big or small?
@@ -581,9 +583,14 @@
     
 @single
     *say
-        You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life. 
+        You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life. Though you may feel that you need an animal companion. Would you like to adopt a pet?
     *then
+    hear yes{
+        -> adoption
+    }
+    hear no{
         -> retire_choice
+    }
 
 
 @big
@@ -602,12 +609,19 @@
         So, you've decided to get yourself a little companion to keep you company? We think these three might be the best options for you. There's a Dog, a Cat or a quiet little fish. Which would you like?
     *then
         hear dog, a dog, the dog{
+            increase character by 2
+            decrease stress by 2
+            decrease money by 5000
             ->dog
         }
         hear cat, a cat, the cat{
+            increase character by 2
+            decrease stress by 2
+            decrease money by 4000
             ->cat
         }
         hear goldfish, a goldfish, the goldfish{
+            decrease stress by 1
             ->fish
         }
         
@@ -722,7 +736,7 @@
 
 @ending
     *say
-        Thank you for playing life simulator, come back again soon!
+        Thank you for playing life simulator, play again to experience a different life!
     *then 
         -> stop
         
