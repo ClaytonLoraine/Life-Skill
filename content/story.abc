@@ -661,10 +661,12 @@
         
 @bedset_roll
     *then
+    if married == true && kids > 0{
         roll 1d4
         if rollResult ==1{
         ->scenario4
         }
+    }
     -> retire_choice
 
 @married_life
