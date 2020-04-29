@@ -30,6 +30,10 @@
         set married to false
         set stress to 0
         set retirement_fund to false
+        set score to 0
+        set retired to false
+        set pet to none
+        set heartbroken to false
         
             -> opener
         }
@@ -40,7 +44,7 @@
 
 @stop
     *say 
-        Thanks for playing!
+        Thanks for playing! Come back later to experience another life!
     
     *then
      >> END
@@ -242,7 +246,7 @@
 
 @wheretolive
     *say 
-        Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independance. Which would you like to do? Live in your old room or rent an apartment?
+        Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independence. Which would you like to do? Live in your old room or rent an apartment?
     
     *then
         hear parent's house, live at home, live with parents, parents, live in old room, old room, room {
@@ -546,14 +550,15 @@
         
 @rejection
     *say
-        OUCH! That one hurt. Your partner was clearly not ready for marriage. The rejection has fractured your relationship and you both to decide to go seperate ways. 
+        OUCH! That one hurt. Your partner was clearly not ready for marriage. The rejection has fractured your relationship and you both decide to go separate ways. 
     *then
         increase stress by 2
+        set heartbroken to true
         ->alone
         
 @alone
     *say
-        Wow, that break up really took a toll on you, huh? You've spent the years following the break up alone in isolation with your thoughts and feelings. Maybe a pet would cheer you up. Would you like to adopt a pet?
+        Wow, that break up really took a toll on you, huh? You've spent years following the break up alone in isolation with your thoughts and feelings. Maybe a pet would cheer you up. Would you like to adopt a pet?
     *then
         hear yes, adopt a pet{
             ->adoption 
@@ -567,6 +572,8 @@
     *say
     Congratulations! You are getting married to the love of your life. Is the wedding going to be big or small?
     *then
+        set married to true
+    
         hear big, big wedding, big one{
         decrease money by 40,000
         increase character by 5
@@ -606,28 +613,31 @@
     
 @adoption
     *say 
-        So, you've decided to get yourself a little companion to keep you company? We think these three might be the best options for you. There's a Dog, a Cat or a quiet little fish. Which would you like?
+        So, you've decided to get yourself a little companion to keep you company? We think these three might be the best options for you. There's a Dog, a Cat, or a quiet little fish. Which would you like?
     *then
         hear dog, a dog, the dog{
             increase character by 2
             decrease stress by 2
             decrease money by 5000
+            set pet to dog
             ->dog
         }
         hear cat, a cat, the cat{
             increase character by 2
             decrease stress by 2
             decrease money by 4000
+            set pet to cat
             ->cat
         }
         hear goldfish, a goldfish, the goldfish{
             decrease stress by 1
+            set pet to fish
             ->fish
         }
         
 @dog
     *say 
-        You've chosen to adopt a dog! This furry, loveable and energetic fella will enjoy your company. Dogs require a lot of attention and love but they can also be your bestfriend. Treat them well!
+        You've chosen to adopt a dog! This furry, loveable, and energetic fella will enjoy your company. Dogs require a lot of attention and love but they can also be your best friend. Treat them well!
     *then
         -> retire_choice
         
@@ -711,7 +721,7 @@
 
 @retire_choice
     *say
-        You're starting to age and you notice to be more fatigued from work than normal. Myabe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?
+        You're starting to age and you notice to be more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?
     *then
         hear yes, retire, retire from work {
         -> retire
@@ -724,8 +734,9 @@
         
 @retire
     *say
-        After a great long time at your job, you decide to retire from work and enjoy the rest of life doing things you enjoy. 
+        After a great long time at your job, you decide to retire from work and spend the rest of your life doing things you enjoy. 
     *then
+        set retired to true
         -> ending
 
 @dontretire
@@ -733,13 +744,6 @@
         You enjoy your job too much and don't know if you would ever stop working in life. You continue the rest of your life working with, just with fewer hours.
     *then
         -> ending
-
-@ending
-    *say
-        Thank you for playing life simulator, play again to experience a different life!
-    *then 
-        -> stop
-        
         
 @scenario2
     *say
@@ -768,3 +772,272 @@
     *then
         decrease money by 1000
         -> retire_choice
+        
+@ending
+    *say
+        Thank you for playing life simulator, here is a quick overview of your life...
+    *then 
+    if money >= 0{
+        -> money_good
+        increase score by 1
+        }
+    if money < 0{
+        -> money_bad
+        decrease score by 1
+        }
+    
+@money_good
+    *say 
+        You did a good job balancing the budget and were able to be free of debt! Congrats!...
+    
+    *then 
+    if character >= 10{
+        -> character_good
+        increase score by 1
+        }
+    if character < 10{
+        -> character_bad
+        decrease score by 1
+        }
+        
+@money_bad
+    *say 
+        You didn't do a great job balancing the budget and left your family with some debt...
+    
+    *then 
+    if character >= 10{
+        -> character_good
+        increase score by 1
+        }
+    if character < 10{
+        -> character_bad
+        decrease score by 1
+        }
+        
+@character_good
+    *say 
+        You turned out to be a great person that people really enjoyed being around!...
+    
+    *then 
+    if stress >= 6{
+        -> stress_good
+        increase score by 1
+        }
+    if stress < 6{
+        -> stress_bad
+        decrease score by 1
+        }
+        
+@character_bad
+    *say 
+        You weren't the most sociable person but you were great friends with the couple people who were able to get past that...
+    
+    *then 
+    if stress >= 6{
+        -> stress_good
+        increase score by 1
+        }
+    if stress < 6{
+        -> stress_bad
+        decrease score by 1
+        }
+
+@stress_good
+    *say 
+        You didn't have a very stressful life which is very rare in today's world!...
+    
+    *then 
+    if married == true{
+        -> married_true
+        }
+    if married == false {
+        -> married_false
+        }
+    if married == false && heartbroken == true {
+        -> married_heartbroken
+        }
+        
+@stress_bad
+    *say 
+        You had a pretty stressful life though many would say it was worth it!...
+    
+    *then 
+    if married == true{
+        -> married_true
+        }
+    if married == false {
+        -> married_false
+        }
+    if married == false && heartbroken == true {
+        -> married_heartbroken
+        }
+        
+@married_true
+    *say
+        You got married to your best friend 
+        
+            *then 
+    if kids == 0{
+        -> kids_0
+        }
+    if kids == 1{
+        -> kids_1
+        }
+    if kids == 2{
+        -> kids_2
+        }
+    if kids == 3{
+        -> kids_3
+        }
+        
+@kids_0
+    *say
+        and didn't have any kids!...
+
+    *then 
+        -> pet
+
+@kids_1
+    *say
+        and had a kid!...
+
+    *then 
+        -> pet
+        
+@kids_2
+    *say
+        and had two kids!...
+
+    *then 
+        -> pet
+        
+@kids_3
+    *say
+        and had three kids! That's a busy house!...
+
+    *then 
+        -> pet
+        
+@married_false
+    *say
+        You decided to live the single life and enjoyed it!...
+        
+    *then
+        -> pet
+        
+@married_heartbroken
+    *say
+        Unfortunately, the love of your life left you...
+        
+    *then 
+        -> pet
+        
+@pet
+    *then
+    if pet == none{
+        -> pet_yes
+        }
+    if pet != none{
+        -> pet_no
+        }
+        
+@pet_yes
+    *say
+        You got a {pet} to keep you company!...
+        
+    *then 
+    if retired == true{
+        -> retired_yes
+        }
+    if retired == false{
+        -> retired_no
+        }
+    if retired == true && retirement_fund == true{
+        -> retired_yes_fund
+        }
+        if retired == false && retirement_fund == true{
+        -> retired_no_fund
+        }
+     
+@pet_no
+    *say
+        You decided not to get a pet...
+        
+    *then 
+    if retired == true && retirement_fund == false{
+        -> retired_yes
+        }
+    if retired == false && retirement_fund == false{
+        -> retired_no
+        }
+    if retired == true && retirement_fund == true{
+        -> retired_yes_fund
+        }
+        if retired == false && retirement_fund == true{
+        -> retired_no_fund
+        }
+        
+@retired_yes
+    *say
+        You retired though you didn't set up a retirement fund so you weren't able to do everything you were hoping you could do...
+        
+    *then 
+     decrease score by 1
+        -> the_end_setup
+        
+@retired_no
+    *say
+        You decided not to retire...
+        
+    *then 
+        -> the_end_setup
+        
+@retired_yes_fund
+    *say
+        You retired and because of the retirement fund, you set up you were able to do everything you were hoping to do!...
+        
+    *then 
+     increase score by 1
+        -> the_end_setup
+        
+@retired_no_fund
+    *say
+        You decided not to retire so you used the money in your old savings account you set up years ago to help fund your kid's college education...
+        
+    *then 
+        -> the_end_setup
+
+@the_end_setup
+    *then
+    if score >= 0{
+        -> the_end_good
+        }
+    if score < 0{
+        -> the_end_bad
+        }
+@the_end_good
+    *say
+        You had a great life and you should be proud!...
+        
+    *then 
+        -> play_again
+        
+@the_end_bad
+    *say
+        Your life may not have been ideal but it was yours and that's something to be proud about!...
+        
+    *then 
+        -> play_again
+        
+@play_again
+    *say
+        Would you like to play again?
+        
+    *then
+        hear yes {
+        -> start
+        }
+        hear no {
+        -> stop
+        }
+
