@@ -345,7 +345,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "college",
-                                            "variableValue": "{\"trade\"}"
+                                            "variableValue": "trade"
                                         }
                                     },
                                     {
@@ -417,7 +417,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "college",
-                                            "variableValue": "{\"public\"}"
+                                            "variableValue": "public"
                                         }
                                     },
                                     {
@@ -468,7 +468,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "college",
-                                            "variableValue": "{\"private\"}"
+                                            "variableValue": "private"
                                         }
                                     },
                                     {
@@ -520,7 +520,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "college",
-                                            "variableValue": "{\"party\"}"
+                                            "variableValue": "party"
                                         }
                                     },
                                     {
@@ -668,7 +668,7 @@
                             "directionType": "set",
                             "parameters": {
                                 "variableName": "specialization",
-                                "variableValue": "{trade}"
+                                "variableValue": "trade"
                             }
                         },
                         {
@@ -752,7 +752,7 @@
             ],
             "id": "private",
             "customProperties": {
-                "sourceLocation": 3162,
+                "sourceLocation": 3164,
                 "sourceID": "story.abc"
             }
         },
@@ -797,7 +797,7 @@
             ],
             "id": "public",
             "customProperties": {
-                "sourceLocation": 3484,
+                "sourceLocation": 3486,
                 "sourceID": "story.abc"
             }
         },
@@ -819,7 +819,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "specialization",
-                                            "variableValue": "{sciences}"
+                                            "variableValue": "sciences"
                                         }
                                     },
                                     {
@@ -848,7 +848,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "specialization",
-                                            "variableValue": "{arts}"
+                                            "variableValue": "arts"
                                         }
                                     },
                                     {
@@ -893,7 +893,7 @@
             ],
             "id": "choosemajor",
             "customProperties": {
-                "sourceLocation": 3804,
+                "sourceLocation": 3806,
                 "sourceID": "story.abc"
             }
         },
@@ -938,7 +938,7 @@
             ],
             "id": "sciences",
             "customProperties": {
-                "sourceLocation": 4115,
+                "sourceLocation": 4121,
                 "sourceID": "story.abc"
             }
         },
@@ -983,7 +983,7 @@
             ],
             "id": "arts",
             "customProperties": {
-                "sourceLocation": 4222,
+                "sourceLocation": 4228,
                 "sourceID": "story.abc"
             }
         },
@@ -1134,7 +1134,7 @@
             ],
             "id": "collegelife",
             "customProperties": {
-                "sourceLocation": 4327,
+                "sourceLocation": 4333,
                 "sourceID": "story.abc"
             }
         },
@@ -1179,7 +1179,7 @@
             ],
             "id": "both_life",
             "customProperties": {
-                "sourceLocation": 5124,
+                "sourceLocation": 5130,
                 "sourceID": "story.abc"
             }
         },
@@ -1224,7 +1224,7 @@
             ],
             "id": "study_life",
             "customProperties": {
-                "sourceLocation": 5424,
+                "sourceLocation": 5430,
                 "sourceID": "story.abc"
             }
         },
@@ -1290,7 +1290,7 @@
             ],
             "id": "party_life",
             "customProperties": {
-                "sourceLocation": 5628,
+                "sourceLocation": 5634,
                 "sourceID": "story.abc"
             }
         },
@@ -1405,7 +1405,7 @@
             ],
             "id": "workstudy",
             "customProperties": {
-                "sourceLocation": 5988,
+                "sourceLocation": 5994,
                 "sourceID": "story.abc"
             }
         },
@@ -1450,14 +1450,14 @@
             ],
             "id": "workstudy_yes",
             "customProperties": {
-                "sourceLocation": 6582,
+                "sourceLocation": 6588,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You know having a job would help you make some extra cash to pay for things and college. However, you think that focusing on your studies is more important right now. You choose not to work at college",
+                    "narration": "You know having a job would help you make some extra cash to pay for things and college. However, you think that focusing on your studies is more important right now. You choose not to work at college...",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -1495,7 +1495,7 @@
             ],
             "id": "workstudy_no",
             "customProperties": {
-                "sourceLocation": 6913,
+                "sourceLocation": 6919,
                 "sourceID": "story.abc"
             }
         },
@@ -1540,7 +1540,7 @@
             ],
             "id": "graduatedcollege",
             "customProperties": {
-                "sourceLocation": 7190,
+                "sourceLocation": 7199,
                 "sourceID": "story.abc"
             }
         },
@@ -1652,7 +1652,7 @@
             ],
             "id": "wheretolive",
             "customProperties": {
-                "sourceLocation": 7430,
+                "sourceLocation": 7439,
                 "sourceID": "story.abc"
             }
         },
@@ -1697,7 +1697,7 @@
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 8284,
+                "sourceLocation": 8293,
                 "sourceID": "story.abc"
             }
         },
@@ -1749,7 +1749,7 @@
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 8535,
+                "sourceLocation": 8544,
                 "sourceID": "story.abc"
             }
         },
@@ -1761,7 +1761,7 @@
                         {
                             "directionType": "condition",
                             "parameters": {
-                                "condition": "{specialization} == {sciences}",
+                                "condition": "{specialization} == 'sciences'",
                                 "directions": [
                                     {
                                         "directionType": "go to",
@@ -1776,7 +1776,7 @@
                         {
                             "directionType": "condition",
                             "parameters": {
-                                "condition": "{specialization} == {arts}",
+                                "condition": "{specialization} == 'arts'",
                                 "directions": [
                                     {
                                         "directionType": "go to",
@@ -1791,7 +1791,7 @@
                         {
                             "directionType": "condition",
                             "parameters": {
-                                "condition": "{specialization} == {trade}",
+                                "condition": "{specialization} == 'trade'",
                                 "directions": [
                                     {
                                         "directionType": "go to",
@@ -1832,7 +1832,7 @@
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 8703,
+                "sourceLocation": 8712,
                 "sourceID": "story.abc"
             }
         },
@@ -1975,7 +1975,7 @@
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 8975,
+                "sourceLocation": 8990,
                 "sourceID": "story.abc"
             }
         },
@@ -2118,7 +2118,7 @@
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 9533,
+                "sourceLocation": 9548,
                 "sourceID": "story.abc"
             }
         },
@@ -2261,7 +2261,7 @@
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 10046,
+                "sourceLocation": 10061,
                 "sourceID": "story.abc"
             }
         },
@@ -2327,7 +2327,7 @@
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 10601,
+                "sourceLocation": 10616,
                 "sourceID": "story.abc"
             }
         },
@@ -2393,7 +2393,7 @@
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 10868,
+                "sourceLocation": 10883,
                 "sourceID": "story.abc"
             }
         },
@@ -2459,7 +2459,7 @@
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 11164,
+                "sourceLocation": 11179,
                 "sourceID": "story.abc"
             }
         },
@@ -2525,7 +2525,7 @@
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 11488,
+                "sourceLocation": 11503,
                 "sourceID": "story.abc"
             }
         },
@@ -2591,7 +2591,7 @@
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 11740,
+                "sourceLocation": 11755,
                 "sourceID": "story.abc"
             }
         },
@@ -2657,7 +2657,7 @@
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 12007,
+                "sourceLocation": 12022,
                 "sourceID": "story.abc"
             }
         },
@@ -2723,7 +2723,7 @@
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 12248,
+                "sourceLocation": 12263,
                 "sourceID": "story.abc"
             }
         },
@@ -2789,7 +2789,7 @@
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 12478,
+                "sourceLocation": 12493,
                 "sourceID": "story.abc"
             }
         },
@@ -2855,7 +2855,7 @@
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 12742,
+                "sourceLocation": 12757,
                 "sourceID": "story.abc"
             }
         },
@@ -3001,7 +3001,7 @@
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 12992,
+                "sourceLocation": 13007,
                 "sourceID": "story.abc"
             }
         },
@@ -3067,7 +3067,7 @@
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 13764,
+                "sourceLocation": 13779,
                 "sourceID": "story.abc"
             }
         },
@@ -3133,7 +3133,7 @@
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 14056,
+                "sourceLocation": 14071,
                 "sourceID": "story.abc"
             }
         },
@@ -3199,7 +3199,7 @@
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 14331,
+                "sourceLocation": 14346,
                 "sourceID": "story.abc"
             }
         },
@@ -3300,7 +3300,7 @@
             ],
             "id": "retirement_fund",
             "customProperties": {
-                "sourceLocation": 14596,
+                "sourceLocation": 14611,
                 "sourceID": "story.abc"
             }
         },
@@ -3345,7 +3345,7 @@
             ],
             "id": "retirement_fund_yes",
             "customProperties": {
-                "sourceLocation": 15057,
+                "sourceLocation": 15072,
                 "sourceID": "story.abc"
             }
         },
@@ -3390,7 +3390,7 @@
             ],
             "id": "retirement_fund_no",
             "customProperties": {
-                "sourceLocation": 15229,
+                "sourceLocation": 15244,
                 "sourceID": "story.abc"
             }
         },
@@ -3435,7 +3435,7 @@
             ],
             "id": "dating",
             "customProperties": {
-                "sourceLocation": 15401,
+                "sourceLocation": 15416,
                 "sourceID": "story.abc"
             }
         },
@@ -3540,7 +3540,7 @@
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 15617,
+                "sourceLocation": 15632,
                 "sourceID": "story.abc"
             }
         },
@@ -3599,7 +3599,7 @@
             ],
             "id": "rejection",
             "customProperties": {
-                "sourceLocation": 16023,
+                "sourceLocation": 16038,
                 "sourceID": "story.abc"
             }
         },
@@ -3682,7 +3682,7 @@
             ],
             "id": "alone",
             "customProperties": {
-                "sourceLocation": 16305,
+                "sourceLocation": 16320,
                 "sourceID": "story.abc"
             }
         },
@@ -3815,7 +3815,7 @@
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 16700,
+                "sourceLocation": 16715,
                 "sourceID": "story.abc"
             }
         },
@@ -3860,7 +3860,7 @@
             ],
             "id": "single",
             "customProperties": {
-                "sourceLocation": 17213,
+                "sourceLocation": 17228,
                 "sourceID": "story.abc"
             }
         },
@@ -3901,7 +3901,7 @@
                                     {
                                         "directionType": "go to",
                                         "parameters": {
-                                            "target": "retire_choice",
+                                            "target": "bedset_roll",
                                             "targetSceneProperty": "narration"
                                         }
                                     }
@@ -3940,7 +3940,7 @@
             ],
             "id": "adoption_q",
             "customProperties": {
-                "sourceLocation": 17490,
+                "sourceLocation": 17505,
                 "sourceID": "story.abc"
             }
         },
@@ -3985,7 +3985,7 @@
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 17646,
+                "sourceLocation": 17659,
                 "sourceID": "story.abc"
             }
         },
@@ -4030,7 +4030,7 @@
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 17864,
+                "sourceLocation": 17877,
                 "sourceID": "story.abc"
             }
         },
@@ -4207,7 +4207,7 @@
             ],
             "id": "adoption",
             "customProperties": {
-                "sourceLocation": 18024,
+                "sourceLocation": 18037,
                 "sourceID": "story.abc"
             }
         },
@@ -4219,7 +4219,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "retire_choice",
+                                "target": "bedset_roll",
                                 "targetSceneProperty": "narration"
                             }
                         },
@@ -4252,7 +4252,7 @@
             ],
             "id": "dog",
             "customProperties": {
-                "sourceLocation": 18801,
+                "sourceLocation": 18814,
                 "sourceID": "story.abc"
             }
         },
@@ -4264,7 +4264,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "retire_choice",
+                                "target": "bedset_roll",
                                 "targetSceneProperty": "narration"
                             }
                         },
@@ -4297,7 +4297,7 @@
             ],
             "id": "cat",
             "customProperties": {
-                "sourceLocation": 19062,
+                "sourceLocation": 19073,
                 "sourceID": "story.abc"
             }
         },
@@ -4306,6 +4306,72 @@
                 {
                     "narration": "You've chosen to be a fish owner! Great! These little aquatic animals do not require as much attention as the other options but will be an intriguing pet. They may not do much but it is always enjoyable to sit in their company and watch them in their own world.",
                     "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "bedset_roll",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "fish",
+            "customProperties": {
+                "sourceLocation": 19344,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "",
+                    "sceneDirections": [
+                        {
+                            "directionType": "roll dice",
+                            "parameters": {
+                                "diceString": "1d4"
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{rollResult} ==1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "scenario4",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
                         {
                             "directionType": "go to",
                             "parameters": {
@@ -4340,9 +4406,9 @@
                     ]
                 }
             ],
-            "id": "fish",
+            "id": "bedset_roll",
             "customProperties": {
-                "sourceLocation": 19335,
+                "sourceLocation": 19672,
                 "sourceID": "story.abc"
             }
         },
@@ -4523,7 +4589,7 @@
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 19657,
+                "sourceLocation": 19791,
                 "sourceID": "story.abc"
             }
         },
@@ -4544,27 +4610,6 @@
                             "parameters": {
                                 "variableName": "character",
                                 "variableValue": "3"
-                            }
-                        },
-                        {
-                            "directionType": "roll dice",
-                            "parameters": {
-                                "diceString": "1d4"
-                            }
-                        },
-                        {
-                            "directionType": "condition",
-                            "parameters": {
-                                "condition": "{rollResult} ==1",
-                                "directions": [
-                                    {
-                                        "directionType": "go to",
-                                        "parameters": {
-                                            "target": "scenario4",
-                                            "targetSceneProperty": "narration"
-                                        }
-                                    }
-                                ]
                             }
                         },
                         {
@@ -4603,7 +4648,7 @@
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 20456,
+                "sourceLocation": 20590,
                 "sourceID": "story.abc"
             }
         },
@@ -4624,27 +4669,6 @@
                             "parameters": {
                                 "variableName": "character",
                                 "variableValue": "6"
-                            }
-                        },
-                        {
-                            "directionType": "roll dice",
-                            "parameters": {
-                                "diceString": "1d4"
-                            }
-                        },
-                        {
-                            "directionType": "condition",
-                            "parameters": {
-                                "condition": "{rollResult} ==1",
-                                "directions": [
-                                    {
-                                        "directionType": "go to",
-                                        "parameters": {
-                                            "target": "scenario4",
-                                            "targetSceneProperty": "narration"
-                                        }
-                                    }
-                                ]
                             }
                         },
                         {
@@ -4683,7 +4707,7 @@
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 20720,
+                "sourceLocation": 20768,
                 "sourceID": "story.abc"
             }
         },
@@ -4704,27 +4728,6 @@
                             "parameters": {
                                 "variableName": "character",
                                 "variableValue": "9"
-                            }
-                        },
-                        {
-                            "directionType": "roll dice",
-                            "parameters": {
-                                "diceString": "1d4"
-                            }
-                        },
-                        {
-                            "directionType": "condition",
-                            "parameters": {
-                                "condition": "{rollResult} ==1",
-                                "directions": [
-                                    {
-                                        "directionType": "go to",
-                                        "parameters": {
-                                            "target": "scenario4",
-                                            "targetSceneProperty": "narration"
-                                        }
-                                    }
-                                ]
                             }
                         },
                         {
@@ -4763,7 +4766,7 @@
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 20993,
+                "sourceLocation": 20955,
                 "sourceID": "story.abc"
             }
         },
@@ -4862,7 +4865,7 @@
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 21271,
+                "sourceLocation": 21148,
                 "sourceID": "story.abc"
             }
         },
@@ -4914,7 +4917,7 @@
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 21714,
+                "sourceLocation": 21591,
                 "sourceID": "story.abc"
             }
         },
@@ -4959,7 +4962,7 @@
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 21921,
+                "sourceLocation": 21798,
                 "sourceID": "story.abc"
             }
         },
@@ -5011,7 +5014,7 @@
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 22142,
+                "sourceLocation": 22019,
                 "sourceID": "story.abc"
             }
         },
@@ -5063,7 +5066,7 @@
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 22381,
+                "sourceLocation": 22258,
                 "sourceID": "story.abc"
             }
         },
@@ -5115,14 +5118,14 @@
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 22595,
+                "sourceLocation": 22472,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Uh Oh! Looks like your kids have outgrown their current bedset in their room and they need a new one!",
+                    "narration": "Uh Oh! Looks like your kids have outgrown their current bedset in their room and they need a new one! This will cost some money...",
                     "sceneDirections": [
                         {
                             "directionType": "reduce",
@@ -5134,7 +5137,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "adoption_q",
+                                "target": "retire_choice",
                                 "targetSceneProperty": "narration"
                             }
                         },
@@ -5167,7 +5170,7 @@
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 22829,
+                "sourceLocation": 22706,
                 "sourceID": "story.abc"
             }
         },
@@ -5249,7 +5252,7 @@
             ],
             "id": "ending",
             "customProperties": {
-                "sourceLocation": 23031,
+                "sourceLocation": 22940,
                 "sourceID": "story.abc"
             }
         },
@@ -5331,7 +5334,7 @@
             ],
             "id": "money_good",
             "customProperties": {
-                "sourceLocation": 23307,
+                "sourceLocation": 23216,
                 "sourceID": "story.abc"
             }
         },
@@ -5413,7 +5416,7 @@
             ],
             "id": "money_bad",
             "customProperties": {
-                "sourceLocation": 23623,
+                "sourceLocation": 23532,
                 "sourceID": "story.abc"
             }
         },
@@ -5495,7 +5498,7 @@
             ],
             "id": "character_good",
             "customProperties": {
-                "sourceLocation": 23937,
+                "sourceLocation": 23846,
                 "sourceID": "story.abc"
             }
         },
@@ -5577,7 +5580,7 @@
             ],
             "id": "character_bad",
             "customProperties": {
-                "sourceLocation": 24236,
+                "sourceLocation": 24145,
                 "sourceID": "story.abc"
             }
         },
@@ -5660,7 +5663,7 @@
             ],
             "id": "stress_good",
             "customProperties": {
-                "sourceLocation": 24567,
+                "sourceLocation": 24476,
                 "sourceID": "story.abc"
             }
         },
@@ -5743,7 +5746,7 @@
             ],
             "id": "stress_bad",
             "customProperties": {
-                "sourceLocation": 24910,
+                "sourceLocation": 24819,
                 "sourceID": "story.abc"
             }
         },
@@ -5841,7 +5844,7 @@
             ],
             "id": "married_true",
             "customProperties": {
-                "sourceLocation": 25248,
+                "sourceLocation": 25157,
                 "sourceID": "story.abc"
             }
         },
@@ -5886,7 +5889,7 @@
             ],
             "id": "kids_0",
             "customProperties": {
-                "sourceLocation": 25537,
+                "sourceLocation": 25446,
                 "sourceID": "story.abc"
             }
         },
@@ -5931,7 +5934,7 @@
             ],
             "id": "kids_1",
             "customProperties": {
-                "sourceLocation": 25619,
+                "sourceLocation": 25528,
                 "sourceID": "story.abc"
             }
         },
@@ -5976,7 +5979,7 @@
             ],
             "id": "kids_2",
             "customProperties": {
-                "sourceLocation": 25698,
+                "sourceLocation": 25607,
                 "sourceID": "story.abc"
             }
         },
@@ -6021,7 +6024,7 @@
             ],
             "id": "kids_3",
             "customProperties": {
-                "sourceLocation": 25780,
+                "sourceLocation": 25689,
                 "sourceID": "story.abc"
             }
         },
@@ -6066,7 +6069,7 @@
             ],
             "id": "married_false",
             "customProperties": {
-                "sourceLocation": 25885,
+                "sourceLocation": 25794,
                 "sourceID": "story.abc"
             }
         },
@@ -6111,7 +6114,7 @@
             ],
             "id": "married_heartbroken",
             "customProperties": {
-                "sourceLocation": 26015,
+                "sourceLocation": 25924,
                 "sourceID": "story.abc"
             }
         },
@@ -6128,7 +6131,7 @@
                                     {
                                         "directionType": "go to",
                                         "parameters": {
-                                            "target": "pet_yes",
+                                            "target": "pet_no",
                                             "targetSceneProperty": "narration"
                                         }
                                     }
@@ -6143,7 +6146,7 @@
                                     {
                                         "directionType": "go to",
                                         "parameters": {
-                                            "target": "pet_no",
+                                            "target": "pet_yes",
                                             "targetSceneProperty": "narration"
                                         }
                                     }
@@ -6179,7 +6182,7 @@
             ],
             "id": "pet",
             "customProperties": {
-                "sourceLocation": 26146,
+                "sourceLocation": 26055,
                 "sourceID": "story.abc"
             }
         },
@@ -6277,7 +6280,7 @@
             ],
             "id": "pet_yes",
             "customProperties": {
-                "sourceLocation": 26271,
+                "sourceLocation": 26180,
                 "sourceID": "story.abc"
             }
         },
@@ -6375,7 +6378,7 @@
             ],
             "id": "pet_no",
             "customProperties": {
-                "sourceLocation": 26659,
+                "sourceLocation": 26568,
                 "sourceID": "story.abc"
             }
         },
@@ -6427,7 +6430,7 @@
             ],
             "id": "retired_yes",
             "customProperties": {
-                "sourceLocation": 27097,
+                "sourceLocation": 27006,
                 "sourceID": "story.abc"
             }
         },
@@ -6472,7 +6475,7 @@
             ],
             "id": "retired_no",
             "customProperties": {
-                "sourceLocation": 27330,
+                "sourceLocation": 27239,
                 "sourceID": "story.abc"
             }
         },
@@ -6524,7 +6527,7 @@
             ],
             "id": "retired_yes_fund",
             "customProperties": {
-                "sourceLocation": 27442,
+                "sourceLocation": 27351,
                 "sourceID": "story.abc"
             }
         },
@@ -6569,7 +6572,7 @@
             ],
             "id": "retired_no_fund",
             "customProperties": {
-                "sourceLocation": 27672,
+                "sourceLocation": 27581,
                 "sourceID": "story.abc"
             }
         },
@@ -6637,7 +6640,7 @@
             ],
             "id": "the_end_setup",
             "customProperties": {
-                "sourceLocation": 27894,
+                "sourceLocation": 27803,
                 "sourceID": "story.abc"
             }
         },
@@ -6682,7 +6685,7 @@
             ],
             "id": "the_end_good",
             "customProperties": {
-                "sourceLocation": 28023,
+                "sourceLocation": 27932,
                 "sourceID": "story.abc"
             }
         },
@@ -6727,7 +6730,7 @@
             ],
             "id": "the_end_bad",
             "customProperties": {
-                "sourceLocation": 28154,
+                "sourceLocation": 28063,
                 "sourceID": "story.abc"
             }
         },
@@ -6749,6 +6752,90 @@
                                         "parameters": {
                                             "target": "start",
                                             "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "money",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "education",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "character",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "jobexperience",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "kids",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "married",
+                                            "variableValue": "{false}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "stress",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "retirement_fund",
+                                            "variableValue": "{false}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "retired",
+                                            "variableValue": "{false}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "pet",
+                                            "variableValue": "none"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "heartbroken",
+                                            "variableValue": "{false}"
                                         }
                                     }
                                 ],
@@ -6807,7 +6894,7 @@
             ],
             "id": "play_again",
             "customProperties": {
-                "sourceLocation": 28329,
+                "sourceLocation": 28238,
                 "sourceID": "story.abc"
             }
         }
