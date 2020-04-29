@@ -190,15 +190,12 @@
                 {
                     "name": "flexyIntent",
                     "samples": [
-                        "married",
-                        "get married",
-                        "marry"
+                        "i will"
                     ]
                 },
                 {
                     "name": "flexzIntent",
                     "samples": [
-                        "single",
                         "stay single",
                         "be alone"
                     ]
@@ -206,13 +203,19 @@
                 {
                     "name": "flexbaIntent",
                     "samples": [
+                        "adopt a pet"
+                    ]
+                },
+                {
+                    "name": "flexbbIntent",
+                    "samples": [
                         "big",
                         "big wedding",
                         "big one"
                     ]
                 },
                 {
-                    "name": "flexbbIntent",
+                    "name": "flexbcIntent",
                     "samples": [
                         "small",
                         "small one",
@@ -220,7 +223,31 @@
                     ]
                 },
                 {
-                    "name": "flexbcIntent",
+                    "name": "flexbdIntent",
+                    "samples": [
+                        "dog",
+                        "a dog",
+                        "the dog"
+                    ]
+                },
+                {
+                    "name": "flexbeIntent",
+                    "samples": [
+                        "cat",
+                        "a cat",
+                        "the cat"
+                    ]
+                },
+                {
+                    "name": "flexbfIntent",
+                    "samples": [
+                        "goldfish",
+                        "a goldfish",
+                        "the goldfish"
+                    ]
+                },
+                {
+                    "name": "flexbgIntent",
                     "samples": [
                         "have kids",
                         "want kids",
@@ -228,7 +255,7 @@
                     ]
                 },
                 {
-                    "name": "flexbdIntent",
+                    "name": "flexbhIntent",
                     "samples": [
                         "don't have kids",
                         "no kids",
@@ -236,14 +263,14 @@
                     ]
                 },
                 {
-                    "name": "flexbeIntent",
+                    "name": "flexbiIntent",
                     "samples": [
                         "retire",
                         "retire from work"
                     ]
                 },
                 {
-                    "name": "flexbfIntent",
+                    "name": "flexbjIntent",
                     "samples": [
                         "keep working"
                     ]
