@@ -537,7 +537,7 @@
     *say
         You and your partner have been going strong for a while now and you begin to think about asking them to marry you. Will you propose?
     *then
-        hear yes, I will{
+        hear yes, I will, I do, I accept{
             roll 1d4
                 if rollResult == 1{
                 -> rejection
