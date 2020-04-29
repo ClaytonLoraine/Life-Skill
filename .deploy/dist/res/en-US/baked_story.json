@@ -190,6 +190,34 @@
                                         }
                                     },
                                     {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "0"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "retired",
+                                            "variableValue": "{false}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "pet",
+                                            "variableValue": "{none}"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "heartbroken",
+                                            "variableValue": "{false}"
+                                        }
+                                    },
+                                    {
                                         "directionType": "go to",
                                         "parameters": {
                                             "target": "opener",
@@ -259,7 +287,7 @@
         {
             "contents": [
                 {
-                    "narration": "Thanks for playing!",
+                    "narration": "Thanks for playing! Come back later to experience another life!",
                     "sceneDirections": [
                         {
                             "directionType": "ending",
@@ -294,7 +322,7 @@
             ],
             "id": "stop",
             "customProperties": {
-                "sourceLocation": 799,
+                "sourceLocation": 908,
                 "sourceID": "story.abc"
             }
         },
@@ -537,7 +565,7 @@
             ],
             "id": "opener",
             "customProperties": {
-                "sourceLocation": 879,
+                "sourceLocation": 1032,
                 "sourceID": "story.abc"
             }
         },
@@ -582,7 +610,7 @@
             ],
             "id": "party",
             "customProperties": {
-                "sourceLocation": 2143,
+                "sourceLocation": 2296,
                 "sourceID": "story.abc"
             }
         },
@@ -627,7 +655,7 @@
             ],
             "id": "trade",
             "customProperties": {
-                "sourceLocation": 2468,
+                "sourceLocation": 2621,
                 "sourceID": "story.abc"
             }
         },
@@ -679,7 +707,7 @@
             ],
             "id": "finished_trade",
             "customProperties": {
-                "sourceLocation": 2690,
+                "sourceLocation": 2843,
                 "sourceID": "story.abc"
             }
         },
@@ -724,7 +752,7 @@
             ],
             "id": "private",
             "customProperties": {
-                "sourceLocation": 3007,
+                "sourceLocation": 3160,
                 "sourceID": "story.abc"
             }
         },
@@ -769,7 +797,7 @@
             ],
             "id": "public",
             "customProperties": {
-                "sourceLocation": 3329,
+                "sourceLocation": 3482,
                 "sourceID": "story.abc"
             }
         },
@@ -865,7 +893,7 @@
             ],
             "id": "choosemajor",
             "customProperties": {
-                "sourceLocation": 3649,
+                "sourceLocation": 3802,
                 "sourceID": "story.abc"
             }
         },
@@ -910,7 +938,7 @@
             ],
             "id": "sciences",
             "customProperties": {
-                "sourceLocation": 3960,
+                "sourceLocation": 4113,
                 "sourceID": "story.abc"
             }
         },
@@ -955,7 +983,7 @@
             ],
             "id": "arts",
             "customProperties": {
-                "sourceLocation": 4067,
+                "sourceLocation": 4220,
                 "sourceID": "story.abc"
             }
         },
@@ -1106,7 +1134,7 @@
             ],
             "id": "collegelife",
             "customProperties": {
-                "sourceLocation": 4172,
+                "sourceLocation": 4325,
                 "sourceID": "story.abc"
             }
         },
@@ -1151,7 +1179,7 @@
             ],
             "id": "both_life",
             "customProperties": {
-                "sourceLocation": 4969,
+                "sourceLocation": 5122,
                 "sourceID": "story.abc"
             }
         },
@@ -1196,7 +1224,7 @@
             ],
             "id": "study_life",
             "customProperties": {
-                "sourceLocation": 5269,
+                "sourceLocation": 5422,
                 "sourceID": "story.abc"
             }
         },
@@ -1262,7 +1290,7 @@
             ],
             "id": "party_life",
             "customProperties": {
-                "sourceLocation": 5473,
+                "sourceLocation": 5626,
                 "sourceID": "story.abc"
             }
         },
@@ -1377,7 +1405,7 @@
             ],
             "id": "workstudy",
             "customProperties": {
-                "sourceLocation": 5833,
+                "sourceLocation": 5986,
                 "sourceID": "story.abc"
             }
         },
@@ -1422,7 +1450,7 @@
             ],
             "id": "workstudy_yes",
             "customProperties": {
-                "sourceLocation": 6427,
+                "sourceLocation": 6580,
                 "sourceID": "story.abc"
             }
         },
@@ -1467,7 +1495,7 @@
             ],
             "id": "workstudy_no",
             "customProperties": {
-                "sourceLocation": 6758,
+                "sourceLocation": 6911,
                 "sourceID": "story.abc"
             }
         },
@@ -1512,14 +1540,14 @@
             ],
             "id": "graduatedcollege",
             "customProperties": {
-                "sourceLocation": 7035,
+                "sourceLocation": 7188,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independance. Which would you like to do? Live in your old room or rent an apartment?",
+                    "narration": "Freshly out of college and ready to take on a new chapter in life, you have to decide where you would like to live. Your loving parents have offered you your old room temporarily until you can get some money saved up to get a place of your own. Or, you can continue to live away from home and find an apartment somewhere to get some independence. Which would you like to do? Live in your old room or rent an apartment?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -1624,7 +1652,7 @@
             ],
             "id": "wheretolive",
             "customProperties": {
-                "sourceLocation": 7275,
+                "sourceLocation": 7428,
                 "sourceID": "story.abc"
             }
         },
@@ -1669,7 +1697,7 @@
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 8129,
+                "sourceLocation": 8282,
                 "sourceID": "story.abc"
             }
         },
@@ -1721,7 +1749,7 @@
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 8380,
+                "sourceLocation": 8533,
                 "sourceID": "story.abc"
             }
         },
@@ -1804,7 +1832,7 @@
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 8548,
+                "sourceLocation": 8701,
                 "sourceID": "story.abc"
             }
         },
@@ -1947,7 +1975,7 @@
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 8820,
+                "sourceLocation": 8973,
                 "sourceID": "story.abc"
             }
         },
@@ -2090,7 +2118,7 @@
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 9378,
+                "sourceLocation": 9531,
                 "sourceID": "story.abc"
             }
         },
@@ -2233,7 +2261,7 @@
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 9891,
+                "sourceLocation": 10044,
                 "sourceID": "story.abc"
             }
         },
@@ -2299,7 +2327,7 @@
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 10446,
+                "sourceLocation": 10599,
                 "sourceID": "story.abc"
             }
         },
@@ -2365,7 +2393,7 @@
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 10713,
+                "sourceLocation": 10866,
                 "sourceID": "story.abc"
             }
         },
@@ -2431,7 +2459,7 @@
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 11009,
+                "sourceLocation": 11162,
                 "sourceID": "story.abc"
             }
         },
@@ -2497,7 +2525,7 @@
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 11333,
+                "sourceLocation": 11486,
                 "sourceID": "story.abc"
             }
         },
@@ -2563,7 +2591,7 @@
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 11585,
+                "sourceLocation": 11738,
                 "sourceID": "story.abc"
             }
         },
@@ -2629,7 +2657,7 @@
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 11852,
+                "sourceLocation": 12005,
                 "sourceID": "story.abc"
             }
         },
@@ -2695,7 +2723,7 @@
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 12093,
+                "sourceLocation": 12246,
                 "sourceID": "story.abc"
             }
         },
@@ -2761,7 +2789,7 @@
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 12323,
+                "sourceLocation": 12476,
                 "sourceID": "story.abc"
             }
         },
@@ -2827,7 +2855,7 @@
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 12587,
+                "sourceLocation": 12740,
                 "sourceID": "story.abc"
             }
         },
@@ -2973,7 +3001,7 @@
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 12837,
+                "sourceLocation": 12990,
                 "sourceID": "story.abc"
             }
         },
@@ -3039,7 +3067,7 @@
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 13609,
+                "sourceLocation": 13762,
                 "sourceID": "story.abc"
             }
         },
@@ -3105,7 +3133,7 @@
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 13901,
+                "sourceLocation": 14054,
                 "sourceID": "story.abc"
             }
         },
@@ -3171,7 +3199,7 @@
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 14176,
+                "sourceLocation": 14329,
                 "sourceID": "story.abc"
             }
         },
@@ -3272,7 +3300,7 @@
             ],
             "id": "retirement_fund",
             "customProperties": {
-                "sourceLocation": 14441,
+                "sourceLocation": 14594,
                 "sourceID": "story.abc"
             }
         },
@@ -3317,7 +3345,7 @@
             ],
             "id": "retirement_fund_yes",
             "customProperties": {
-                "sourceLocation": 14902,
+                "sourceLocation": 15055,
                 "sourceID": "story.abc"
             }
         },
@@ -3362,7 +3390,7 @@
             ],
             "id": "retirement_fund_no",
             "customProperties": {
-                "sourceLocation": 15074,
+                "sourceLocation": 15227,
                 "sourceID": "story.abc"
             }
         },
@@ -3407,7 +3435,7 @@
             ],
             "id": "dating",
             "customProperties": {
-                "sourceLocation": 15246,
+                "sourceLocation": 15399,
                 "sourceID": "story.abc"
             }
         },
@@ -3512,20 +3540,27 @@
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 15462,
+                "sourceLocation": 15615,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "OUCH! That one hurt. Your partner was clearly not ready for marriage. The rejection has fractured your relationship and you both to decide to go seperate ways.",
+                    "narration": "OUCH! That one hurt. Your partner was clearly not ready for marriage. The rejection has fractured your relationship and you both decide to go separate ways.",
                     "sceneDirections": [
                         {
                             "directionType": "increase",
                             "parameters": {
                                 "variableName": "stress",
                                 "variableValue": "2"
+                            }
+                        },
+                        {
+                            "directionType": "set",
+                            "parameters": {
+                                "variableName": "heartbroken",
+                                "variableValue": "{true}"
                             }
                         },
                         {
@@ -3564,14 +3599,14 @@
             ],
             "id": "rejection",
             "customProperties": {
-                "sourceLocation": 15868,
+                "sourceLocation": 16021,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "Wow, that break up really took a toll on you, huh? You've spent the years following the break up alone in isolation with your thoughts and feelings. Maybe a pet would cheer you up. Would you like to adopt a pet?",
+                    "narration": "Wow, that break up really took a toll on you, huh? You've spent years following the break up alone in isolation with your thoughts and feelings. Maybe a pet would cheer you up. Would you like to adopt a pet?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -3647,7 +3682,7 @@
             ],
             "id": "alone",
             "customProperties": {
-                "sourceLocation": 16121,
+                "sourceLocation": 16303,
                 "sourceID": "story.abc"
             }
         },
@@ -3656,6 +3691,13 @@
                 {
                     "narration": "Congratulations! You are getting married to the love of your life. Is the wedding going to be big or small?",
                     "sceneDirections": [
+                        {
+                            "directionType": "set",
+                            "parameters": {
+                                "variableName": "married",
+                                "variableValue": "{true}"
+                            }
+                        },
                         {
                             "directionType": "choice",
                             "parameters": {
@@ -3773,7 +3815,7 @@
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 16520,
+                "sourceLocation": 16698,
                 "sourceID": "story.abc"
             }
         },
@@ -3853,7 +3895,7 @@
             ],
             "id": "single",
             "customProperties": {
-                "sourceLocation": 17000,
+                "sourceLocation": 17211,
                 "sourceID": "story.abc"
             }
         },
@@ -3898,7 +3940,7 @@
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 17362,
+                "sourceLocation": 17573,
                 "sourceID": "story.abc"
             }
         },
@@ -3943,14 +3985,14 @@
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 17580,
+                "sourceLocation": 17791,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "So, you've decided to get yourself a little companion to keep you company? We think these three might be the best options for you. There's a Dog, a Cat or a quiet little fish. Which would you like?",
+                    "narration": "So, you've decided to get yourself a little companion to keep you company? We think these three might be the best options for you. There's a Dog, a Cat, or a quiet little fish. Which would you like?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -3981,6 +4023,13 @@
                                         "parameters": {
                                             "variableName": "money",
                                             "variableValue": "5000"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "pet",
+                                            "variableValue": "{dog}"
                                         }
                                     },
                                     {
@@ -4028,6 +4077,13 @@
                                         }
                                     },
                                     {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "pet",
+                                            "variableValue": "{cat}"
+                                        }
+                                    },
+                                    {
                                         "directionType": "go to",
                                         "parameters": {
                                             "target": "cat",
@@ -4055,6 +4111,13 @@
                                         "parameters": {
                                             "variableName": "stress",
                                             "variableValue": "1"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "pet",
+                                            "variableValue": "{fish}"
                                         }
                                     },
                                     {
@@ -4099,14 +4162,14 @@
             ],
             "id": "adoption",
             "customProperties": {
-                "sourceLocation": 17740,
+                "sourceLocation": 17951,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You've chosen to adopt a dog! This furry, loveable and energetic fella will enjoy your company. Dogs require a lot of attention and love but they can also be your bestfriend. Treat them well!",
+                    "narration": "You've chosen to adopt a dog! This furry, loveable, and energetic fella will enjoy your company. Dogs require a lot of attention and love but they can also be your best friend. Treat them well!",
                     "sceneDirections": [
                         {
                             "directionType": "go to",
@@ -4144,7 +4207,7 @@
             ],
             "id": "dog",
             "customProperties": {
-                "sourceLocation": 18428,
+                "sourceLocation": 18722,
                 "sourceID": "story.abc"
             }
         },
@@ -4189,7 +4252,7 @@
             ],
             "id": "cat",
             "customProperties": {
-                "sourceLocation": 18687,
+                "sourceLocation": 18983,
                 "sourceID": "story.abc"
             }
         },
@@ -4234,7 +4297,7 @@
             ],
             "id": "fish",
             "customProperties": {
-                "sourceLocation": 18960,
+                "sourceLocation": 19256,
                 "sourceID": "story.abc"
             }
         },
@@ -4415,7 +4478,7 @@
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 19282,
+                "sourceLocation": 19578,
                 "sourceID": "story.abc"
             }
         },
@@ -4495,7 +4558,7 @@
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 20084,
+                "sourceLocation": 20380,
                 "sourceID": "story.abc"
             }
         },
@@ -4575,7 +4638,7 @@
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 20351,
+                "sourceLocation": 20647,
                 "sourceID": "story.abc"
             }
         },
@@ -4655,14 +4718,14 @@
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 20627,
+                "sourceLocation": 20923,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You're starting to age and you notice to be more fatigued from work than normal. Myabe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?",
+                    "narration": "You're starting to age and you notice to be more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -4754,15 +4817,22 @@
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 20908,
+                "sourceLocation": 21204,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "After a great long time at your job, you decide to retire from work and enjoy the rest of life doing things you enjoy.",
+                    "narration": "After a great long time at your job, you decide to retire from work and spend the rest of your life doing things you enjoy.",
                     "sceneDirections": [
+                        {
+                            "directionType": "set",
+                            "parameters": {
+                                "variableName": "retired",
+                                "variableValue": "{true}"
+                            }
+                        },
                         {
                             "directionType": "go to",
                             "parameters": {
@@ -4799,7 +4869,7 @@
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 21351,
+                "sourceLocation": 21647,
                 "sourceID": "story.abc"
             }
         },
@@ -4844,52 +4914,7 @@
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 21525,
-                "sourceID": "story.abc"
-            }
-        },
-        {
-            "contents": [
-                {
-                    "narration": "Thank you for playing life simulator, play again to experience a different life!",
-                    "sceneDirections": [
-                        {
-                            "directionType": "go to",
-                            "parameters": {
-                                "target": "stop",
-                                "targetSceneProperty": "narration"
-                            }
-                        },
-                        {
-                            "directionType": "choice",
-                            "parameters": {
-                                "utterances": [
-                                    "restart",
-                                    "start over"
-                                ],
-                                "saveToHistory": "true",
-                                "directions": [
-                                    {
-                                        "directionType": "go to",
-                                        "parameters": {
-                                            "target": "start",
-                                            "targetSceneProperty": "narration"
-                                        },
-                                        "sourceScene": "global append"
-                                    }
-                                ],
-                                "utteranceIDs": [
-                                    "AMAZON.StartOverIntent"
-                                ]
-                            },
-                            "sourceScene": "global append"
-                        }
-                    ]
-                }
-            ],
-            "id": "ending",
-            "customProperties": {
-                "sourceLocation": 21738,
+                "sourceLocation": 21854,
                 "sourceID": "story.abc"
             }
         },
@@ -4941,7 +4966,7 @@
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 21889,
+                "sourceLocation": 22075,
                 "sourceID": "story.abc"
             }
         },
@@ -4993,7 +5018,7 @@
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 22128,
+                "sourceLocation": 22314,
                 "sourceID": "story.abc"
             }
         },
@@ -5045,7 +5070,7 @@
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 22342,
+                "sourceLocation": 22528,
                 "sourceID": "story.abc"
             }
         },
@@ -5097,7 +5122,1647 @@
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 22576,
+                "sourceLocation": 22762,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Thank you for playing life simulator, here is a quick overview of your life...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{money} >= 0",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "money_good",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{money} < 0",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "money_bad",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "ending",
+            "customProperties": {
+                "sourceLocation": 22967,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You did a good job balancing the budget and were able to be free of debt! Congrats!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{character} >= 10",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "character_good",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{character} < 10",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "character_bad",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "money_good",
+            "customProperties": {
+                "sourceLocation": 23243,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You didn't do a great job balancing the budget and left your family with some debt...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{character} >= 10",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "character_good",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{character} < 10",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "character_bad",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "money_bad",
+            "customProperties": {
+                "sourceLocation": 23559,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You turned out to be a great person that people really enjoyed being around!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{stress} >= 6",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "stress_good",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{stress} < 6",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "stress_bad",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "character_good",
+            "customProperties": {
+                "sourceLocation": 23873,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You weren't the most sociable person but you were great friends with the couple people who were able to get past that...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{stress} >= 6",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "stress_good",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "increase",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{stress} < 6",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "stress_bad",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    },
+                                    {
+                                        "directionType": "reduce",
+                                        "parameters": {
+                                            "variableName": "score",
+                                            "variableValue": "1"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "character_bad",
+            "customProperties": {
+                "sourceLocation": 24172,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You didn't have a very stressful life which is very rare in today's world!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{married} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "married_true",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{married} == false",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "married_false",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{married} == false && {heartbroken} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "married_heartbroken",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "stress_good",
+            "customProperties": {
+                "sourceLocation": 24503,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You had a pretty stressful life though many would say it was worth it!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{married} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "married_true",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{married} == false",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "married_false",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{married} == false && {heartbroken} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "married_heartbroken",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "stress_bad",
+            "customProperties": {
+                "sourceLocation": 24846,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You got married to your best friend",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{kids} == 0",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "kids_0",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{kids} == 1",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "kids_1",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{kids} == 2",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "kids_2",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{kids} == 3",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "kids_3",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "married_true",
+            "customProperties": {
+                "sourceLocation": 25184,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "and didn't have any kids!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "pet",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "kids_0",
+            "customProperties": {
+                "sourceLocation": 25473,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "and had a kid!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "pet",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "kids_1",
+            "customProperties": {
+                "sourceLocation": 25555,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "and had two kids!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "pet",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "kids_2",
+            "customProperties": {
+                "sourceLocation": 25634,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "and had three kids! That's a busy house!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "pet",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "kids_3",
+            "customProperties": {
+                "sourceLocation": 25716,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You decided to live the single life and enjoyed it!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "pet",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "married_false",
+            "customProperties": {
+                "sourceLocation": 25821,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Unfortunately, the love of your life left you...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "pet",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "married_heartbroken",
+            "customProperties": {
+                "sourceLocation": 25951,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{pet} == {none}",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "pet_yes",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{pet} != {none}",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "pet_no",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "pet",
+            "customProperties": {
+                "sourceLocation": 26082,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You got a {pet} to keep you company!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{retired} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retired_yes",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{retired} == false",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retired_no",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{retired} == true && {retirement_fund} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retired_yes_fund",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{retired} == false && {retirement_fund} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retired_no_fund",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "pet_yes",
+            "customProperties": {
+                "sourceLocation": 26203,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You decided not to get a pet...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{retired} == true && {retirement_fund} == false",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retired_yes",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{retired} == false && {retirement_fund} == false",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retired_no",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{retired} == true && {retirement_fund} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retired_yes_fund",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{retired} == false && {retirement_fund} == true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "retired_no_fund",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "pet_no",
+            "customProperties": {
+                "sourceLocation": 26591,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You retired though you didn't set up a retirement fund so you weren't able to do everything you were hoping you could do...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "reduce",
+                            "parameters": {
+                                "variableName": "score",
+                                "variableValue": "1"
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "the_end_setup",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "retired_yes",
+            "customProperties": {
+                "sourceLocation": 27029,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You decided not to retire...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "the_end_setup",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "retired_no",
+            "customProperties": {
+                "sourceLocation": 27262,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You retired and because of the retirement fund, you set up you were able to do everything you were hoping to do!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "increase",
+                            "parameters": {
+                                "variableName": "score",
+                                "variableValue": "1"
+                            }
+                        },
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "the_end_setup",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "retired_yes_fund",
+            "customProperties": {
+                "sourceLocation": 27374,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You decided not to retire so you used the money in your old savings account you set up years ago to help fund your kid's college education...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "the_end_setup",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "retired_no_fund",
+            "customProperties": {
+                "sourceLocation": 27604,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "",
+                    "sceneDirections": [
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{score} >= 0",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "the_end_good",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "condition",
+                            "parameters": {
+                                "condition": "{score} < 0",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "the_end_bad",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "the_end_setup",
+            "customProperties": {
+                "sourceLocation": 27826,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "You had a great life and you should be proud!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "play_again",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "the_end_good",
+            "customProperties": {
+                "sourceLocation": 27955,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Your life may not have been ideal but it was yours and that's something to be proud about!...",
+                    "sceneDirections": [
+                        {
+                            "directionType": "go to",
+                            "parameters": {
+                                "target": "play_again",
+                                "targetSceneProperty": "narration"
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "the_end_bad",
+            "customProperties": {
+                "sourceLocation": 28086,
+                "sourceID": "story.abc"
+            }
+        },
+        {
+            "contents": [
+                {
+                    "narration": "Would you like to play again?",
+                    "sceneDirections": [
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "yes"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.YesIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "no"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "stop",
+                                            "targetSceneProperty": "narration"
+                                        }
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.NoIntent"
+                                ]
+                            }
+                        },
+                        {
+                            "directionType": "choice",
+                            "parameters": {
+                                "utterances": [
+                                    "restart",
+                                    "start over"
+                                ],
+                                "saveToHistory": "true",
+                                "directions": [
+                                    {
+                                        "directionType": "go to",
+                                        "parameters": {
+                                            "target": "start",
+                                            "targetSceneProperty": "narration"
+                                        },
+                                        "sourceScene": "global append"
+                                    }
+                                ],
+                                "utteranceIDs": [
+                                    "AMAZON.StartOverIntent"
+                                ]
+                            },
+                            "sourceScene": "global append"
+                        }
+                    ]
+                }
+            ],
+            "id": "play_again",
+            "customProperties": {
+                "sourceLocation": 28261,
                 "sourceID": "story.abc"
             }
         }
