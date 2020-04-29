@@ -158,7 +158,7 @@
             "kids1.narration": "You and your partner had a kid! Congrats!",
             "kids2.narration": "You and your partner had twins! Twice as much fun!",
             "kids3.narration": "What luck! You and your partner had triplets! A triple threat!",
-            "retire_choice.narration": "You're starting to age and you notice to be more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?",
+            "retire_choice.narration": "You're starting to age and you notice you have been more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?",
             "utterance-retire": "retire",
             "utterance-retire from work": "retire from work",
             "utterance-keep working": "keep working",

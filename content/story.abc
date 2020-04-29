@@ -27,13 +27,13 @@
         set character to 0
         set jobexperience to 0
         set kids to 0
-        set married to false
+        set married to 'false'
         set stress to 0
-        set retirement_fund to false
+        set retirement_fund to 'false'
         set score to 0
-        set retired to false
+        set retired to 'false'
         set pet to 'none'
-        set heartbroken to false
+        set heartbroken to 'false'
         
             -> opener
         }
@@ -56,14 +56,14 @@
     *then
         hear trade school, trade, go to trade school {
         set college to 'trade'
-        decrease money by 30,000
+        decrease money by 30000
         increase education by 10
         increase character by 2
             -> trade
         }
         
         hear public college, go to public college, public {
-        decrease money by 10,000
+        decrease money by 10000
         increase character by 1
         increase education by 10
         set college to 'public'
@@ -71,7 +71,7 @@
             -> public
         }
         hear private college, private, go to private college {
-        decrease money by 60,000
+        decrease money by 60000
         increase character by 5
         increase education by 10
         set college to 'private'
@@ -80,7 +80,7 @@
         }
         
         hear party college, party school, party, go to party school {
-        decrease money by 60,000
+        decrease money by 60000
         increase character by 10
         increase education by 5
         set college to 'party'
@@ -109,7 +109,7 @@
         Congrats! You have finished up your short experience at trade school and now have valuable skill sets that you can use in the workforce! Now it is time to figure out which job you want to do.
         *then
             set specialization to 'trade'
-            -> tradejobs
+            -> collegelife
             
 @private
     *say
@@ -213,7 +213,7 @@
         decrease character by 2  
         decrease education by 2
         increase jobexperience by 4
-        increase money by 30,000
+        increase money by 30000
         increase stress by 2
             -> workstudy_yes
         }
@@ -256,7 +256,7 @@
         }
         
         hear rent an apartment, rent apartment, get apartment, apartment, rent, live away from home {
-        decrease money by 10,000
+        decrease money by 10000
         increase character by 3
             -> apartment
         }
@@ -300,18 +300,18 @@
     
     *then 
         hear programmer{
-        increase money by 225,000
+        increase money by 225000
         increase stress by 2
         -> programmer
         }
         hear doctor{
         increase stress by 4
-        increase money by 600,000
+        increase money by 600000
         -> doctor
         }
         hear forensic scientist{
         increase stress by 2
-        increase money by 195,000
+        increase money by 195000
         -> forensic_scientist
         }
         
@@ -323,17 +323,17 @@
     *then 
         hear teacher{
         increase stress by 3
-        increase money by 105,000
+        increase money by 105000
         -> teacher
         }
         hear writer{
         increase stress by 2
-        increase money by 135,000
+        increase money by 135000
         -> writer
         }
         hear designer{
         increase stress by 2
-        increase money by 180,000
+        increase money by 180000
         -> designer
         }
 
@@ -344,17 +344,17 @@
     *then 
         hear contractor{
         increase stress by 1
-        increase money by 225,000
+        increase money by 225000
         -> construction
         }
         hear auto mechanic{
         increase stress by 1
-        increase money by 120,000
+        increase money by 120000
         -> auto_mechanic
         }
         hear electrician{
         increase stress by 1
-        increase money by 180,000
+        increase money by 180000
         -> electrician
         }
 
@@ -454,16 +454,16 @@
     *then
         hear country, live out in the country, in the country, the country{
         decrease stress by 1
-        decrease money by 70,000
+        decrease money by 70000
         -> country
         }
         hear city, big city, live in the city, in the city, the city{
         increase stress by 1
-        decrease money by 150,000
+        decrease money by 150000
         -> city
         }
         hear suburb, suburbs, in the suburbs, the suburbs{
-        decrease money by 120,000
+        decrease money by 120000
         -> suburb
         }
         
@@ -504,8 +504,8 @@
         Now that you are finally all settled in, would you like to set up a retirement fund to help yourself in the future? This will require monthly contributions.
     *then
         hear fund, set up fund, yes, sure {
-        decrease money by 40,000
-        set retirement_fund to true
+        decrease money by 40000
+        set retirement_fund to 'true'
         -> retirement_fund_yes
         }
         
@@ -542,6 +542,7 @@
                 if rollResult == 1{
                 -> rejection
                 }
+        set married to 'true'
         -> married
         }
         hear no, stay single, be alone{
@@ -553,7 +554,7 @@
         OUCH! That one hurt. Your partner was clearly not ready for marriage. The rejection has fractured your relationship and you both decide to go separate ways. 
     *then
         increase stress by 2
-        set heartbroken to true
+        set heartbroken to 'true'
         ->alone
         
 @alone
@@ -572,17 +573,16 @@
     *say
     Congratulations! You are getting married to the love of your life. Is the wedding going to be big or small?
     *then
-        set married to true
     
         hear big, big wedding, big one{
-        decrease money by 40,000
+        decrease money by 40000
         increase character by 5
         increase stress by 3
         -> big
         }
         
         hear small, small one, small wedding{
-        decrease money by 20,000
+        decrease money by 20000
         increase character by 3
         increase stress by 3
         -> small
@@ -699,7 +699,7 @@
         You and your partner had a kid! Congrats!
     
     *then
-        decrease money by 40,000
+        decrease money by 40000
         increase character by 3
         -> adoption_q
         
@@ -708,7 +708,7 @@
         You and your partner had twins! Twice as much fun!
     
     *then
-        decrease money by 80,000
+        decrease money by 80000
         increase character by 6
         -> adoption_q
         
@@ -717,14 +717,14 @@
         What luck! You and your partner had triplets! A triple threat!
     
     *then
-        decrease money by 120,000
+        decrease money by 120000
         increase character by 9
 
         -> adoption_q
 
 @retire_choice
-    *say
-        You're starting to age and you notice to be more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?
+	*say
+		You're starting to age and you notice you have been more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?
     *then
         hear yes, retire, retire from work {
         -> retire
@@ -739,7 +739,7 @@
     *say
         After a great long time at your job, you decide to retire from work and spend the rest of your life doing things you enjoy. 
     *then
-        set retired to true
+        set retired to 'true'
         -> ending
 
 @dontretire
@@ -752,21 +752,21 @@
     *say
         You have now moved into your new place but you soon discover that your new living space needs repairs. That's gonna hurt the wallet!
     *then
-        decrease money by 5,000
+        decrease money by 5000
         -> retirement_fund
         
 @scenario1
     *say
          You were at a party and fell off a roof and broke your back! You had to be transported by ambulance to the hospital
     *then
-        decrease money by 10,000
+        decrease money by 10000
         -> workstudy
     
 @scenario3
     *say
         Your hard work has finally paid off! Your boss has decided to give you a raise after all the time and effort you have put in!
     *then
-        increase money by $20,000
+        increase money by 20000
         -> chooseresidents
         
 @scenario4
@@ -850,13 +850,13 @@
         You didn't have a very stressful life which is very rare in today's world!...
     
     *then 
-    if married == true{
+    if married == 'true'{
         -> married_true
         }
-    if married == false {
+    if married == 'false' {
         -> married_false
         }
-    if married == false && heartbroken == true {
+    if married == 'false' && heartbroken == 'true' {
         -> married_heartbroken
         }
         
@@ -949,16 +949,16 @@
         You got a {pet} to keep you company!...
         
     *then 
-    if retired == true{
+    if retired == 'true'{
         -> retired_yes
         }
-    if retired == false{
+    if retired == 'false'{
         -> retired_no
         }
-    if retired == true && retirement_fund == true{
+    if retired == 'true' && retirement_fund == 'true'{
         -> retired_yes_fund
         }
-        if retired == false && retirement_fund == true{
+        if retired == 'false' && retirement_fund == 'true'{
         -> retired_no_fund
         }
      
@@ -967,16 +967,16 @@
         You decided not to get a pet...
         
     *then 
-    if retired == true && retirement_fund == false{
+    if retired == 'true' && retirement_fund == 'false'{
         -> retired_yes
         }
-    if retired == false && retirement_fund == false{
+    if retired == 'false' && retirement_fund == 'false'{
         -> retired_no
         }
-    if retired == true && retirement_fund == true{
+    if retired == 'true' && retirement_fund == 'true'{
         -> retired_yes_fund
         }
-        if retired == false && retirement_fund == true{
+        if retired == 'false' && retirement_fund == 'true'{
         -> retired_no_fund
         }
         
@@ -1044,13 +1044,13 @@
         set character to 0
         set jobexperience to 0
         set kids to 0
-        set married to false
+        set married to 'false'
         set stress to 0
-        set retirement_fund to false
+        set retirement_fund to 'false'
         set score to 0
-        set retired to false
+        set retired to 'false'
         set pet to 'none'
-        set heartbroken to false
+        set heartbroken to 'false'
         }
         hear no {
         -> stop
