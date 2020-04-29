@@ -32,7 +32,7 @@
         set retirement_fund to false
         set score to 0
         set retired to false
-        set pet to none
+        set pet to "none"
         set heartbroken to false
         
             -> opener
@@ -590,7 +590,13 @@
     
 @single
     *say
-        You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life. Though you may feel that you need an animal companion. Would you like to adopt a pet?
+        You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life. Though you may feel that you need an animal companion. 
+    *then
+        -> adoption_q
+        
+@adoption_q
+    *say
+        Would you like to adopt a pet?
     *then
     hear yes{
         -> adoption
@@ -677,7 +683,7 @@
         -> kids3
         }
         hear don't have kids, no, no kids, don't want kids{
-        -> retire_choice
+        -> adoption_q
         }
         
 @kids1
@@ -691,7 +697,7 @@
             if rollResult ==1{
             ->scenario4
             }
-        -> retire_choice
+        -> adoption_q
         
 @kids2
     *say 
@@ -704,7 +710,7 @@
             if rollResult ==1{
             ->scenario4
             }
-        -> retire_choice
+        -> adoption_q
         
 @kids3
     *say 
@@ -717,7 +723,7 @@
             if rollResult ==1{
             ->scenario4
             }
-        -> retire_choice
+        -> adoption_q
 
 @retire_choice
     *say
@@ -771,7 +777,7 @@
         Uh Oh! Looks like your kids have outgrown their current bedset in their room and they need a new one!
     *then
         decrease money by 1000
-        -> retire_choice
+        -> adoption_q
         
 @ending
     *say
