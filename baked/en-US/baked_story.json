@@ -172,7 +172,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "married",
-                                            "variableValue": "{false}"
+                                            "variableValue": "false"
                                         }
                                     },
                                     {
@@ -186,7 +186,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "retirement_fund",
-                                            "variableValue": "{false}"
+                                            "variableValue": "false"
                                         }
                                     },
                                     {
@@ -200,7 +200,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "retired",
-                                            "variableValue": "{false}"
+                                            "variableValue": "false"
                                         }
                                     },
                                     {
@@ -214,7 +214,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "heartbroken",
-                                            "variableValue": "{false}"
+                                            "variableValue": "false"
                                         }
                                     },
                                     {
@@ -322,7 +322,7 @@
             ],
             "id": "stop",
             "customProperties": {
-                "sourceLocation": 910,
+                "sourceLocation": 918,
                 "sourceID": "story.abc"
             }
         },
@@ -352,7 +352,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{30,000}"
+                                            "variableValue": "30000"
                                         }
                                     },
                                     {
@@ -396,7 +396,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{10,000}"
+                                            "variableValue": "10000"
                                         }
                                     },
                                     {
@@ -447,7 +447,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{60,000}"
+                                            "variableValue": "60000"
                                         }
                                     },
                                     {
@@ -499,7 +499,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{60,000}"
+                                            "variableValue": "60000"
                                         }
                                     },
                                     {
@@ -565,7 +565,7 @@
             ],
             "id": "opener",
             "customProperties": {
-                "sourceLocation": 1034,
+                "sourceLocation": 1042,
                 "sourceID": "story.abc"
             }
         },
@@ -610,7 +610,7 @@
             ],
             "id": "party",
             "customProperties": {
-                "sourceLocation": 2298,
+                "sourceLocation": 2302,
                 "sourceID": "story.abc"
             }
         },
@@ -655,7 +655,7 @@
             ],
             "id": "trade",
             "customProperties": {
-                "sourceLocation": 2623,
+                "sourceLocation": 2627,
                 "sourceID": "story.abc"
             }
         },
@@ -674,7 +674,7 @@
                         {
                             "directionType": "go to",
                             "parameters": {
-                                "target": "tradejobs",
+                                "target": "collegelife",
                                 "targetSceneProperty": "narration"
                             }
                         },
@@ -707,7 +707,7 @@
             ],
             "id": "finished_trade",
             "customProperties": {
-                "sourceLocation": 2845,
+                "sourceLocation": 2849,
                 "sourceID": "story.abc"
             }
         },
@@ -752,7 +752,7 @@
             ],
             "id": "private",
             "customProperties": {
-                "sourceLocation": 3164,
+                "sourceLocation": 3170,
                 "sourceID": "story.abc"
             }
         },
@@ -797,7 +797,7 @@
             ],
             "id": "public",
             "customProperties": {
-                "sourceLocation": 3486,
+                "sourceLocation": 3492,
                 "sourceID": "story.abc"
             }
         },
@@ -893,7 +893,7 @@
             ],
             "id": "choosemajor",
             "customProperties": {
-                "sourceLocation": 3806,
+                "sourceLocation": 3812,
                 "sourceID": "story.abc"
             }
         },
@@ -938,7 +938,7 @@
             ],
             "id": "sciences",
             "customProperties": {
-                "sourceLocation": 4121,
+                "sourceLocation": 4127,
                 "sourceID": "story.abc"
             }
         },
@@ -983,7 +983,7 @@
             ],
             "id": "arts",
             "customProperties": {
-                "sourceLocation": 4228,
+                "sourceLocation": 4234,
                 "sourceID": "story.abc"
             }
         },
@@ -1134,7 +1134,7 @@
             ],
             "id": "collegelife",
             "customProperties": {
-                "sourceLocation": 4333,
+                "sourceLocation": 4339,
                 "sourceID": "story.abc"
             }
         },
@@ -1179,7 +1179,7 @@
             ],
             "id": "both_life",
             "customProperties": {
-                "sourceLocation": 5130,
+                "sourceLocation": 5136,
                 "sourceID": "story.abc"
             }
         },
@@ -1224,7 +1224,7 @@
             ],
             "id": "study_life",
             "customProperties": {
-                "sourceLocation": 5430,
+                "sourceLocation": 5436,
                 "sourceID": "story.abc"
             }
         },
@@ -1290,7 +1290,7 @@
             ],
             "id": "party_life",
             "customProperties": {
-                "sourceLocation": 5634,
+                "sourceLocation": 5640,
                 "sourceID": "story.abc"
             }
         },
@@ -1332,7 +1332,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{30,000}"
+                                            "variableValue": "30000"
                                         }
                                     },
                                     {
@@ -1405,7 +1405,7 @@
             ],
             "id": "workstudy",
             "customProperties": {
-                "sourceLocation": 5994,
+                "sourceLocation": 6000,
                 "sourceID": "story.abc"
             }
         },
@@ -1450,7 +1450,7 @@
             ],
             "id": "workstudy_yes",
             "customProperties": {
-                "sourceLocation": 6588,
+                "sourceLocation": 6593,
                 "sourceID": "story.abc"
             }
         },
@@ -1495,7 +1495,7 @@
             ],
             "id": "workstudy_no",
             "customProperties": {
-                "sourceLocation": 6919,
+                "sourceLocation": 6924,
                 "sourceID": "story.abc"
             }
         },
@@ -1540,7 +1540,7 @@
             ],
             "id": "graduatedcollege",
             "customProperties": {
-                "sourceLocation": 7199,
+                "sourceLocation": 7204,
                 "sourceID": "story.abc"
             }
         },
@@ -1600,7 +1600,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{10,000}"
+                                            "variableValue": "10000"
                                         }
                                     },
                                     {
@@ -1652,7 +1652,7 @@
             ],
             "id": "wheretolive",
             "customProperties": {
-                "sourceLocation": 7439,
+                "sourceLocation": 7444,
                 "sourceID": "story.abc"
             }
         },
@@ -1697,7 +1697,7 @@
             ],
             "id": "parents_house",
             "customProperties": {
-                "sourceLocation": 8293,
+                "sourceLocation": 8297,
                 "sourceID": "story.abc"
             }
         },
@@ -1749,7 +1749,7 @@
             ],
             "id": "apartment",
             "customProperties": {
-                "sourceLocation": 8544,
+                "sourceLocation": 8548,
                 "sourceID": "story.abc"
             }
         },
@@ -1832,7 +1832,7 @@
             ],
             "id": "choosejob",
             "customProperties": {
-                "sourceLocation": 8712,
+                "sourceLocation": 8716,
                 "sourceID": "story.abc"
             }
         },
@@ -1853,7 +1853,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{225,000}"
+                                            "variableValue": "225000"
                                         }
                                     },
                                     {
@@ -1895,7 +1895,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{600,000}"
+                                            "variableValue": "600000"
                                         }
                                     },
                                     {
@@ -1930,7 +1930,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{195,000}"
+                                            "variableValue": "195000"
                                         }
                                     },
                                     {
@@ -1975,7 +1975,7 @@
             ],
             "id": "sciencejobs",
             "customProperties": {
-                "sourceLocation": 8990,
+                "sourceLocation": 8994,
                 "sourceID": "story.abc"
             }
         },
@@ -2003,7 +2003,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{105,000}"
+                                            "variableValue": "105000"
                                         }
                                     },
                                     {
@@ -2038,7 +2038,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{135,000}"
+                                            "variableValue": "135000"
                                         }
                                     },
                                     {
@@ -2073,7 +2073,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{180,000}"
+                                            "variableValue": "180000"
                                         }
                                     },
                                     {
@@ -2118,7 +2118,7 @@
             ],
             "id": "artjobs",
             "customProperties": {
-                "sourceLocation": 9548,
+                "sourceLocation": 9549,
                 "sourceID": "story.abc"
             }
         },
@@ -2146,7 +2146,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{225,000}"
+                                            "variableValue": "225000"
                                         }
                                     },
                                     {
@@ -2181,7 +2181,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{120,000}"
+                                            "variableValue": "120000"
                                         }
                                     },
                                     {
@@ -2216,7 +2216,7 @@
                                         "directionType": "increase",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{180,000}"
+                                            "variableValue": "180000"
                                         }
                                     },
                                     {
@@ -2261,7 +2261,7 @@
             ],
             "id": "tradejobs",
             "customProperties": {
-                "sourceLocation": 10061,
+                "sourceLocation": 10059,
                 "sourceID": "story.abc"
             }
         },
@@ -2327,7 +2327,7 @@
             ],
             "id": "programmer",
             "customProperties": {
-                "sourceLocation": 10616,
+                "sourceLocation": 10611,
                 "sourceID": "story.abc"
             }
         },
@@ -2393,7 +2393,7 @@
             ],
             "id": "doctor",
             "customProperties": {
-                "sourceLocation": 10883,
+                "sourceLocation": 10878,
                 "sourceID": "story.abc"
             }
         },
@@ -2459,7 +2459,7 @@
             ],
             "id": "forensic_scientist",
             "customProperties": {
-                "sourceLocation": 11179,
+                "sourceLocation": 11174,
                 "sourceID": "story.abc"
             }
         },
@@ -2525,7 +2525,7 @@
             ],
             "id": "teacher",
             "customProperties": {
-                "sourceLocation": 11503,
+                "sourceLocation": 11498,
                 "sourceID": "story.abc"
             }
         },
@@ -2591,7 +2591,7 @@
             ],
             "id": "writer",
             "customProperties": {
-                "sourceLocation": 11755,
+                "sourceLocation": 11750,
                 "sourceID": "story.abc"
             }
         },
@@ -2657,7 +2657,7 @@
             ],
             "id": "designer",
             "customProperties": {
-                "sourceLocation": 12022,
+                "sourceLocation": 12017,
                 "sourceID": "story.abc"
             }
         },
@@ -2723,7 +2723,7 @@
             ],
             "id": "construction",
             "customProperties": {
-                "sourceLocation": 12263,
+                "sourceLocation": 12258,
                 "sourceID": "story.abc"
             }
         },
@@ -2789,7 +2789,7 @@
             ],
             "id": "auto_mechanic",
             "customProperties": {
-                "sourceLocation": 12493,
+                "sourceLocation": 12488,
                 "sourceID": "story.abc"
             }
         },
@@ -2855,7 +2855,7 @@
             ],
             "id": "electrician",
             "customProperties": {
-                "sourceLocation": 12757,
+                "sourceLocation": 12752,
                 "sourceID": "story.abc"
             }
         },
@@ -2886,7 +2886,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{70,000}"
+                                            "variableValue": "70000"
                                         }
                                     },
                                     {
@@ -2925,7 +2925,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{150,000}"
+                                            "variableValue": "150000"
                                         }
                                     },
                                     {
@@ -2956,7 +2956,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{120,000}"
+                                            "variableValue": "120000"
                                         }
                                     },
                                     {
@@ -3001,7 +3001,7 @@
             ],
             "id": "chooseresidents",
             "customProperties": {
-                "sourceLocation": 13007,
+                "sourceLocation": 13002,
                 "sourceID": "story.abc"
             }
         },
@@ -3067,7 +3067,7 @@
             ],
             "id": "country",
             "customProperties": {
-                "sourceLocation": 13779,
+                "sourceLocation": 13771,
                 "sourceID": "story.abc"
             }
         },
@@ -3133,7 +3133,7 @@
             ],
             "id": "city",
             "customProperties": {
-                "sourceLocation": 14071,
+                "sourceLocation": 14063,
                 "sourceID": "story.abc"
             }
         },
@@ -3199,7 +3199,7 @@
             ],
             "id": "suburb",
             "customProperties": {
-                "sourceLocation": 14346,
+                "sourceLocation": 14338,
                 "sourceID": "story.abc"
             }
         },
@@ -3223,14 +3223,14 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{40,000}"
+                                            "variableValue": "40000"
                                         }
                                     },
                                     {
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "retirement_fund",
-                                            "variableValue": "{true}"
+                                            "variableValue": "true"
                                         }
                                     },
                                     {
@@ -3300,7 +3300,7 @@
             ],
             "id": "retirement_fund",
             "customProperties": {
-                "sourceLocation": 14611,
+                "sourceLocation": 14603,
                 "sourceID": "story.abc"
             }
         },
@@ -3345,7 +3345,7 @@
             ],
             "id": "retirement_fund_yes",
             "customProperties": {
-                "sourceLocation": 15072,
+                "sourceLocation": 15065,
                 "sourceID": "story.abc"
             }
         },
@@ -3390,7 +3390,7 @@
             ],
             "id": "retirement_fund_no",
             "customProperties": {
-                "sourceLocation": 15244,
+                "sourceLocation": 15237,
                 "sourceID": "story.abc"
             }
         },
@@ -3435,7 +3435,7 @@
             ],
             "id": "dating",
             "customProperties": {
-                "sourceLocation": 15416,
+                "sourceLocation": 15409,
                 "sourceID": "story.abc"
             }
         },
@@ -3472,6 +3472,13 @@
                                                     }
                                                 }
                                             ]
+                                        }
+                                    },
+                                    {
+                                        "directionType": "set",
+                                        "parameters": {
+                                            "variableName": "married",
+                                            "variableValue": "true"
                                         }
                                     },
                                     {
@@ -3540,7 +3547,7 @@
             ],
             "id": "marriage",
             "customProperties": {
-                "sourceLocation": 15632,
+                "sourceLocation": 15625,
                 "sourceID": "story.abc"
             }
         },
@@ -3560,7 +3567,7 @@
                             "directionType": "set",
                             "parameters": {
                                 "variableName": "heartbroken",
-                                "variableValue": "{true}"
+                                "variableValue": "true"
                             }
                         },
                         {
@@ -3599,7 +3606,7 @@
             ],
             "id": "rejection",
             "customProperties": {
-                "sourceLocation": 16038,
+                "sourceLocation": 16061,
                 "sourceID": "story.abc"
             }
         },
@@ -3682,7 +3689,7 @@
             ],
             "id": "alone",
             "customProperties": {
-                "sourceLocation": 16320,
+                "sourceLocation": 16345,
                 "sourceID": "story.abc"
             }
         },
@@ -3691,13 +3698,6 @@
                 {
                     "narration": "Congratulations! You are getting married to the love of your life. Is the wedding going to be big or small?",
                     "sceneDirections": [
-                        {
-                            "directionType": "set",
-                            "parameters": {
-                                "variableName": "married",
-                                "variableValue": "{true}"
-                            }
-                        },
                         {
                             "directionType": "choice",
                             "parameters": {
@@ -3712,7 +3712,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{40,000}"
+                                            "variableValue": "40000"
                                         }
                                     },
                                     {
@@ -3756,7 +3756,7 @@
                                         "directionType": "reduce",
                                         "parameters": {
                                             "variableName": "money",
-                                            "variableValue": "{20,000}"
+                                            "variableValue": "20000"
                                         }
                                     },
                                     {
@@ -3815,7 +3815,7 @@
             ],
             "id": "married",
             "customProperties": {
-                "sourceLocation": 16715,
+                "sourceLocation": 16740,
                 "sourceID": "story.abc"
             }
         },
@@ -3860,7 +3860,7 @@
             ],
             "id": "single",
             "customProperties": {
-                "sourceLocation": 17228,
+                "sourceLocation": 17223,
                 "sourceID": "story.abc"
             }
         },
@@ -3940,7 +3940,7 @@
             ],
             "id": "adoption_q",
             "customProperties": {
-                "sourceLocation": 17505,
+                "sourceLocation": 17500,
                 "sourceID": "story.abc"
             }
         },
@@ -3985,7 +3985,7 @@
             ],
             "id": "big",
             "customProperties": {
-                "sourceLocation": 17659,
+                "sourceLocation": 17654,
                 "sourceID": "story.abc"
             }
         },
@@ -4030,7 +4030,7 @@
             ],
             "id": "small",
             "customProperties": {
-                "sourceLocation": 17877,
+                "sourceLocation": 17872,
                 "sourceID": "story.abc"
             }
         },
@@ -4207,7 +4207,7 @@
             ],
             "id": "adoption",
             "customProperties": {
-                "sourceLocation": 18037,
+                "sourceLocation": 18032,
                 "sourceID": "story.abc"
             }
         },
@@ -4252,7 +4252,7 @@
             ],
             "id": "dog",
             "customProperties": {
-                "sourceLocation": 18814,
+                "sourceLocation": 18809,
                 "sourceID": "story.abc"
             }
         },
@@ -4297,7 +4297,7 @@
             ],
             "id": "cat",
             "customProperties": {
-                "sourceLocation": 19073,
+                "sourceLocation": 19068,
                 "sourceID": "story.abc"
             }
         },
@@ -4342,7 +4342,7 @@
             ],
             "id": "fish",
             "customProperties": {
-                "sourceLocation": 19344,
+                "sourceLocation": 19339,
                 "sourceID": "story.abc"
             }
         },
@@ -4408,7 +4408,7 @@
             ],
             "id": "bedset_roll",
             "customProperties": {
-                "sourceLocation": 19672,
+                "sourceLocation": 19667,
                 "sourceID": "story.abc"
             }
         },
@@ -4589,7 +4589,7 @@
             ],
             "id": "married_life",
             "customProperties": {
-                "sourceLocation": 19791,
+                "sourceLocation": 19786,
                 "sourceID": "story.abc"
             }
         },
@@ -4602,7 +4602,7 @@
                             "directionType": "reduce",
                             "parameters": {
                                 "variableName": "money",
-                                "variableValue": "{40,000}"
+                                "variableValue": "40000"
                             }
                         },
                         {
@@ -4648,7 +4648,7 @@
             ],
             "id": "kids1",
             "customProperties": {
-                "sourceLocation": 20590,
+                "sourceLocation": 20585,
                 "sourceID": "story.abc"
             }
         },
@@ -4661,7 +4661,7 @@
                             "directionType": "reduce",
                             "parameters": {
                                 "variableName": "money",
-                                "variableValue": "{80,000}"
+                                "variableValue": "80000"
                             }
                         },
                         {
@@ -4707,7 +4707,7 @@
             ],
             "id": "kids2",
             "customProperties": {
-                "sourceLocation": 20768,
+                "sourceLocation": 20762,
                 "sourceID": "story.abc"
             }
         },
@@ -4720,7 +4720,7 @@
                             "directionType": "reduce",
                             "parameters": {
                                 "variableName": "money",
-                                "variableValue": "{120,000}"
+                                "variableValue": "120000"
                             }
                         },
                         {
@@ -4766,14 +4766,14 @@
             ],
             "id": "kids3",
             "customProperties": {
-                "sourceLocation": 20955,
+                "sourceLocation": 20948,
                 "sourceID": "story.abc"
             }
         },
         {
             "contents": [
                 {
-                    "narration": "You're starting to age and you notice to be more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?",
+                    "narration": "You're starting to age and you notice you have been more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?",
                     "sceneDirections": [
                         {
                             "directionType": "choice",
@@ -4865,7 +4865,7 @@
             ],
             "id": "retire_choice",
             "customProperties": {
-                "sourceLocation": 21148,
+                "sourceLocation": 21140,
                 "sourceID": "story.abc"
             }
         },
@@ -4878,7 +4878,7 @@
                             "directionType": "set",
                             "parameters": {
                                 "variableName": "retired",
-                                "variableValue": "{true}"
+                                "variableValue": "true"
                             }
                         },
                         {
@@ -4917,7 +4917,7 @@
             ],
             "id": "retire",
             "customProperties": {
-                "sourceLocation": 21591,
+                "sourceLocation": 21582,
                 "sourceID": "story.abc"
             }
         },
@@ -4962,7 +4962,7 @@
             ],
             "id": "dontretire",
             "customProperties": {
-                "sourceLocation": 21798,
+                "sourceLocation": 21791,
                 "sourceID": "story.abc"
             }
         },
@@ -4975,7 +4975,7 @@
                             "directionType": "reduce",
                             "parameters": {
                                 "variableName": "money",
-                                "variableValue": "{5,000}"
+                                "variableValue": "5000"
                             }
                         },
                         {
@@ -5014,7 +5014,7 @@
             ],
             "id": "scenario2",
             "customProperties": {
-                "sourceLocation": 22019,
+                "sourceLocation": 22012,
                 "sourceID": "story.abc"
             }
         },
@@ -5027,7 +5027,7 @@
                             "directionType": "reduce",
                             "parameters": {
                                 "variableName": "money",
-                                "variableValue": "{10,000}"
+                                "variableValue": "10000"
                             }
                         },
                         {
@@ -5066,7 +5066,7 @@
             ],
             "id": "scenario1",
             "customProperties": {
-                "sourceLocation": 22258,
+                "sourceLocation": 22250,
                 "sourceID": "story.abc"
             }
         },
@@ -5079,7 +5079,7 @@
                             "directionType": "increase",
                             "parameters": {
                                 "variableName": "money",
-                                "variableValue": "{$20,000}"
+                                "variableValue": "20000"
                             }
                         },
                         {
@@ -5118,7 +5118,7 @@
             ],
             "id": "scenario3",
             "customProperties": {
-                "sourceLocation": 22472,
+                "sourceLocation": 22463,
                 "sourceID": "story.abc"
             }
         },
@@ -5170,7 +5170,7 @@
             ],
             "id": "scenario4",
             "customProperties": {
-                "sourceLocation": 22706,
+                "sourceLocation": 22695,
                 "sourceID": "story.abc"
             }
         },
@@ -5252,7 +5252,7 @@
             ],
             "id": "ending",
             "customProperties": {
-                "sourceLocation": 22940,
+                "sourceLocation": 22929,
                 "sourceID": "story.abc"
             }
         },
@@ -5334,7 +5334,7 @@
             ],
             "id": "money_good",
             "customProperties": {
-                "sourceLocation": 23216,
+                "sourceLocation": 23205,
                 "sourceID": "story.abc"
             }
         },
@@ -5416,7 +5416,7 @@
             ],
             "id": "money_bad",
             "customProperties": {
-                "sourceLocation": 23532,
+                "sourceLocation": 23521,
                 "sourceID": "story.abc"
             }
         },
@@ -5498,7 +5498,7 @@
             ],
             "id": "character_good",
             "customProperties": {
-                "sourceLocation": 23846,
+                "sourceLocation": 23835,
                 "sourceID": "story.abc"
             }
         },
@@ -5580,7 +5580,7 @@
             ],
             "id": "character_bad",
             "customProperties": {
-                "sourceLocation": 24145,
+                "sourceLocation": 24134,
                 "sourceID": "story.abc"
             }
         },
@@ -5663,7 +5663,7 @@
             ],
             "id": "stress_good",
             "customProperties": {
-                "sourceLocation": 24476,
+                "sourceLocation": 24465,
                 "sourceID": "story.abc"
             }
         },
@@ -5746,7 +5746,7 @@
             ],
             "id": "stress_bad",
             "customProperties": {
-                "sourceLocation": 24819,
+                "sourceLocation": 24808,
                 "sourceID": "story.abc"
             }
         },
@@ -5844,7 +5844,7 @@
             ],
             "id": "married_true",
             "customProperties": {
-                "sourceLocation": 25157,
+                "sourceLocation": 25146,
                 "sourceID": "story.abc"
             }
         },
@@ -5889,7 +5889,7 @@
             ],
             "id": "kids_0",
             "customProperties": {
-                "sourceLocation": 25446,
+                "sourceLocation": 25435,
                 "sourceID": "story.abc"
             }
         },
@@ -5934,7 +5934,7 @@
             ],
             "id": "kids_1",
             "customProperties": {
-                "sourceLocation": 25528,
+                "sourceLocation": 25517,
                 "sourceID": "story.abc"
             }
         },
@@ -5979,7 +5979,7 @@
             ],
             "id": "kids_2",
             "customProperties": {
-                "sourceLocation": 25607,
+                "sourceLocation": 25596,
                 "sourceID": "story.abc"
             }
         },
@@ -6024,7 +6024,7 @@
             ],
             "id": "kids_3",
             "customProperties": {
-                "sourceLocation": 25689,
+                "sourceLocation": 25678,
                 "sourceID": "story.abc"
             }
         },
@@ -6069,7 +6069,7 @@
             ],
             "id": "married_false",
             "customProperties": {
-                "sourceLocation": 25794,
+                "sourceLocation": 25783,
                 "sourceID": "story.abc"
             }
         },
@@ -6114,7 +6114,7 @@
             ],
             "id": "married_heartbroken",
             "customProperties": {
-                "sourceLocation": 25924,
+                "sourceLocation": 25913,
                 "sourceID": "story.abc"
             }
         },
@@ -6182,7 +6182,7 @@
             ],
             "id": "pet",
             "customProperties": {
-                "sourceLocation": 26055,
+                "sourceLocation": 26044,
                 "sourceID": "story.abc"
             }
         },
@@ -6280,7 +6280,7 @@
             ],
             "id": "pet_yes",
             "customProperties": {
-                "sourceLocation": 26180,
+                "sourceLocation": 26169,
                 "sourceID": "story.abc"
             }
         },
@@ -6378,7 +6378,7 @@
             ],
             "id": "pet_no",
             "customProperties": {
-                "sourceLocation": 26568,
+                "sourceLocation": 26557,
                 "sourceID": "story.abc"
             }
         },
@@ -6430,7 +6430,7 @@
             ],
             "id": "retired_yes",
             "customProperties": {
-                "sourceLocation": 27006,
+                "sourceLocation": 26995,
                 "sourceID": "story.abc"
             }
         },
@@ -6475,7 +6475,7 @@
             ],
             "id": "retired_no",
             "customProperties": {
-                "sourceLocation": 27239,
+                "sourceLocation": 27228,
                 "sourceID": "story.abc"
             }
         },
@@ -6527,7 +6527,7 @@
             ],
             "id": "retired_yes_fund",
             "customProperties": {
-                "sourceLocation": 27351,
+                "sourceLocation": 27340,
                 "sourceID": "story.abc"
             }
         },
@@ -6572,7 +6572,7 @@
             ],
             "id": "retired_no_fund",
             "customProperties": {
-                "sourceLocation": 27581,
+                "sourceLocation": 27570,
                 "sourceID": "story.abc"
             }
         },
@@ -6640,7 +6640,7 @@
             ],
             "id": "the_end_setup",
             "customProperties": {
-                "sourceLocation": 27803,
+                "sourceLocation": 27792,
                 "sourceID": "story.abc"
             }
         },
@@ -6685,7 +6685,7 @@
             ],
             "id": "the_end_good",
             "customProperties": {
-                "sourceLocation": 27932,
+                "sourceLocation": 27921,
                 "sourceID": "story.abc"
             }
         },
@@ -6730,7 +6730,7 @@
             ],
             "id": "the_end_bad",
             "customProperties": {
-                "sourceLocation": 28063,
+                "sourceLocation": 28052,
                 "sourceID": "story.abc"
             }
         },
@@ -6793,7 +6793,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "married",
-                                            "variableValue": "{false}"
+                                            "variableValue": "false"
                                         }
                                     },
                                     {
@@ -6807,7 +6807,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "retirement_fund",
-                                            "variableValue": "{false}"
+                                            "variableValue": "false"
                                         }
                                     },
                                     {
@@ -6821,7 +6821,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "retired",
-                                            "variableValue": "{false}"
+                                            "variableValue": "false"
                                         }
                                     },
                                     {
@@ -6835,7 +6835,7 @@
                                         "directionType": "set",
                                         "parameters": {
                                             "variableName": "heartbroken",
-                                            "variableValue": "{false}"
+                                            "variableValue": "false"
                                         }
                                     }
                                 ],
@@ -6894,7 +6894,7 @@
             ],
             "id": "play_again",
             "customProperties": {
-                "sourceLocation": 28238,
+                "sourceLocation": 28227,
                 "sourceID": "story.abc"
             }
         }
