@@ -476,7 +476,7 @@
             if rollResult == 1{
             ->scenario2
             }
-    -> marriage
+    -> dating
     
 
 @city
@@ -487,7 +487,7 @@
             if rollResult == 1{
             ->scenario2
             }
-    -> retirement_fund
+    -> dating
 
 @suburb
     *say
@@ -497,7 +497,7 @@
             if rollResult == 1{
             ->scenario2
             }
-    -> retirement_fund
+    -> dating
     
 @retirement_fund
     *say
@@ -838,11 +838,11 @@
         You weren't the most sociable person but you were great friends with the couple people who were able to get past that...
     
     *then 
-    if stress >= 6{
+    if stress < 6{
         -> stress_good
         increase score by 1
         }
-    if stress < 6{
+    if stress >= 6{
         -> stress_bad
         decrease score by 1
         }
