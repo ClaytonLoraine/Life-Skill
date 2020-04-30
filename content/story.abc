@@ -109,7 +109,7 @@
         Congrats! You have finished up your short experience at trade school and now have valuable skill sets that you can use in the workforce! Now it is time to figure out which job you want to do.
         *then
             set specialization to 'trade'
-            -> collegelife
+            ->choosejob
             
 @private
     *say
