@@ -592,6 +592,7 @@
     *say
         You figured that getting married would be a waste of your time and you are better off alone. All you need is your work and yourself to be content in life. Though you may feel that you need an animal companion. 
     *then
+        increase money by 5,000
         -> adoption_q
         
 @adoption_q
@@ -602,6 +603,7 @@
         -> adoption
     }
     hear no{
+        increase money by 5,000
         -> bedset_roll
     }
 
@@ -693,6 +695,7 @@
         -> kids3
         }
         hear don't have kids, no, no kids, don't want kids{
+        increase money by 15,000
         -> adoption_q
         }
         
@@ -701,7 +704,7 @@
         You and your partner had a kid! Congrats!
     
     *then
-        decrease money by 40000
+        decrease money by 20,000
         increase character by 3
         -> adoption_q
         
@@ -710,7 +713,7 @@
         You and your partner had twins! Twice as much fun!
     
     *then
-        decrease money by 80000
+        decrease money by 40,000
         increase character by 6
         -> adoption_q
         
@@ -719,7 +722,7 @@
         What luck! You and your partner had triplets! A triple threat!
     
     *then
-        decrease money by 120000
+        decrease money by 60,000
         increase character by 9
 
         -> adoption_q
@@ -748,6 +751,7 @@
     *say
         You enjoy your job too much and don't know if you would ever stop working in life. You continue the rest of your life working with, just with fewer hours.
     *then
+        increase money by 40,000
         -> ending
         
 @scenario2
@@ -970,6 +974,7 @@
         
     *then 
     if retired == true && retirement_fund == false{
+        increase money by 100,000
         -> retired_yes
         }
     if retired == false && retirement_fund == false{
