@@ -729,12 +729,12 @@
 
 @retire_choice
 	*say
-		You're starting to age and you notice you have been more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire or keep working?
+		You're starting to age and you notice you have been more fatigued from work than normal. Maybe you should just retire and enjoy your time and do some activities you like. Will you retire?
     *then
         hear yes, retire, retire from work {
         -> retire
         }
-        hear no, keep working{
+        hear no, ,don't retire, keep working{
         increase character by 2
         increase stress by 3
         ->dontretire
@@ -742,10 +742,9 @@
         
 @retire
     *say
-        After a great long time at your job, you decide to retire from work. You cashed in on your retirement fund and can now spend the rest of your life doing things you enjoy. 
+        After a great long time at your job, you decide to retire from work. You can now spend the rest of your life doing things you enjoy. 
     *then
         set retired to 'true'
-        increase money by 100,000
         -> ending
 
 @dontretire
@@ -975,7 +974,6 @@
         
     *then 
     if retired == true && retirement_fund == false{
-        increase money by 100000
         -> retired_yes
         }
     if retired == false && retirement_fund == false{
@@ -1008,6 +1006,7 @@
         You retired and because of the retirement fund, you set up you were able to do everything you were hoping to do!...
         
     *then 
+    increase money by 100000
      increase score by 1
         -> the_end_setup
         
