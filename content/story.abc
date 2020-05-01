@@ -476,7 +476,7 @@
             if rollResult == 1{
             ->scenario2
             }
-    -> dating
+    -> retirement_fund
     
 
 @city
@@ -487,7 +487,7 @@
             if rollResult == 1{
             ->scenario2
             }
-    -> dating
+    -> retirement_fund
 
 @suburb
     *say
@@ -497,7 +497,7 @@
             if rollResult == 1{
             ->scenario2
             }
-    -> dating
+    -> retirement_fund
     
 @retirement_fund
     *say
@@ -742,9 +742,10 @@
         
 @retire
     *say
-        After a great long time at your job, you decide to retire from work and spend the rest of your life doing things you enjoy. 
+        After a great long time at your job, you decide to retire from work. You cashed in on your retirement fund and can now spend the rest of your life doing things you enjoy. 
     *then
         set retired to 'true'
+        increase money by 100,000
         -> ending
 
 @dontretire
