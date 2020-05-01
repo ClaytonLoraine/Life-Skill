@@ -190,7 +190,9 @@
                 {
                     "name": "flexyIntent",
                     "samples": [
-                        "i will"
+                        "i will",
+                        "i do",
+                        "i accept"
                     ]
                 },
                 {

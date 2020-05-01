@@ -118,6 +118,8 @@
             "dating.narration": "You've met a cute partner whom you deem suitable for companionship during the night on the town. You two hit it off immediately and decide to begin dating.",
             "marriage.narration": "You and your partner have been going strong for a while now and you begin to think about asking them to marry you. Will you propose?",
             "utterance-I will": "I will",
+            "utterance-I do": "I do",
+            "utterance-I accept": "I accept",
             "utterance-stay single": "stay single",
             "utterance-be alone": "be alone",
             "rejection.narration": "OUCH! That one hurt. Your partner was clearly not ready for marriage. The rejection has fractured your relationship and you both decide to go separate ways.",
