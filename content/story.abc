@@ -745,7 +745,7 @@
         After a great long time at your job, you decide to retire from work. You cashed in on your retirement fund and can now spend the rest of your life doing things you enjoy. 
     *then
         set retired to 'true'
-        increase money by 100,000
+        increase money by 100000
         -> ending
 
 @dontretire
