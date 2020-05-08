@@ -13,7 +13,19 @@
         }
 
         hear no {
-            -> start
+        set money to 0
+        set education to 0
+        set character to 0
+        set jobexperience to 0
+        set kids to 0
+        set married to 'false'
+        set stress to 0
+        set retirement_fund to 'false'
+        set score to 0
+        set retired to 'false'
+        set pet to 'none'
+        set heartbroken to 'false'
+            -> opener
         }
 
 @start
@@ -756,21 +768,21 @@
         
 @scenario2
     *say
-        You have now moved into your new place but you soon discover that your new living space needs repairs. That's gonna hurt the wallet!
+        You have now moved into your new place but you soon discover that your new living space needs repairs. That's gonna hurt the wallet!...
     *then
         decrease money by 5000
         -> retirement_fund
         
 @scenario1
     *say
-         You were at a party and fell off a roof and broke your back! You had to be transported by ambulance to the hospital
+         You were at a party and fell off a roof and broke your back! You had to be transported by ambulance to the hospital...
     *then
         decrease money by 10000
         -> workstudy
     
 @scenario3
     *say
-        Your hard work has finally paid off! Your boss has decided to give you a raise after all the time and effort you have put in!
+        Your hard work has finally paid off! Your boss has decided to give you a raise after all the time and effort you have put in!...
     *then
         increase money by 20000
         -> chooseresidents
@@ -955,16 +967,16 @@
         You got a {pet} to keep you company!...
         
     *then 
-    if retired == true{
+    if (retired == true && retirement_fund == false){
         -> retired_yes
         }
-    if retired == false{
+    if (retired == false && retirement_fund == false){
         -> retired_no
         }
-    if retired == true && retirement_fund == true{
+    if (retired == true && retirement_fund == true){
         -> retired_yes_fund
         }
-        if retired == false && retirement_fund == true{
+        if (retired == false && retirement_fund == true){
         -> retired_no_fund
         }
      
@@ -973,16 +985,16 @@
         You decided not to get a pet...
         
     *then 
-    if retired == true && retirement_fund == false{
+    if (retired == true && retirement_fund == false){
         -> retired_yes
         }
-    if retired == false && retirement_fund == false{
+    if (retired == false && retirement_fund == false){
         -> retired_no
         }
-    if retired == true && retirement_fund == true{
+    if (retired == true && retirement_fund == true){
         -> retired_yes_fund
         }
-        if retired == false && retirement_fund == true{
+        if (retired == false && retirement_fund == true){
         -> retired_no_fund
         }
         

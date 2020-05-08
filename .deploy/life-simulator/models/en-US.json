@@ -190,7 +190,9 @@
                 {
                     "name": "flexyIntent",
                     "samples": [
-                        "i will"
+                        "i will",
+                        "i do",
+                        "i accept"
                     ]
                 },
                 {
@@ -272,6 +274,7 @@
                 {
                     "name": "flexbjIntent",
                     "samples": [
+                        "don't retire",
                         "keep working"
                     ]
                 },
